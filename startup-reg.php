@@ -193,11 +193,11 @@
 										
 									  </form>
 									  
-									  <div class="advExpert">
+									  <!--<div class="advExpert">
 										<p>Если для реализации или продвижения проекта у вас не хватает квалифицированных специалистов, вы можете воспользоваться функцией <b>&laquo;поиск эксперта&raquo;</b> по завершении заполнения данной формы. Чтобы найти требуемых экспертов, нажмите кнопку &laquo;найти эксперта&raquo; в левом меню и оставте соответствующую заявку.</p>
 										<p><b>Также вы можете воспользоваться помощью квалифицированных специалистов в области ICO</b> (которые смогут помочь вам избежать юридических проблем, решат технические и организационные вопросы и организуют эффективное провижение) с помощью нашего сервиса <a href="#">&laquo;Descrow&nbsp;Expert&raquo;</a></p>
 										<a href="#"><img src="images/dexpert.png" alt="" style="filter: invert(100%); max-width: 400px;" /></a>
-									  </div>
+									  </div>-->
 									</div><div id="step-4" class="wizard_content" style="display: none;">
 									  <form class="form-horizontal form-label-left">
 
@@ -269,8 +269,8 @@
 											</div>
 										  </div>
 										</div>
-										<hr/>
-										<a href="#"><img src="images/dexpert-banner.jpg" alt="" style="filter: invert(100%); max-width: 696px; width: 100%; margin-top: 20px; margin-left: 9px;" /></a>
+										<!--<hr/>
+										<a href="#"><img src="images/dexpert-banner.jpg" alt="" style="filter: invert(100%); max-width: 696px; width: 100%; margin-top: 20px; margin-left: 9px;" /></a>-->
 									  </div>
 									  <input type="submit" id="smbForm" style="display: none;">
 									  <div class="clearfix"></div>
