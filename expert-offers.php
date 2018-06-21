@@ -1,17 +1,20 @@
 <?php require_once('_top-expert.php'); ?>
 				<section class="expertOffers col-md-12">
-					<div class="x_panel">
+					<!--<div class="x_panel">
 						<div class="x_title">
 						  <h2>Получайте предложения о сотрудничестве</h2>
 						  <div class="clearfix"></div>
 						</div>
-						<div class="x_content text-left">
-							<p><i class="fa fa-check"></i> Чтобы получать предложения о сотрудничестве от стартапов, вам необходимо пополнить <u><a href="user - wallet.php">баланс кошелька платформы</a></u> на сумму не менее 10 DES.</p>
+						<div class="x_content text-left">-->
+							<!-- вариант с необходимым количеством DES на аккаунте -->
+							<!--<p><i class="fa fa-check"></i> Чтобы получать предложения о сотрудничестве от стартапов, вам необходимо иметь на <u><a href="user - wallet.php">балансе кошелька платформы</a></u> сумму не менее 100 DES.</p>-->
+							<!-- вариант с платой за пришедшие предложения -->
+							<!--<p><i class="fa fa-check"></i> Чтобы получать предложения о сотрудничестве от стартапов, вам необходимо пополнить <u><a href="user - wallet.php">баланс кошелька платформы</a></u> на сумму не менее 10 DES.</p>
 							<p><i class="fa fa-check"></i> Пока ваш баланс превышает 10 DES, вы будете получать предложения, соответствующие компетенциям, указанным в вашей анкете.</p>
 							<p><i class="fa fa-check"></i> За каждое пришедшее предложение, с вашего баланса будет списываться 10 DES.</p><br/>
-							<h4 class="text-center"><b>Получение предложений: <span class="text-success">активно</span></b> <button type="button" class="btn btn-warning noborder btn-xs">Отключить</button></h4><br/>
-						</div>
-					</div>
+							<h4 class="text-center"><b>Получение предложений: <span class="text-success">активно</span></b> <button type="button" class="btn btn-warning noborder btn-xs">Отключить</button></h4><br/>-->
+						<!--</div>
+					</div>-->
 					<div class="x_panel">
 						<div class="x_title">
 						  <h2>Я хочу сотрудничать</h2>
@@ -137,12 +140,36 @@
 				<hr/>
 				<p><b>Примечание:</b></p>
 				<p>Проектная занятость 2-3 месяца. График 5/2, восьмичасовой рабочий день. Плюсом будет наличие сертификатов (Cisco, Microsoft и т.д.), знание блокчейн и технических нюансов майнинга.</p>
+				<button type="button" class="btn btn-info btn-md" data-dismiss="modal" data-toggle="modal" data-target="#messageModal"><i class="fa fa-envelope"></i> &nbsp;Написать стартапу</button>
 				<hr>
 				<p class="text-center">
 					<button type="button" class="btn btn-success pull-left" data-dismiss="modal" data-toggle="modal" data-target="#offerAcceptModal">Откликнуться</button>
 					<button type="button" class="btn btn-danger pull-right" data-dismiss="modal" data-toggle="modal" data-target="#offerDismissModal">Не интересует</button>
 					<div class="clear"></div>
 				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- окно лс стартапу -->
+<div class="modal fade in" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Написать стартапу<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body">
+			
+				<div class="notice">
+					<p><i class="fa fa-check"></i> Если вы хотите обратиться к стартапу публично, воспользуйтесь формой &laquo;задать вопрос&raquo; на вкладке &laquo;вопросы&raquo;.</p>
+					<p><i class="fa fa-check"></i> Здесь вы можете написать личное сообщение стартапу:</p>
+				</div>
+				<p><textarea id="adv-descr" required="required" class="form-control col-xs-12" rows="4" placeholder="Вопрос или обращение к стартапу"></textarea>
+				   <div class="clear"></div></p>
+				<p class="text-center"><button type="button" class="btn btn-success">Отправить</button></p>
+				
 			</div>
 		</div>
 	</div>

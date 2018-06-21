@@ -8,8 +8,8 @@
 						<div class="x_content text-left">
 							<div class="tabParent tp1" role="tabpanel" data-example-id="togglable-tabs">
 								<ul id="infoTab" class="nav nav-tabs" role="tablist">
-								  <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Я сотрудничаю</a></li>
-								  <li role="presentation" class=""><a href="#tab_content2" role="tab" id="tab2" data-toggle="tab" aria-expanded="false">Я ищу</a></li>
+								  <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Я ищу</a></li>
+								  <li role="presentation" class=""><a href="#tab_content2" role="tab" id="tab2" data-toggle="tab" aria-expanded="false">Я сотрудничаю</a></li>
 								  <li role="presentation" class=""><a href="#tab_content3" role="tab" id="tab3" data-toggle="tab" aria-expanded="false">Откликнулись на предложение <span class="label label-danger">3</span></a></li>
 								  <li role="presentation" class=""><a href="#tab_content4" role="tab" id="tab4" data-toggle="tab" aria-expanded="false">Архив сотрудничеств</a></li>
 								</ul>
@@ -20,33 +20,6 @@
 									  <div class="x_content over-x-auto">
 										<table class="table table-striped valign-m">
 											<thead>
-											  <tr>
-												<th><a href="#">Специалист <i class="fa fa-caret-down"></i></a></th>
-												<th><a href="#">Задача  <i class="fa fa-caret-down"></i></a></th>
-												<th><a href="#">Сумма  <i class="fa fa-caret-down"></i></a></th>
-												<th><a href="#">Дата  <i class="fa fa-caret-down"></i></a></th>
-												<th></th>
-											  </tr>
-											</thead>
-											<tbody>
-											  <tr>
-												<td><a href="startup.php">Системный администратор</a></td>
-												<td>Организация серверного парка</td>
-												<td>$ 2 000</td>
-												<td>03.05.2018</td>
-												<td class="text-right"><button type="button" class="btn btn-danger noborder btn-sm" data-toggle="modal" data-target="#coopCancelModal">Завершить сотрудничество</button></td>
-											  </tr>
-											</tbody>
-										</table>
-									  </div>
-									</div>
-								  </div>
-
-								  <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="tab2">
-									<div class="x_panel">
-									  <div class="x_content over-x-auto">
-											<table class="table table-striped valign-m">
-												<thead>
 												  <tr>
 													<th><a href="#">Специалист <i class="fa fa-caret-down"></i></a></th>
 													<th><a href="#">Задача  <i class="fa fa-caret-down"></i></a></th>
@@ -76,6 +49,33 @@
 												</tbody>
 											</table>
 											<br/><button type="button" class="btn btn-info noborder btn-md" data-toggle="modal" data-target="#searchExertModal">Поиск нового специалиста</button>
+									  </div>
+									</div>
+								  </div>
+
+								  <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="tab2">
+									<div class="x_panel">
+									  <div class="x_content over-x-auto">
+										<table class="table table-striped valign-m">
+											<thead>
+											  <tr>
+												<th><a href="#">Специалист <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Задача  <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Сумма  <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Дата  <i class="fa fa-caret-down"></i></a></th>
+												<th></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td><a href="startup.php">Системный администратор</a></td>
+												<td>Организация серверного парка</td>
+												<td>$ 2 000</td>
+												<td>03.05.2018</td>
+												<td class="text-right"><button type="button" class="btn btn-danger noborder btn-sm" data-toggle="modal" data-target="#coopCancelModal">Завершить сотрудничество</button></td>
+											  </tr>
+											</tbody>
+										</table>
 										</div>
 									</div>
 								  </div>
@@ -302,8 +302,26 @@
 				<p><b>Опыт работы в проектах:</b> <a href="#">&laquo;Test project 1&raquo;</a>, <a href="#">&laquo;Test project 2&raquo;</a>, <a href="#">&laquo;Test project 4&raquo;</a>.</p>
 				<p><a href="expert-info.php">Карточка специалиста</a></p>
 				<p><a href="expert-feedback.php">Посмотреть отзывы о сотрудничестве</a></p>
+				<button type="button" class="btn btn-info btn-md" data-dismiss="modal" data-toggle="modal" data-target="#messageModal"><i class="fa fa-envelope"></i> &nbsp;Написать эксперту</button>
 				<hr/>
 				<p class="text-center"><button type="button" class="btn btn-info pull-left button140">Подтвердить сотрудничество</button><button type="button" class="btn btn-warning pull-right button140" data-dismiss="modal" data-toggle="modal" data-target="#replyDismissModal">Отказаться</button><div class="clear"></div></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно лс эксперту -->
+<div class="modal fade in" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Написать эксперту<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body">
+				<p><textarea id="adv-descr" required="required" class="form-control col-xs-12" rows="4" placeholder="Ваше сообщение эксперту"></textarea>
+				   <div class="clear"></div></p>
+				<p class="text-center"><button type="button" class="btn btn-success">Отправить</button></p>
+				
 			</div>
 		</div>
 	</div>
