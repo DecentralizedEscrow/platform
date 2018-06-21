@@ -10,6 +10,44 @@
 						  <div class="clearfix"></div>
 						</div>
 						<div class="x_content">
+							<div class="lang">
+								<h4>Язык анкеты: <span class="text-success">Русский</span> &nbsp; <button type="button" class="btn btn-xs btn-info noborder" onclick="$('.lang .select').slideToggle();">Анкеты на других языках и статусы</button></h3><p>Вы можете заполнить дополнительные анкеты для проекта на других языках, чтобы заинтересовать иностранную аудиторию.</p>
+								<div class="col-md-6 col-xs-12 select" style="border: 1px solid #EAEAEA; display: none;">
+									<table class="table table-striped">
+										<thead>
+										  <tr>
+											<th>Язык</th>
+											<th>Обновлено</th>
+											<th>Статус</th>
+											<th></th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<td>Russian</th>
+											<td>12.06.2018</th>
+											<td>Опубликовано</th>
+											<td><button class="btn btn-xs btn-warning noborder">Редактировать</button> <button class="btn btn-xs btn-danger noborder" data-toggle="modal" data-target="#delLangModal">Удалить</button></th>
+										  </tr>
+										  <tr>
+											<td>English</th>
+											<td>14.06.2018</th>
+											<td>На модерации</th>
+											<td><button class="btn btn-xs btn-warning noborder">Редактировать</button> <button class="btn btn-xs btn-danger noborder" data-toggle="modal" data-target="#delLangModal">Удалить</button></th>
+										  </tr>
+										  <tr>
+											<td>German</th>
+											<td>14.06.2018</th>
+											<td>Черновик</th>
+											<td><button class="btn btn-xs btn-warning noborder">Редактировать</button> <button class="btn btn-xs btn-danger noborder" data-toggle="modal" data-target="#delLangModal">Удалить</button></th>
+										  </tr>
+										</tbody>
+									</table>
+									<button class="btn btn-sm btn-info noborder" data-toggle="modal" data-target="#addLangModal">Добавить анкету на другом языке</button>
+								</div>
+								<div class="clear"></div>
+								<hr/>
+							</div>
 							<div class="tabParent" role="tabpanel" data-example-id="togglable-tabs">
 								<ul id="infoTab" class="nav nav-tabs" role="tablist">
 								  <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Основная информация</a>
@@ -329,6 +367,112 @@
 	</div>
 </div>
  
+<!-- окно добавления языка -->
+<div class="modal fade in" id="addLangModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Добавление анкеты<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<center>
+					Выберите язык анкеты &nbsp; 
+					<select data-placeholder="Choose a Language...">
+					  <option value="AF">Afrikanns</option>
+					  <option value="SQ">Albanian</option>
+					  <option value="AR">Arabic</option>
+					  <option value="HY">Armenian</option>
+					  <option value="EU">Basque</option>
+					  <option value="BN">Bengali</option>
+					  <option value="BG">Bulgarian</option>
+					  <option value="CA">Catalan</option>
+					  <option value="KM">Cambodian</option>
+					  <option value="ZH">Chinese (Mandarin)</option>
+					  <option value="HR">Croation</option>
+					  <option value="CS">Czech</option>
+					  <option value="DA">Danish</option>
+					  <option value="NL">Dutch</option>
+					  <option value="EN">English</option>
+					  <option value="ET">Estonian</option>
+					  <option value="FJ">Fiji</option>
+					  <option value="FI">Finnish</option>
+					  <option value="FR">French</option>
+					  <option value="KA">Georgian</option>
+					  <option value="DE">German</option>
+					  <option value="EL">Greek</option>
+					  <option value="GU">Gujarati</option>
+					  <option value="HE">Hebrew</option>
+					  <option value="HI">Hindi</option>
+					  <option value="HU">Hungarian</option>
+					  <option value="IS">Icelandic</option>
+					  <option value="ID">Indonesian</option>
+					  <option value="GA">Irish</option>
+					  <option value="IT">Italian</option>
+					  <option value="JA">Japanese</option>
+					  <option value="JW">Javanese</option>
+					  <option value="KO">Korean</option>
+					  <option value="LA">Latin</option>
+					  <option value="LV">Latvian</option>
+					  <option value="LT">Lithuanian</option>
+					  <option value="MK">Macedonian</option>
+					  <option value="MS">Malay</option>
+					  <option value="ML">Malayalam</option>
+					  <option value="MT">Maltese</option>
+					  <option value="MI">Maori</option>
+					  <option value="MR">Marathi</option>
+					  <option value="MN">Mongolian</option>
+					  <option value="NE">Nepali</option>
+					  <option value="NO">Norwegian</option>
+					  <option value="FA">Persian</option>
+					  <option value="PL">Polish</option>
+					  <option value="PT">Portuguese</option>
+					  <option value="PA">Punjabi</option>
+					  <option value="QU">Quechua</option>
+					  <option value="RO">Romanian</option>
+					  <option value="RU">Russian</option>
+					  <option value="SM">Samoan</option>
+					  <option value="SR">Serbian</option>
+					  <option value="SK">Slovak</option>
+					  <option value="SL">Slovenian</option>
+					  <option value="ES">Spanish</option>
+					  <option value="SW">Swahili</option>
+					  <option value="SV">Swedish </option>
+					  <option value="TA">Tamil</option>
+					  <option value="TT">Tatar</option>
+					  <option value="TE">Telugu</option>
+					  <option value="TH">Thai</option>
+					  <option value="BO">Tibetan</option>
+					  <option value="TO">Tonga</option>
+					  <option value="TR">Turkish</option>
+					  <option value="UK">Ukranian</option>
+					  <option value="UR">Urdu</option>
+					  <option value="UZ">Uzbek</option>
+					  <option value="VI">Vietnamese</option>
+					  <option value="CY">Welsh</option>
+					  <option value="XH">Xhosa</option>
+					</select>
+				</center>
+				<hr>
+				<p class="text-center"><button type="button" class="btn btn-success button140">Создать анкету</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Назад</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно подтверждения удаления языка -->
+<div class="modal fade in" id="delLangModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Удаление анкеты<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>Вы уверены, что хотите удалить анкету проекта на языке «English»?</p>
+				<hr>
+				<p class="text-center"><button type="button" class="btn btn-danger button140">Удалить</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Назад</button></p>
+			</div>
+		</div>
+	</div>
+</div>
   
   <script src="js/bootstrap.min.js"></script>
 

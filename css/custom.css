@@ -5478,7 +5478,7 @@ hr {border-color: #cecece;}
 	background: #0676ae;
 	border-bottom: 3px solid #06539a;
 }
-.noborder {border: none;}
+.noborder {border: none !important;}
 .noborder:hover {border: none;}
 
 .modal-body input {
@@ -6988,3 +6988,7 @@ span.label {
 .nav-sm .accMode button i {padding: 7px;}
 .nav-sm #menuMode {padding: 4px 0;}
 .nav-sm #menuMode > div > a  > div {text-align: center;}
+
+.btn-danger {border-bottom: 3px solid #ac2925;}
+
+.startupCard .cardLang {height: 32px; font-size: 16px;}

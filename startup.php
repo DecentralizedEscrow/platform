@@ -8,8 +8,14 @@
 				  </div>
 				  
 				  <div class="x_panel">
-					<div class="x_title">
+					<div class="x_title text-left">
 					  <h2>Test project 8</h2>
+						<!-- смена языка анкеты, здесь отображаются доступные языки -->
+						<select class="cardLang pull-right">
+						  <option value="ru" selected="selected">RU</option>
+						  <option value="en">EN</option>
+						</select>
+						<!--<img src="images/flags/Russian_Federation.png" class="pull-right" alt="" height="32" style="margin-right: 8px; border: 1px solid #000" />-->
 						<!-- показывается в случае, если карточку просматривает создатель стартапа -->
 						<a href="startup-edit.php"><button type="button" class="changeInfo pull-right btn btn-info noborder">Изменить информацию</button></a>
 					  <div class="clearfix"></div>
@@ -174,7 +180,7 @@
 						</div>
 						
 						<!-- статблок для проекта на ICO -->
-						<div class="stats col-sm-5 col-xs-12 hidden">
+						<div class="stats col-sm-5 col-xs-12">
 							<div class="row">
 								<div class="pull-left">Прогресс 50%</div>
 								<div class="pull-right">Ост: 11 дней</div>
@@ -208,7 +214,7 @@
 						</div>
 						
 						<!-- статблок для проекта в работе - выполнение этапа -->
-						<div class="stats col-sm-5 col-xs-12 ">
+						<div class="stats col-sm-5 col-xs-12 hidden">
 							<div class="row">
 								<div class="pull-left">Этап #2 (из 3)</div>
 								<div class="pull-right">Ост: 35 дней</div>
