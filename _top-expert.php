@@ -102,10 +102,10 @@
 				  
 				  <div class="accMode">
 					<div class="inner">
-						<a id="dropMode" href="javascript:;" onclick="$('#menuMode').slideToggle(); $('.accMode button').toggleClass('active');"><button class="btn-success"><i class="fa fa-graduation-cap"></i>&nbsp; Эксперт <span class="caret"></span></button></a>
+						<a id="dropMode" href="javascript:;" onclick="$('#menuMode').slideToggle(); $('.accMode button').toggleClass('active');"><button class="btn-success"><i class="fa fa-graduation-cap"></i><span class="cap">&nbsp; Эксперт </span><span class="caret"></span></button></a>
 						<div id="menuMode">
-						  <div><a href="dashboard-invest.php"><div><i class="fa fa-briefcase"></i> &nbsp; В режим инвестора</div></a></div>
-						  <div><a href="dashboard-startup.php"><div><i class="fa fa-rocket"></i> &nbsp; В режим стартапа</div></a></div>
+						  <div><a href="dashboard-invest.php"><div><i class="fa fa-briefcase"></i><span class="cap"> &nbsp; В режим инвестора</span></div></a></div>
+						  <div><a href="dashboard-startup.php"><div><i class="fa fa-rocket"></i><span class="cap"> &nbsp; В режим стартапа</span></div></a></div>
 						</div>
 					</div>
 				  </div>
@@ -149,15 +149,28 @@
 					  <div class="burger-bg"></div>
 					  <nav class="" role="navigation">
 						<div class="nav toggle">
-						  <a class="page-name"><i class="fa fa-bars">&nbsp;&nbsp;<span>Главная</span></i></a>
-						  <a id="menu_toggle"><i class="fa fa-bars">&nbsp;&nbsp;<span>Меню</span></i></a>
+						  <a class="page-name hidden"><i class="fa"><span>RU</span></i> <i class="fa fa-angle-down"></i></a>
+						  <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+						  <li class="dropdown lang">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">RU <i class="fa fa-angle-down"></i></a>
+							<ul class="dropdown-menu" role="menu">
+							  <li><a href="#">ENGLISH</a></li>
+							</ul>
+						  </li>
+						  <li class="dropdown currency">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" title="Суммы отображаются в USD"><i class="fa fa-dollar"></i> <i class="fa fa-angle-down"></i></a>
+							<ul class="dropdown-menu" role="menu">
+							  <li><a href="#" title="Отображать суммы в ETH"><img src="images/des/eth.svg" height="16" style="position: relative; top: -2px;"> ETH</a></li>
+							</ul>
+						  </li>
 						</div>
 
 						<ul class="nav navbar-nav navbar-right">
 						  <li class="">
 							<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-							  test@descrow.com
-							  <span class=" fa fa-angle-down"></span>
+							  <span class="uico fa fa-user"></span>
+							  <span class="mail">test@descrow.com</span>
+							  <span class="fa fa-angle-down"></span>
 							</a>
 							<ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
 							  <li><a href="user - info.php"><i class="fa fa-key"></i> Личные данные</a></li>
