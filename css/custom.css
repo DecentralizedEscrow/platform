@@ -6261,8 +6261,8 @@ ul.msg_list li a .time {right: 12px;}
 	display: inline-block;
 }
 
-#transferModal .modal-body, #tSellModal .modal-body, #tBuyModal .modal-body, #buyFreezeModal .modal-body, #buyFreezeModalList .modal-body {text-align: center;}
-#transferModal .modal-body span, #tSellModal .modal-body span, #tBuyModal .modal-body span, #buyFreezeModal .modal-body span {
+#transferModal .modal-body, #buyFreezeModalList .modal-body {text-align: center;}
+#transferModal .modal-body span {
 	min-width: 80px;
     display: inline-block;
 }

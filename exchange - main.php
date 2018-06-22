@@ -133,16 +133,9 @@
 				<h4 class="modal-title" id="image-gallery-title"></h4>
 			</div>
 			<div class="modal-body">
-				<div class="row">
-					<div class="col-sm-9 col-xs-12">
-						<div><span>Купить</span> <input type="text" id="tokenAmount" placeholder="Кол-во токенов"></div>
-						<div><span>На сумму</span> <input type="text" id="tokenAmount" placeholder="... ETH"></div>
-					</div>
-					<div class="col-sm-3 col-xs-12">
-						<div><button type="button" class="btn btn-success btn-lg">Купить</button></div>
-					</div>
-				</div>
-				<div>Цена покупки одного токена проекта - 0.0012 ETH</div>
+				<p>Купить <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">2.234 ETH</span></b></p>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-success">Купить</button><button type="button" class="btn btn-warning" data-dismiss="modal">Отмена</button></p>
 			</div>
 		</div>
 	</div>
@@ -156,16 +149,9 @@
 				<h4 class="modal-title" id="image-gallery-title"></h4>
 			</div>
 			<div class="modal-body">
-				<div class="row">
-					<div class="col-sm-9 col-xs-12">
-						<div><span>Продать</span> <input type="text" id="tokenAmount" placeholder="Кол-во токенов"></div>
-						<div><span>На сумму</span> <input type="text" id="tokenAmount" placeholder="... ETH"></div>
-					</div>
-					<div class="col-sm-3 col-xs-12">
-						<div><button type="button" class="btn btn-success btn-lg">Продать</button></div>
-					</div>
-				</div>
-				<div>Цена продажи одного токена проекта - 0.002 ETH</div>
+				<p>Продать <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">2.234 ETH</span></b></p>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-success">Продать</button><button type="button" class="btn btn-warning" data-dismiss="modal">Отмена</button></p>
 			</div>
 		</div>
 	</div>
@@ -179,6 +165,9 @@
 				<h4 class="modal-title" id="image-gallery-title"></h4>
 			</div>
 			<div class="modal-body">
+				<p><i class="fa fa-check"></i> Имейте в виду, что вы не можете подать более одной заявки на продажу/покупку конкретного токена. В случае отмены заявки, вы сможете разместить новую заявку на данный токен только по прошествии 24 часов.</p>
+				<p><i class="fa fa-check"></i> Цена за токен не может быть меньше цены продажи данного токена на ICO.</p>
+				<hr/>
 				<div class="text-center">
 					<select name="orderType">
 					  <option value="default">Тип заявки</option>
@@ -193,8 +182,12 @@
 					</select>
 					<input type="text" id="tokenAmount" placeholder="количество">
 					<input type="text" id="tokenAmount" placeholder="сумма">
-					<div class="clear"></div><br/>
-					<button type="button" class="btn btn-success noborder btn-sm">Подать заявку</button>
+					<div class="clear"></div>
+					<br/>
+					<p class="text-left">Минимальная стоимость продажи токена XDR: <b>0.01 ETH</b><br/>
+					Минимальная сумма продажи 120 токенов XDR: <b>1.20 ETH</b></p>
+					<hr/>
+					<p class="text-center"><button type="button" class="btn btn-success button140">Подать заявку</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button></p>
 				</div>
 			</div>
 		</div>

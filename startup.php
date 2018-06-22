@@ -931,21 +931,13 @@
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				Купить токены проекта &laquo;Тормозной завод&raquo;<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				Купить токены проекта &laquo;Металлургический завод&raquo;<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
 				<h4 class="modal-title" id="image-gallery-title"></h4>
 			</div>
 			<div class="modal-body">
-				
-				<div class="row">
-					<div class="col-sm-8 col-xs-12">
-						<div><span>Купить</span> <input type="text" id="tokenAmount" placeholder="Кол-во токенов"></div>
-						<div><span>На сумму</span> <input type="text" id="tokenAmount" placeholder="... ETH"></div>
-					</div>
-					<div class="col-sm-4 col-xs-12">
-						<div><button type="button" class="btn btn-success btn-lg">Отправить заявку</button></div>
-					</div>
-				</div>
-				
+				<p>Купить <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">2.234 ETH</span></b></p>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-success">Купить</button><button type="button" class="btn btn-warning" data-dismiss="modal">Отмена</button></p>
 			</div>
 		</div>
 	</div>
