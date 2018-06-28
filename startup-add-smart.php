@@ -30,15 +30,17 @@
 									</div>
 									<div class="row">
 										<div class="col-md-4 col-sm-4 col-xs-12">
-											<label>Минимальная сумма, необходимая для реализации (в&nbsp;ETH) (soft&nbsp;cap)</label> <input type="text" id="name-short" required="required" class="form-control"> <label>= $ 0 по текущему курсу</label>
+											<label>Минимальная сумма, необходимая для реализации (USD) (soft&nbsp;cap)</label> <input type="text" id="name-short" required="required" class="form-control">
 										</div>
 										<div class="col-md-4 col-sm-4 col-xs-12">
-											<label>Максимально возможная сумма сборов (в&nbsp;ETH) (hard&nbsp;cap)</label> <input type="text" id="name-short" required="required" class="form-control"> <label>= $ 0 по текущему курсу</label>
+											<label>Максимально возможная сумма сборов (USD) (hard&nbsp;cap)</label> <input type="text" id="name-short" required="required" class="form-control">
 										</div>
 										<div class="col-md-4 col-sm-4 col-xs-12">
-											<label>Прайс продажи токенов (токен/ETH) (стоимость токена)</label><input type="text" id="name-short" required="required" class="form-control">
-											<label>= $ 0 по текущему курсу</label>
+											<label>Прайс продажи токенов (токен/USD) (стоимость токена)</label><input type="text" id="name-short" required="required" class="form-control">
 										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12 text-right">Rоличество токенов, которое будет продано: <b>33 000 000</b></div>
 									</div>
 									<div class="row">
 										<div class="col-md-11 col-sm-11 col-xs-12">

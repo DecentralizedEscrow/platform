@@ -189,8 +189,8 @@
 							  <div class="progress-bar progress-bar-info" data-transitiongoal="50" style="width: 50%;" aria-valuenow="50"></div>
 							</div>
 							<div class="earn row">
-								<div class="num"><span title="$ 531 855 по текущему курсу">890 ETH</span></div>
-								<div class="txt">собрано из запрашиваемой суммы<br/><span title="$ 1 063 710 по текущему курсу">1780 ETH</span></div>
+								<div class="num">$ 1 900</div>
+								<div class="txt">собрано из запрашиваемой суммы<br/>$ 3 800</div>
 							</div>
 							<div class="btns row">
 								<div class="col-xs-3" style="padding-right: 10px;"><button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#askModal"><i class="fa fa-envelope"></i></button></div>
@@ -775,12 +775,19 @@
 			</div>
 			<div class="modal-body">
 				<table class="table valign-m" style="width:100%"><tbody>
+				  <tr><td colspan="2">Оплата с кошелька<br/>
+					<select style="width:100%;">
+					  <option selected="">ETH - 0xcae6a24603c9c7c43c6f9381f3598b97eeeaa848</option>
+					  <option>BTC - 1ExAmpLe0FaBiTco1NADr3sSV5tsGaMF6hd</option>
+					</select>
+					<div class="text-right" style="margin-top:4px;">Баланс коешелька: 12.4353 ETH</div>
+				  </td></tr>
 				  <tr>
 					<td>
 						<div>Токены проекта <input type="text" id="tokenAmount" class="form-control" placeholder="Кол-во"> шт.</div>
 					</td>
 					<td>
-						<div title="$ 23.9 по текущему курсу"><span id="tokenPrice">0.04</span> ETH</div>
+						<div><span id="tokenPrice">$ 0.4</span></div>
 					</td>
 				  </tr>
 				  <tr>
@@ -788,7 +795,7 @@
 						<div>Первый транш составит:</div>
 					</td>
 					<td>
-						<div>0.02 ETH</div>
+						<div>$ 0.1</div>
 					</td>
 				  </tr>
 				  <tr>
@@ -796,7 +803,7 @@
 						<div>Будет зарезервировано:</div>
 					</td>
 					<td>
-						<div>0.03 ETH</div>
+						<div>$ 0.3</div>
 					</td>
 				  </tr>
 				  <tr>
@@ -813,15 +820,12 @@
 						</div>
 					</td>
 					<td>
-						<div><span id="insurancePrice">0.01</span> ETH</div>
+						<div><span id="insurancePrice">$ 0.1</span></div>
 					</td>
 				  </tr>
 				  <tr>
-					<td>
-						<div>ОСТАТОК НА СЧЕТУ: 15 ETH</div>
-					</td>
-					<td>
-						<div>Итого: <span id="tokenSum">0.05</span> ETH</div>
+					<td colspan="2" align="right">
+						<div><b>Итого: <span id="tokenSum">$ 0.5</span> = 0.0014 ETH</b></div>
 					</td>
 				  </tr>
 				</tbody></table>
@@ -908,13 +912,13 @@
 					  <tr>
 						<td><a href="#">#1</a></td>
 						<td>12.02.2018</td>
-						<td>10 000<span class="mobile"> токенов = 1 ETH</span></td>
+						<td>10 000<span class="mobile"> токенов = $ 120</span></td>
 						<td><div><button type="button" class="btn btn-success btn-md" data-dismiss="modal" data-toggle="modal" data-target="#buyFreezeModal">Купить</button></div></td>
 					  </tr>
 					  <tr>
 						<td><a href="#">#2</a></td>
 						<td>12.02.2018</td>
-						<td>10 000<span class="mobile"> токенов = 1 ETH</span></td>
+						<td>10 000<span class="mobile"> токенов = $ 120</span></td>
 						<td><div><button type="button" class="btn btn-success btn-md" data-dismiss="modal" data-toggle="modal" data-target="#buyFreezeModal">Купить</button></div></td>
 					  </tr>
 					</tbody>
@@ -935,7 +939,14 @@
 				<h4 class="modal-title" id="image-gallery-title"></h4>
 			</div>
 			<div class="modal-body">
-				<p>Купить <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">2.234 ETH</span></b></p>
+				<p>Купить <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">$ 120</span> = 0.12 ETH</b></p>
+				<p>Оплата с кошелька<br>
+					<select style="width:100%;">
+					  <option selected="">ETH - 0xcae6a24603c9c7c43c6f9381f3598b97eeeaa848</option>
+					  <option>BTC - 1ExAmpLe0FaBiTco1NADr3sSV5tsGaMF6hd</option>
+					</select>
+					<div class="text-right" style="margin-top:4px;">Баланс коешелька: 12.4353 ETH</div>
+				  </p>
 				<hr/>
 				<p class="text-center"><button type="button" class="btn btn-success">Купить</button><button type="button" class="btn btn-warning" data-dismiss="modal">Отмена</button></p>
 			</div>

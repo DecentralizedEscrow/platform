@@ -26,7 +26,7 @@
 												<th><a href="#">Тип сделки  <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#">Дата  <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#">Кол-во токенов  <i class="fa fa-caret-down"></i></a></th>
-												<th><a href="#">Сумма, ETH  <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Цена  <i class="fa fa-caret-down"></i></a></th>
 												<th></th>
 											  </tr>
 											</thead>
@@ -36,7 +36,7 @@
 												<td><span class="buy">Продажа</span></td>
 												<td>22.04.2018</td>
 												<td><img src="https://s2.coinmarketcap.com/static/img/coins/16x16/1.png" alt="" /> 100 XBR<span class="mobile"> токенов</span></td>
-												<td>5.4452<span class="mobile"> ETH</span></td>
+												<td>$ 15</td>
 												<td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#tSellModal">Продать</button></td>
 											  </tr>
 											  <tr>
@@ -44,7 +44,7 @@
 												<td><span class="sell">Покупка</span></td>
 												<td>22.04.2018</td>
 												<td><img src="https://s2.coinmarketcap.com/static/img/coins/16x16/1.png" alt="" /> 500 XBR<span class="mobile"> токенов</span></td>
-												<td>1.4329<span class="mobile"> ETH</span></td>
+												<td>$ 154</td>
 												<td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#tBuyModal">Купить</button></td>
 											  </tr>
 											  <tr>
@@ -52,7 +52,7 @@
 												<td><span class="buy">Покупка</span></td>
 												<td>22.04.2018</td>
 												<td><img src="https://s2.coinmarketcap.com/static/img/coins/16x16/1.png" alt="" /> 320 XBR<span class="mobile"> токенов</span></td>
-												<td>3.4391<span class="mobile"> ETH</span></td>
+												<td>$ 321</td>
 												<td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#tSellModal">Продать</button></td>
 											  </tr>
 											  <tr>
@@ -60,7 +60,7 @@
 												<td><span class="sell">Продажа</span></td>
 												<td>22.04.2018</td>
 												<td><img src="https://s2.coinmarketcap.com/static/img/coins/16x16/1.png" alt="" /> 400 XBR<span class="mobile"> токенов</span></td>
-												<td>1.5762<span class="mobile"> ETH</span></td>
+												<td>$ 123</td>
 												<td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#tBuyModal">Купить</button></td>
 											  </tr>
 											</tbody>
@@ -79,7 +79,7 @@
 													<th><a href="#">Тип сделки  <i class="fa fa-caret-down"></i></a></th>
 													<th><a href="#">Дата  <i class="fa fa-caret-down"></i></a></th>
 													<th><a href="#">Кол-во токенов  <i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">Сумма, ETH  <i class="fa fa-caret-down"></i></a></th>
+													<th><a href="#">Цена  <i class="fa fa-caret-down"></i></a></th>
 													<th></th>
 												  </tr>
 												</thead>
@@ -89,7 +89,7 @@
 													<td><span class="buy">Покупка</span></td>
 													<td>12.02.2018</td>
 													<td><img src="https://s2.coinmarketcap.com/static/img/coins/16x16/1.png" alt="" /> 10 000 XBR<span class="mobile"> токенов</span></td>
-													<td>0.002<span class="mobile"> ETH</span></td>
+													<td>$ 12</td>
 													<td><a href="#">Отменить</a></td>
 												  </tr>
 												  <tr>
@@ -97,7 +97,7 @@
 													<td><span class="sell">Продажа</span></td>
 													<td>12.02.2018</td>
 													<td><img src="https://s2.coinmarketcap.com/static/img/coins/16x16/1.png" alt="" /> 10 000 XBR<span class="mobile"> токенов</span></td>
-													<td>0.0012<span class="mobile"> ETH</span></td>
+													<td>$ 10</td>
 													<td><a href="#">Отменить</a></td>
 												  </tr>
 												</tbody>
@@ -133,7 +133,14 @@
 				<h4 class="modal-title" id="image-gallery-title"></h4>
 			</div>
 			<div class="modal-body">
-				<p>Купить <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">2.234 ETH</span></b></p>
+				<p>Купить <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">$ 223</span> = 0.02 ETH</b></p>
+				<p>Оплата с кошелька<br>
+					<select style="width:100%;">
+					  <option selected="">ETH - 0xcae6a24603c9c7c43c6f9381f3598b97eeeaa848</option>
+					  <option>BTC - 1ExAmpLe0FaBiTco1NADr3sSV5tsGaMF6hd</option>
+					</select>
+					<div class="text-right" style="margin-top:4px;">Баланс коешелька: 12.4353 ETH</div>
+				  </p>
 				<hr/>
 				<p class="text-center"><button type="button" class="btn btn-success">Купить</button><button type="button" class="btn btn-warning" data-dismiss="modal">Отмена</button></p>
 			</div>
@@ -149,7 +156,7 @@
 				<h4 class="modal-title" id="image-gallery-title"></h4>
 			</div>
 			<div class="modal-body">
-				<p>Продать <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">2.234 ETH</span></b></p>
+				<p>Продать <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">$ 214</span></b></p>
 				<hr/>
 				<p class="text-center"><button type="button" class="btn btn-success">Продать</button><button type="button" class="btn btn-warning" data-dismiss="modal">Отмена</button></p>
 			</div>
@@ -184,8 +191,8 @@
 					<input type="text" id="tokenAmount" placeholder="сумма">
 					<div class="clear"></div>
 					<br/>
-					<p class="text-left">Минимальная стоимость продажи токена XDR: <b>0.01 ETH</b><br/>
-					Минимальная сумма продажи 120 токенов XDR: <b>1.20 ETH</b></p>
+					<p class="text-left">Минимальная стоимость продажи токена XDR: <b>$ 1</b><br/>
+					Минимальная сумма продажи 120 токенов XDR: <b>$ 120</b></p>
 					<hr/>
 					<p class="text-center"><button type="button" class="btn btn-success button140">Подать заявку</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button></p>
 				</div>
