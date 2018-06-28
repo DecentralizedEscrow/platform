@@ -199,8 +199,29 @@
 				Поиск нового специалиста<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
 			</div>
 			<div class="modal-body">
-				<p>Компетенции специалиста</p>
-				<p><input type="text" class="col-xs-12" placeholder="Программист блокчейн, маркетолог и т.д."><div class="clear"></div></p>
+				<p>Требуемые компетенции (одного конкретного) специалиста</p>
+				<div class="comps">
+					<div class="row">
+						<div class="col-md-12">
+							<select class="w-100">
+							  <option selected disabled hidden>Укажите компетенцию</option>
+							  <option>Программист</option>
+							  <option>Юрист</option>
+							  <option>Маркетолог</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<p><button type="button" class="btn btn-primary noborder addCompBtn">Добавить еще компетенцию</button></p>
+				<script>
+					$('.addCompBtn').click(function () {
+						$('.comps').append('<div class="row"><div class="col-md-10"><select class="w-100"><option selected disabled hidden>Укажите дополнительную компетенцию</option><option>Программист</option><option>Юрист</option><option>Маркетолог</option></select></div><div class="col-md-2 removeCompBtn" onclick="removeComp(this);">Удалить</div></div>');
+					});
+					function removeComp (s) {
+						$(s).parent('.row').remove();
+					};
+				</script>
+				
 				<p>Задача, которую специалист должен выполнить</p>
 				<p><input type="text" class="col-xs-12" placeholder="Основная задача, кратко"><div class="clear"></div></p>
 				<p>Сумма оплаты работ</p>

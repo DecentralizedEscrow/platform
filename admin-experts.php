@@ -11,6 +11,7 @@
 								  <li role="presentation" class=""><a href="#tab_content2" role="tab" id="tab2" data-toggle="tab" aria-expanded="false">Эксперты <span class="label label-danger">1</span></a></li>
 								  <li role="presentation" class=""><a href="#tab_content3" role="tab" id="tab3" data-toggle="tab" aria-expanded="false">Заявки</a></li>
 								  <li role="presentation" class=""><a href="#tab_content4" role="tab" id="tab4" data-toggle="tab" aria-expanded="false">Отзывы</a></li>
+								  <li role="presentation" class=""><a href="#tab_content5" role="tab" id="tab5" data-toggle="tab" aria-expanded="false">Компетенции</a></li>
 								</ul>
 								<div id="infoTabContent" class="tab-content">
 								  <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
@@ -182,8 +183,8 @@
 													<td><a href="#" title="Децентрализованный механический завод">Децентрализованный...</a></td>
 													<td><a href="#">Программист blockchain</a></td>
 													<td>$2000/м</td>
-													<td>13</td>
-													<td>4</td>
+													<td><a href="#">13</a></td>
+													<td><a href="#">4</a></td>
 													<td><a href="#">Борис Бритва</a></td>
 													<td><button type="button" class="btn btn-warning btn-sm noborder">Посмотреть</button></td>
 												  </tr>
@@ -239,6 +240,47 @@
 													<td><a href="#">Владимир Прохоров</a></td>
 													<td><a href="#">Система дистанционного регулирования</a></td>
 													<td><button type="button" class="btn btn-warning btn-sm noborder">Посмотреть</button></td>
+												  </tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								
+								<div role="tabpanel" class="tab-pane fade" id="tab_content5" aria-labelledby="tab5">
+									<div class="x_panel">
+									  <div class="x_content">
+										<div class="row">
+											<div class="col-md-6">
+												Поиск &nbsp;
+												<select name="sField">
+												  <option selected="" disabled="" hidden="">по полю</option>
+												  <option>id</option>
+												  <option>Название</option>
+												</select>
+												=
+												<input type="text">
+												<button>Поиск</button>
+											</div>
+										</div><hr/>
+											<button type="button" class="btn btn-info" data-toggle="modal" data-target="#Modal"><i class="fa fa-envelope"></i> &nbsp;Добавить компетенцию</button>
+											<table class="table table-striped valign-m">
+												<thead>
+												  <tr>
+													<th><a href="#">id <i class="fa fa-caret-down"></i></a></th>
+													<th><a href="#">Название <i class="fa fa-caret-down"></i></a></th>
+													<th><a href="#">Проектов нуждается<i class="fa fa-caret-down"></i></a></th>
+													<th><a href="#">Экспертов <i class="fa fa-caret-down"></i></a></th>
+													<th></th>
+												  </tr>
+												</thead>
+												<tbody>
+												  <tr>
+													<td>1</td>
+													<td>Программист C#</td>
+													<td><a href="#">4</a></td>
+													<td><a href="#">12</a></td>
+													<td><button type="button" class="btn btn-warning btn-sm noborder">Изменить</button><button type="button" class="btn btn-danger btn-sm noborder">Удалить</button></td>
 												  </tr>
 												</tbody>
 											</table>

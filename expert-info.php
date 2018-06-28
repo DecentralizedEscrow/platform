@@ -16,7 +16,7 @@
 					</div>
 					<div class="x_panel extra">
 						<div class="x_title">
-						  <h2>Дополнительная информация &nbsp;<button type="button" class="btn btn-xs btn-warning noborder">изменить</button></h2>
+						  <h2>Дополнительная информация &nbsp;<button type="button" class="btn btn-xs btn-warning noborder"  data-toggle="modal" data-target="#editInfoModal">изменить</button></h2>
 						  <!-- изменение должно работать аналогично разделу "личные данные -> измменить информацию" -->
 						  <div class="clearfix"></div>
 						</div>
@@ -118,7 +118,14 @@
 				Добавление компетенции<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
 			</div>
 			<div class="modal-body">
-				<p><input type="text" class="col-xs-12" placeholder="Название компетенции"><div class="clear"></div></p>
+				<p>
+					<select class="w-100">
+					  <option selected disabled hidden>Укажите компетенцию</option>
+					  <option>Программист</option>
+					  <option>Юрист</option>
+					  <option>Маркетолог</option>
+					</select>
+				</p>
 				<p><textarea class="form-control col-xs-12" rows="4" placeholder="Наименование документа, подтверждающего компетенцию (дата выдачи, место выдачи) или иной комментарий"></textarea><div class="clear"></div></p>
 				<p class="text-center"><button type="button" class="btn btn-success">Добавить</button></p>
 			</div>
@@ -138,6 +145,30 @@
 				<p>Период работы: <input type="date" /> - <input type="date" /></p>
 				<hr/>
 				<p class="text-center"><button type="button" class="btn btn-success">Добавить</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- окно изменения доп данных -->
+<div class="modal fade in" id="editInfoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Изменение дополнительных данных<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>Дата рождения</p>
+				<p><input type="date" class="col-xs-12" value="1980-01-01"></p><div class="clear"></div><p></p>
+				<p>Персональный сайт</p>
+				<p><input type="text" class="col-xs-12" value="asdgfdh.com"></p><div class="clear"></div><p></p>
+				<p>Знание языков (через запятую)</p>
+				<p><input type="text" class="col-xs-12" value="русский (родной), английский (advanced)"></p><div class="clear"></div><p></p>
+				<p>Аккаунты в соц. сетях (через запятую)</p>
+				<p><input type="text" class="col-xs-12" value="vk.com/asdfwgr5, facebook.com/asdfwgr5"></p><div class="clear"></div><p></p>
+				<p>Личностные качества</p>
+				<p><textarea class="form-control col-xs-12" rows="2">быстрообучаемость, целеустремленность, организаторские способности, ответственность, усидчивость</textarea> </p><div class="clear"></div><p></p>
+				<p class="text-center"><button type="button" class="btn btn-warning">Принять</button></p>
 			</div>
 		</div>
 	</div>

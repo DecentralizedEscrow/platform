@@ -7017,3 +7017,11 @@ span.label {
 .row.stat select {height: 19px;}
 
 .tabParent.style1 .text-right button {margin-right: 0;}
+
+.w-100 {width: 100%;}
+#searchExertModal .comps > .row {margin-bottom: 8px;}
+.removeCompBtn {
+	cursor: pointer;
+	margin-top: 4px;
+}
+.removeCompBtn:hover {text-decoration: underline;}

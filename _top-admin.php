@@ -99,7 +99,7 @@
 						<a id="dropMode" href="javascript:;" onclick="$('#menuMode').slideToggle(); $('.accMode button').toggleClass('active');"><button class="btn-success"><i class="fa fa-gear"></i><span class="cap">&nbsp; Администратор </span><span class="caret"></span></button></a>
 						<div id="menuMode">
 						  <div><a href="dashboard-invest.php"><div><i class="fa fa-briefcase"></i><span class="cap"> &nbsp; В режим инвестора</span></div></a></div>
-						  <div><a href="dashboard-invest.php"><div><i class="fa fa-rocket"></i><span class="cap"> &nbsp; В режим стартапа</span></div></a></div>
+						  <div><a href="dashboard-startup.php"><div><i class="fa fa-rocket"></i><span class="cap"> &nbsp; В режим стартапа</span></div></a></div>
 						  <div><a href="expert-offers.php"><div><i class="fa fa-graduation-cap"></i><span class="cap"> &nbsp; В режим эксперта</span></div></a></div>
 						</div>
 					</div>
