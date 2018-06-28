@@ -38,6 +38,7 @@
 
 </head>
 
+
 <body class="nav-md">
 <!-- окно вопроса поддержке -->
 <div class="modal fade" id="supportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -60,54 +61,6 @@
 		</div>
 	</div>
 </div>
-<!-- окно справки раздела -->
-<div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				Справка по разделу<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
-				<h4 class="modal-title" id="image-gallery-title"></h4>
-			</div>
-			<div class="modal-body">
-			
-				<div id="myCarousel" class="carousel slide" data-interval="false">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-				  </ol>
-
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner">
-					<div class="item active">
-					  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Aspect_ratio_-_4x3.svg/2000px-Aspect_ratio_-_4x3.svg.png" alt="">
-					</div>
-
-					<div class="item">
-					  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Aspect_ratio_-_4x3.svg/2000px-Aspect_ratio_-_4x3.svg.png" alt="">
-					</div>
-
-					<div class="item">
-					  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Aspect_ratio_-_4x3.svg/2000px-Aspect_ratio_-_4x3.svg.png" alt="">
-					</div>
-				  </div>
-
-				  <!-- Left and right controls -->
-				  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<span class="sr-only">Далее</span>
-				  </a>
-				  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-					<span class="sr-only">Назад</span>
-				  </a>
-				</div>
-				
-			</div>
-		</div>
-	</div>
-</div>
 
   <div class="container body">
 
@@ -122,7 +75,7 @@
 			<!-- основной блок -->
 			  <div class="leftCol col-fixed left_col">
 				<div class="left_col scroll-view">
-				  
+
 				  <div class="navbar nav_title" style="border: 0;">
 					<a href="index.html" class="site_title"><img src="images/des/des-logo-icon.png" alt="" /><span><img src="images/des/des-logo-text.png" alt="" /></span></a>
 				  </div>
@@ -143,11 +96,11 @@
 
 				  <div class="accMode">
 					<div class="inner">
-						<a id="dropMode" href="javascript:;" onclick="$('#menuMode').slideToggle(); $('.accMode button').toggleClass('active');"><button class="btn-success"><i class="fa fa-briefcase"></i><span class="cap">&nbsp; Инвестор </span><span class="caret"></span></button></a>
+						<a id="dropMode" href="javascript:;" onclick="$('#menuMode').slideToggle(); $('.accMode button').toggleClass('active');"><button class="btn-success"><i class="fa fa-gear"></i><span class="cap">&nbsp; Администратор </span><span class="caret"></span></button></a>
 						<div id="menuMode">
-						  <div><a href="dashboard-startup.php"><div><i class="fa fa-rocket"></i><span class="cap"> &nbsp; В режим стартапа</span></div></a></div>
+						  <div><a href="dashboard-invest.php"><div><i class="fa fa-briefcase"></i><span class="cap"> &nbsp; В режим инвестора</span></div></a></div>
+						  <div><a href="dashboard-invest.php"><div><i class="fa fa-rocket"></i><span class="cap"> &nbsp; В режим стартапа</span></div></a></div>
 						  <div><a href="expert-offers.php"><div><i class="fa fa-graduation-cap"></i><span class="cap"> &nbsp; В режим эксперта</span></div></a></div>
-						  <div><a href="dashboard-admin.php"><div><i class="fa fa-gear"></i><span class="cap"> &nbsp; В режим администратора</span></div></a></div>
 						</div>
 					</div>
 				  </div>
@@ -159,41 +112,17 @@
 
 					<div class="menu_section">
 					  <ul class="nav side-menu">
-						<li><a href="dashboard-invest.php"><i class="fa fa-dashboard"></i> Главная <span class="fa"></span></a></li>
-						<li><a href="ico-list.php"><i class="fa fa-database"></i> Все проекты на ICO <span class="fa"></span></a></li>
-						
-						<!-- комбинированное меню. неактуально -->
-						<!--<li><a><i class="fa fa-briefcase"></i> Инвестор <span class="fa fa-chevron-down"></span></a>
-						  <ul class="nav child_menu" style="display: none">
-							<li><a><i class="fa fa-user"></i> Я участвую <span class="fa"></span></a></li>
-							<li><a><i class="fa fa-eye"></i> Я отслеживаю <span class="fa"></span></a></li>
-							<li><a><i class="fa fa-pie-chart"></i> Все отчеты <span class="fa"></span></a></li>
-						  </ul>
-						</li>
-						<li><a><i class="fa fa-rocket"></i> Стартап <span class="fa fa-chevron-down"></span></a>
-						  <ul class="nav child_menu" style="display: none">
-							<li><a><i class="fa fa-file-text-o"></i> Текущий проект <span class="fa"></span></a></li>
-							<li><a><i class="fa fa-files-o"></i> Архив проектов <span class="fa"></span></a></li>
-						  </ul>
-						</li>-->
-						
-						<!-- пункты инвестора -->
-						<li><a href="projects-my.php"><i class="fa fa-user"></i> Я участвую <span class="fa"></span></a></li>
-						<!--<li><a href="ico-list.php"><i class="fa fa-eye"></i> Я отслеживаю <span class="fa"></span></a></li>-->
-						<!--<li><a><i class="fa fa-pie-chart"></i> Все отчеты <span class="fa"></span></a></li>-->
-						
-						<!-- пункты стартапа 
-						<li><a><i class="fa fa-file-text-o"></i> Текущий проект <span class="fa"></span></a></li>
-						<li><a><i class="fa fa-files-o"></i> Архив проектов <span class="fa"></span></a></li>-->
-						
-						<li><a href="user - refer.php"><i class="fa fa-group"></i> Реферальная программа <span class="fa"></span></a></li>
-						<li><a href="exchange - main.php"><i class="fa fa-area-chart"></i> Биржа токенов <span class="fa"></span></a></li>
+						<!-- пункты админа -->
+						<li><a href="dashboard-admin.php"><i class="fa fa-dashboard"></i> Главная <span class="fa"></span></a></li>
+						<li><a href="admin-users.php"><i class="fa fa-user"></i> Пользователи <span class="fa"></span></a></li>
+						<li><a href="admin-startups.php"><i class="fa fa-rocket"></i> Стартапы <span class="fa"></span><span class="label label-danger">1</span></a></li>
+						<li><a href="admin-experts.php"><i class="fa fa-graduation-cap"></i> Эксперты <span class="fa"></span><span class="label label-danger">1</span></a></li>
+						<li><a href="admin-refer.php"><i class="fa fa-users"></i> Партнерка <span class="fa"></span></a></li>
+						<li><a href="admin-money.php"><i class="fa fa-dollar"></i> Финансы <span class="fa"></span></a></li>
+						<li><a href="admin-exchange.php"><i class="fa fa-area-chart"></i> Биржа <span class="fa"></span></a></li>
+						<li><a href="admin-support.php"><i class="fa fa-question-circle"></i> Поддержка <span class="fa"></span><span class="label label-danger">3</span></a></li>
+						<li><a href="#"><i class="fa fa-gear"></i> Настройки <span class="fa"></span></a></li>
 					  </ul>
-					  <div class="menu_section support">
-						  <ul class="nav side-menu">
-							<li data-toggle="modal" data-target="#supportModal"><a><i class="fa fa-question-circle"></i> Техническая поддержка</a></li>
-						  </ul>
-					  </div>
 					</div>
 
 				  </div>
@@ -240,21 +169,15 @@
 							</a>
 							<ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
 							  <li><a href="user - info.php"><i class="fa fa-key"></i> Личные данные</a></li>
-							  <!--<li><a href="user - wallet.php"><i class="material-icons" style="position: relative; top: 2px;">&#xe850;</i> Кошелек</a></li>-->
 							  <li><a href="user - wallet.php"><i class="fa fa-dollar"></i> Кошелек</a></li>
 							  <li><a href="javascript:;"><i class="fa fa-sign-out"></i> Выйти</a></li>
 							</ul>
 						  </li>
-						  
+
 						  <li role="presentation" class="msgh">
 							<a href="user - mail - list.php" class="dropdown-toggle info-number">
 							  <i class="fa fa-envelope-o"></i>
 							  <span class="badge bg-red">6</span>
-							</a>
-						  </li>
-						  <li role="presentation" class="msgh">
-							<a href="#" class="dropdown-toggle info-number" data-toggle="modal" data-target="#helpModal">
-							  <i class="fa fa-question-circle"></i>
 							</a>
 						  </li>
 

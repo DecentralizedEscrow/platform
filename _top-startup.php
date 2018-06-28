@@ -100,6 +100,7 @@
 						<div id="menuMode">
 						  <div><a href="dashboard-invest.php"><div><i class="fa fa-briefcase"></i><span class="cap"> &nbsp; В режим инвестора</span></div></a></div>
 						  <div><a href="expert-offers.php"><div><i class="fa fa-graduation-cap"></i><span class="cap"> &nbsp; В режим эксперта</span></div></a></div>
+						  <div><a href="dashboard-admin.php"><div><i class="fa fa-gear"></i><span class="cap"> &nbsp; В режим администратора</span></div></a></div>
 						</div>
 					</div>
 				  </div>
@@ -153,12 +154,12 @@
 							  <li><a href="#">ENGLISH</a></li>
 							</ul>
 						  </li>
-						  <li class="dropdown currency">
+						  <!--<li class="dropdown currency">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" title="Суммы отображаются в USD"><i class="fa fa-dollar"></i> <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" role="menu">
 							  <li><a href="#" title="Отображать суммы в ETH"><img src="images/des/eth.svg" height="16" style="position: relative; top: -2px;"> ETH</a></li>
 							</ul>
-						  </li>
+						  </li>-->
 						</div>
 
 						<ul class="nav navbar-nav navbar-right">

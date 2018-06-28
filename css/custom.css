@@ -6925,7 +6925,7 @@ span.label {
 .userWallet .tokenList .table .btn.btn-info {margin: 0;}
 
 .tokenExchange table tr > th:nth-child(4), .tokenExchange table tr > td:nth-child(4) {text-align: right;}
-.tokenExchange table img {width: 16px; height: 16px; position: relative; top: -2px;}
+.tokenExchange table img, .tokenTableImg {width: 16px; height: 16px; position: relative; top: -2px;}
 
 .img-circle.profile_img {width: 60px; height: 60px;}
 
@@ -6994,3 +6994,26 @@ span.label {
 .startupCard .cardLang {height: 32px; font-size: 16px;}
 
 .nav-sm .accMode .inner .caret {margin-top: 6px;}
+
+/* tab style */
+.tabParent.style1 {
+	background: #fff;
+}
+.tabParent.style1 .nav-tabs li {
+	background: #ededed;
+	border: 1px solid #E6E9ED;
+	border-bottom: none;
+	border-radius: 5px 5px 0 0;
+}
+.tabParent.style1 .nav-tabs > li.active > a {border: 1px solid #fff;}
+.tabParent.style1 .tab-content {
+	text-align: justify;
+	border: 1px solid #E6E9ED;
+	border-top: none;
+}
+.tabParent.style1 .tab-pane .x_panel {border: none;}
+
+.row.stat h2 {margin: 0;}
+.row.stat select {height: 19px;}
+
+.tabParent.style1 .text-right button {margin-right: 0;}
