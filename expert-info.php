@@ -63,6 +63,27 @@
 						  <div class="clearfix"></div>
 						</div>
 						<div class="x_content text-left over-x-auto">
+							<h4>На платформе</h4>
+							<table class="table table-striped valign-m">
+								<thead>
+								  <tr>
+									<th><a href="#">Проект <i class="fa fa-caret-down"></i></a></th>
+									<th><a href="#">Позиция <i class="fa fa-caret-down"></i></a></th>
+									<th><a href="#">Период работы <i class="fa fa-caret-down"></i></a></th>
+									<th></th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td><a href="#">Гидравлический аннигилятор</a></td>
+									<td><a href="#">Администратор серверного парка</a></td>
+									<td>10.11.2016 - 03.08.2018</td>
+									<td><button type="button" class="btn btn-info btn-sm noborder">Отзыв</button></td><!-- функциональность идентична кнопке "посмотреть отзыв" в "мои проекты" -> "я сотрудничал" -->
+								  </tr>
+								</tbody>
+							</table>
+							<hr/>
+							<h4>Добавлено вручную</h4>
 							<table class="table table-striped valign-m">
 								<thead>
 								  <tr>
