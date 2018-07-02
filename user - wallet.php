@@ -19,7 +19,7 @@
 								<div class="col-md-2 col-xs-12">Ethereum адрес</div>
 								<div class="col-md-8 col-xs-12"><input type="text" id="ethAddr" placeholder="0x..." /> <i class="fa fa-info-circle" title="подсказка"></i></div>
 								<div class="col-md-2 col-xs-12"><button class="btn btn-success">Сохранить</button></div>
-							</div>-->
+							</div> -->
 							<div class="row">
 								<div class="oper col-md-6 col-xs-12">
 									<div class="eth row">
