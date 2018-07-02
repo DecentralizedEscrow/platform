@@ -71,7 +71,22 @@
 										<div class="row">
 											<div class="col-sm-6 col-xs-12">
 												<h2>Категория проекта</h2>
-												<input type="text" id="project-name" required="required" class="form-control col-xs-12" value="Информационные технологии">
+												<select class="form-control col-xs-12">
+												  <option>Выберите категорию</option>
+												  <option>Медицина</option>
+												  <option selected>Ритейл/Торговля</option>
+												  <option>Страхование</option>
+												  <option>Банкинг/ФинТех</option>
+												  <option>Гейминг</option>
+												  <option>Программа лояльности</option>
+												  <option>Общество/Благотворительность</option>
+												  <option>Спорт</option>
+												  <option>Искусство</option>
+												  <option>Блокчейн</option>
+												  <option>ИИ</option>
+												  <option>Робототехника</option>
+												  <option>Прочее</option>
+												</select>
 												<div class="clearfix"></div>
 											</div>
 											<div class="col-sm-6 col-xs-12">

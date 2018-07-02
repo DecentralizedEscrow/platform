@@ -3,6 +3,7 @@
 					<div class="x_panel">
 						<div class="x_title">
 						  <h2>Пользователи</h2>
+						  <button type="button" class="changeInfo pull-right btn btn-info noborder"><i class="fa fa-list-alt"></i> &nbsp;Отчеты в csv</button>
 						</div>
 						<div class="x_content">
 							<div class="tabParent style1" role="tabpanel" data-example-id="togglable-tabs">
@@ -77,6 +78,7 @@
 												<th><a href="#">Последний вход <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#">Последний ip <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#">Роль <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#" title="Инвестировал в проекты"><i class="fa fa-briefcase"></i> <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#">Операции <i class="fa fa-caret-down"></i></a></th>
 											  </tr>
 											</thead>
@@ -88,6 +90,7 @@
 												<td>22.06.2018</td>
 												<td>219.79.134.5</td>
 												<td>user</td>
+												<td><a href="#">4</a></td>
 												<td>
 													<select name="oper">
 													  <option selected disabled hidden>Выберите операцию</option>

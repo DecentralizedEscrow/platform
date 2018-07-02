@@ -7025,3 +7025,56 @@ span.label {
 	margin-top: 4px;
 }
 .removeCompBtn:hover {text-decoration: underline;}
+
+.enterReg {
+	padding: 20px 0;
+	text-align: center;
+}
+.enterReg button {margin: 0;}
+#regModal .modal-dialog, #enterModal .modal-dialog {max-width: 314px;}
+#regModal .modal-dialog input, #enterModal .modal-dialog input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#regModal .modal-dialog input[type='checkbox'] {
+	width: auto;
+	position: relative;
+    top: 1px;
+}
+
+#sidebar-menu span.label {
+	float: right;
+    height: 21px;
+}
+
+.icoList .tabParent .tab-content .x_content {padding-top: 0;}
+.icoSearch {
+	margin-bottom: 20px;
+	position: relative;
+}
+.icoSearch input {border-radius: 2px;}
+.icoSearch .icoSBtn {
+	position: absolute;
+    right: 0;
+    top: 0;
+	height: 34px;
+    width: 48px;
+    color: #446180;
+    text-align: center;
+    background-color: #ededed;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+	cursor: pointer;
+}
+.icoSearch .icoSBtn:hover {background-color: #e0e0e0;}
+.icoSearch .icoSBtn i {
+	position: relative;
+	top: 6px;
+}
+
+.repBtn {
+	position: absolute;
+    right: 5px;
+    bottom: 4px;
+    font-size: 16px;
+}

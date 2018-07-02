@@ -1,11 +1,11 @@
-<?php require_once('_top.php'); ?>
+<?php require_once('_top-guest.php'); ?>
 				<section class="icoList col-md-12">
-					<a href="startup-reg.php"><button type="button" class="addStartup pull-right btn btn-success noborder">Добавить свой стартап</button></a>
+					<button type="button" class="addStartup pull-right btn btn-success noborder" data-toggle="modal" data-target="#enterModal">Добавить свой стартап</button>
 					<div class="tabParent" role="tabpanel" data-example-id="togglable-tabs">
 						<ul id="infoTab" class="nav nav-tabs" role="tablist">
 						  <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true"><i class="fa fa-database"></i> &nbsp;Все проекты</a>
 						  </li>
-						  <li role="presentation" class=""><a href="#tab_content2" role="tab" id="tab2" data-toggle="tab" aria-expanded="false"><i class="fa fa-eye"></i> &nbsp;Избранные проекты</a>
+						  <li role="presentation" class="" style="cursor: pointer;" data-toggle="modal" data-target="#enterModal"><a><i class="fa fa-eye" data-dismiss="modal" data-toggle="modal" data-target="#enterModal"></i> &nbsp;Избранные проекты</a>
 						  </li>
 						</ul>
 						<div id="infoTabContent" class="tab-content">
@@ -86,7 +86,7 @@
 												На сумму: $ 21 400
 											</div>
 											<div class="btns"><div>
-												<div><i class="fa fa-eye"></i></div>
+												<div><i class="fa fa-eye" data-dismiss="modal" data-toggle="modal" data-target="#enterModal"></i></div>
 												<div><a href="startup.php"><button type="button" class="btn btn-info noborder btn-xs"> Подробнее</button></a></div>
 											</div></div>
 										</div>
@@ -105,7 +105,7 @@
 												Цель: $ 1 000 000
 											</div>
 											<div class="btns"><div>
-												<div><i class="fa fa-eye"></i></div>
+												<div><i class="fa fa-eye" data-dismiss="modal" data-toggle="modal" data-target="#enterModal"></i></div>
 												<div><a href="startup.php"><button type="button" class="btn btn-info noborder btn-xs"> Подробнее</button></a></div>
 											</div></div>
 										</div>
@@ -126,7 +126,7 @@
 												Цель: $ 1 000 000
 											</div>
 											<div class="btns"><div>
-												<div><i class="fa fa-eye"></i></div>
+												<div><i class="fa fa-eye" data-dismiss="modal" data-toggle="modal" data-target="#enterModal"></i></div>
 												<div><a href="startup.php"><button type="button" class="btn btn-info noborder btn-xs"> Подробнее</button></a></div>
 											</div></div>
 										</div>
@@ -149,7 +149,7 @@
 												Реализация до: 27.12.2018
 											</div>
 											<div class="btns"><div>
-												<div><i class="fa fa-eye"></i></div>
+												<div><i class="fa fa-eye" data-dismiss="modal" data-toggle="modal" data-target="#enterModal"></i></div>
 												<div><a href="startup.php"><button type="button" class="btn btn-info noborder btn-xs"> Подробнее</button></a></div>
 											</div></div>
 										</div>
@@ -168,7 +168,7 @@
 												Реализация до: 27.12.2018
 											</div>
 											<div class="btns"><div>
-												<div><i class="fa fa-eye"></i></div>
+												<div><i class="fa fa-eye" data-dismiss="modal" data-toggle="modal" data-target="#enterModal"></i></div>
 												<div><a href="startup.php"><button type="button" class="btn btn-info noborder btn-xs"> Подробнее</button></a></div>
 											</div></div>
 										</div>
@@ -187,7 +187,7 @@
 												Завершено: 13.05.2018
 											</div>
 											<div class="btns"><div>
-												<div><i class="fa fa-eye"></i></div>
+												<div><i class="fa fa-eye" data-dismiss="modal" data-toggle="modal" data-target="#enterModal"></i></div>
 												<div><a href="startup.php"><button type="button" class="btn btn-info noborder btn-xs"> Подробнее</button></a></div>
 											</div></div>
 										</div>
@@ -208,128 +208,7 @@
 												Завершено: 13.05.2018
 											</div>
 											<div class="btns"><div>
-												<div><i class="fa fa-eye"></i></div>
-												<div><a href="startup.php"><button type="button" class="btn btn-info noborder btn-xs"> Подробнее</button></a></div>
-											</div></div>
-										</div>
-									</div></div>
-								</div>							
-							  </div>
-							</div>
-						  </div>
-						  <div role="tabpanel" class="main tab-pane fade in" id="tab_content2" aria-labelledby="favorite">
-							<div class="x_panel">
-								<div class="x_title">
-								  <h2>Избранные проекты</h2>
-								  <ul class="nav navbar-right panel_toolbox">
-									  <li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Категория <i class="fa fa-caret-down"></i></a>
-										<ul class="dropdown-menu" role="menu">
-										  <li><a href="#">Медицина</a></li>
-										  <li><a href="#">Ритейл/Торговля</a></li>
-										  <li><a href="#">Страхование</a></li>
-										  <li><a href="#">Банкинг/ФинТех</a></li>
-										  <li><a href="#">Гейминг</a></li>
-										  <li><a href="#">Программа лояльности</a></li>
-										  <li><a href="#">Общество/Благотворительность</a></li>
-										  <li><a href="#">Спорт</a></li>
-										  <li><a href="#">Искусство</a></li>
-										  <li><a href="#">Блокчейн</a></li>
-										  <li><a href="#">ИИ</a></li>
-										  <li><a href="#">Робототехника</a></li>
-										  <li><a href="#">Прочее</a></li>
-										</ul>
-									  </li>
-									  <li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Статус <i class="fa fa-caret-down"></i></a>
-										<ul class="dropdown-menu" role="menu">
-										  <li><a href="#">Идея</a></li>
-										  <li><a href="#">Скоро</a></li>
-										  <li><a href="#">На ICO</a></li>
-										  <li><a href="#">В работе</a></li>
-										  <li><a href="#">Завершено</a></li>
-										</ul>
-									  </li>
-									  <li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Сортировать <i class="fa fa-caret-down"></i></a>
-										<ul class="dropdown-menu" role="menu">
-										  <li><a href="#">Дата добавления</a></li>
-										  <li><a href="#">Собрано средств (всего)</a></li>
-										  <li><a href="#">Процент собранных средств</a></li>
-										  <li><a href="#">Дней до начала ICO</a></li>
-										  <li><a href="#">Дней до конца ICO</a></li>
-										  <li><a href="#">Добавлено в избранное</a></li>
-										</ul>
-									  </li>
-									  <li class="displayLine"><a><i class="fa fa-th"></i></a>
-									  </li>
-									  <li class="displayBlock muted"><a><i class="fa fa-list"></i></a>
-									  </li>
-									</ul>
-								  <div class="clearfix"></div>
-								</div>
-							  <div class="x_content">
-								<div class="icoSearch">
-									<input type="text" class="form-control" placeholder="Поиск по названию стартапа"><div class="icoSBtn"><i class="fa fa-search"></i></div>
-									<div class="clear"></div>
-								</div>
-								<div class="row">
-									<div class="icoCard col-sm-4 col-xs-12"><div>
-										<div class="img"><a href="startup.php"><img src="http://daniellegibsonevents.com/wp-content/uploads/2014/06/16-9-dummy-image2.jpg" alt="" /></a></div>
-										<div class="summary">
-											<div class="name"><a href="startup.php">Название проекта</a></div>
-											<div class="descr">Описание проекта. Nunc et mi in nisl semper elementum eu sed sapien. Mauris vehicula enim vel quam mollis lobortis.</div>
-											<div class="">
-												<div class="pull-left">Прогресс 45%</div>
-												<div class="pull-right">Осталось: 35 дней</div>
-											</div>
-											<div class="progress"><div class="progress-bar progress-bar-info" data-transitiongoal="45" style="width: 45%;" aria-valuenow="45"></div></div>
-											<div class="money">
-												Собрано: $ 1 583 354<br/>
-												Цель: $ 1 000 000
-											</div>
-											<div class="btns"><div>
-												<div><i class="fa fa-eye-slash"></i></div>
-												<div><a href="startup.php"><button type="button" class="btn btn-info noborder btn-xs"> Подробнее</button></a></div>
-											</div></div>
-										</div>
-									</div></div>
-									<div class="icoCard col-sm-4 col-xs-12"><div>
-										<div class="img"><a href="startup.php"><img src="http://daniellegibsonevents.com/wp-content/uploads/2014/06/16-9-dummy-image2.jpg" alt="" /></a></div>
-										<div class="summary">
-											<div class="name"><a href="startup.php">Название проекта</a></div>
-											<div class="descr">Описание проекта. Nunc et mi in nisl semper elementum eu sed sapien. Mauris vehicula enim vel quam mollis lobortis.</div>
-											<div class="">
-												<div class="pull-left">Прогресс 45%</div>
-												<div class="pull-right">Осталось: 35 дней</div>
-											</div>
-											<div class="progress"><div class="progress-bar progress-bar-info" data-transitiongoal="45" style="width: 45%;" aria-valuenow="45"></div></div>
-											<div class="money">
-												Собрано: $ 1 583 354<br/>
-												Цель: $ 1 000 000
-											</div>
-											<div class="btns"><div>
-												<div><i class="fa fa-eye-slash"></i></div>
-												<div><a href="startup.php"><button type="button" class="btn btn-info noborder btn-xs"> Подробнее</button></a></div>
-											</div></div>
-										</div>
-									</div></div>
-									<div class="icoCard col-sm-4 col-xs-12"><div>
-										<div class="img"><a href="startup.php"><img src="http://daniellegibsonevents.com/wp-content/uploads/2014/06/16-9-dummy-image2.jpg" alt="" /></a></div>
-										<div class="summary">
-											<div class="name"><a href="startup.php">Название проекта</a></div>
-											<div class="descr">Описание проекта. Nunc et mi in nisl semper elementum eu sed sapien. Mauris vehicula enim vel quam mollis lobortis.</div>
-											<div class="">
-												<div class="pull-left">Прогресс 45%</div>
-												<div class="pull-right">Осталось: 35 дней</div>
-											</div>
-											<div class="progress"><div class="progress-bar progress-bar-info" data-transitiongoal="45" style="width: 45%;" aria-valuenow="45"></div></div>
-											<div class="money">
-												Собрано: $ 1 583 354<br/>
-												Цель: $ 1 000 000
-											</div>
-											<div class="btns"><div>
-												<div><i class="fa fa-eye-slash"></i></div>
+												<div><i class="fa fa-eye" data-dismiss="modal" data-toggle="modal" data-target="#enterModal"></i></div>
 												<div><a href="startup.php"><button type="button" class="btn btn-info noborder btn-xs"> Подробнее</button></a></div>
 											</div></div>
 										</div>
@@ -368,7 +247,7 @@
     </div>
 
   </div>
-
+  
   <script src="js/bootstrap.min.js"></script>
 
   <!-- bootstrap progress js -->

@@ -3,13 +3,15 @@
 					<div class="x_panel">
 						<div class="x_title">
 						  <h2>Финансы</h2>
+						  <button type="button" class="changeInfo pull-right btn btn-info noborder"><i class="fa fa-list-alt"></i> &nbsp;Отчеты в csv</button>
 						</div>
 						<div class="x_content">
 							<div class="tabParent style1" role="tabpanel" data-example-id="togglable-tabs">
 								<ul id="infoTab" class="nav nav-tabs" role="tablist">
 								  <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Сводка</a></li>
 								  <li role="presentation" class=""><a href="#tab_content2" role="tab" id="tab2" data-toggle="tab" aria-expanded="false">Кошельки</a></li>
-								  <li role="presentation" class=""><a href="#tab_content3" role="tab" id="tab3" data-toggle="tab" aria-expanded="false">Рассылка токенов</a></li>
+								  <li role="presentation" class=""><a href="#tab_content3" role="tab" id="tab3" data-toggle="tab" aria-expanded="false">Транзакции</a></li>
+								  <li role="presentation" class=""><a href="#tab_content4" role="tab" id="tab4" data-toggle="tab" aria-expanded="false">Рассылка токенов</a></li>
 								</ul>
 								<div id="infoTabContent" class="tab-content">
 								  <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
@@ -80,6 +82,60 @@
 												<td>7.1232 ETH</td>
 												<td title="Ожидается подтверждение транша">Ожидается...</td>
 												<td><button type="button" class="btn btn-warning btn-sm noborder">Просмотр</button></td>
+											</tr>
+											</tbody>
+										</table>
+									  </div>
+									</div>
+								  </div>
+								  
+								  <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="tab3">
+									<div class="x_panel">
+									  <div class="x_content">
+										<div class="row">
+											<div class="col-md-6">
+												Поиск &nbsp;
+												<select name="sField">
+												  <option selected="" disabled="" hidden="">по полю</option>
+												  <option>Стратап</option>
+												  <option>Ставка</option>
+												  <option>Создан</option>
+												  <option>Статус</option>
+												</select>
+												=
+												<input type="text">
+												<button>Поиск</button>
+											</div>
+											<div class="col-md-6 text-right">
+												Период &nbsp; <input type="date"/> - <input type="date"/> <button>></button>
+											</div>
+											<div class="col-md-4 pull-right text-right">
+												Отображать &nbsp;
+												<select name="sField">
+												  <option selected="">Инвесторские</option>
+												  <option>Стартаперские</option>
+												</select>
+											</div>
+										</div><hr/>
+										<table class="table table-striped valign-m">
+											<thead>
+											  <tr>
+												<th><a href="#">Дата <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Тип <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Отправитель <i class="fa fa-caret-down"></i></a></th>
+												<th></th>
+												<th><a href="#">Получатель <i class="fa fa-caret-down"></i></a></th>
+												<th></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td>27.05.2018 12:43:56</td>
+												<td>Вывод</td>
+												<td><a href="#">Дмитрий Пантеелев</a></td>
+												<td><a href="#">0х2354072043569...</a></td>
+												<td><a href="#">Михаил Прохоров</a></td>
+												<td><a href="#">0х2354072043569...</a></td>
 											</tr>
 											</tbody>
 										</table>
