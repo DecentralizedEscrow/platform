@@ -123,7 +123,7 @@
 											  <option value="PA">Punjabi</option>
 											  <option value="QU">Quechua</option>
 											  <option value="RO">Romanian</option>
-											  <option value="RU">Russian</option>
+											  <option value="RU" selected>Russian</option>
 											  <option value="SM">Samoan</option>
 											  <option value="SR">Serbian</option>
 											  <option value="SK">Slovak</option>
@@ -146,6 +146,29 @@
 											  <option value="XH">Xhosa</option>
 											</select>
 										  </div>
+										</div>
+										<div class="form-group">
+										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="project-name">Категория проекта<span class="required"></span>
+										  </label>
+										  <div class="col-md-6 col-sm-6 col-xs-12">
+											<select class="form-control col-md-7 col-xs-12">
+											  <option>Медицина</option>
+											  <option>Ритейл/Торговля</option>
+											  <option>Страхование</option>
+											  <option>Банкинг/ФинТех</option>
+											  <option>Гейминг</option>
+											  <option>Программа лояльности</option>
+											  <option>Общество/Благотворительность</option>
+											  <option>Спорт</option>
+											  <option>Искусство</option>
+											  <option>Блокчейн</option>
+											  <option>ИИ</option>
+											  <option>Робототехника</option>
+											  <option selected>Прочее</option>
+											</select>
+										  </div>
+										</div>
+										<div class="form-group">
 										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="project-name">Наименование проекта <span class="required"></span>
 										  </label>
 										  <div class="col-md-6 col-sm-6 col-xs-12">
@@ -230,6 +253,13 @@
 												<input type="radio" name="reg-purpose" value="2" checked=""> Проведение ICO
 											  </label>
 											</div>
+										  </div>
+										</div>
+										<div class="form-group">
+										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="project-name">Тэги проекта (через запятую)<span class="required"></span>
+										  </label>
+										  <div class="col-md-6 col-sm-6 col-xs-12">
+											<input type="text" id="tags" class="form-control col-md-7 col-xs-12 optional">
 										  </div>
 										</div>
 										<div class="form-group">

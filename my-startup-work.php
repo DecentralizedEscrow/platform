@@ -324,6 +324,7 @@
 									
 									<div class="btns">
 										<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#roadChangeModal">История изменений</button>
+										<button type="button" class="btn btn-warning btn-md" data-toggle="modal" data-target="#endStageModal">Завершить текущий этап</button>
 										<button type="button" class="btn btn-warning btn-md" data-toggle="modal" data-target="#roadChange1Modal">Изменить дорожную карту</button>
 									</div>
 								  </div>
@@ -411,6 +412,23 @@
 				</table>
 				<div class="clearfix"></div>
 				
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- окно завершения этапа -->
+<div class="modal fade in" id="endStageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Досрочное завершение этапа<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p><b>Вы цверены, что хотите завершить текущий этап досрочно?</b></p>
+				<p>В случае досрочного завершения текущего этапа, сроки реализации последующих этапов будут перенесены на соответствующее количество дней (*) <!-- в скобках выводится количество дней, оставшееся до планового завершения данного этапа. Именно на это количество будут перенесены сроки последующих эьапов --></p>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning button140">Завершить</button><button type="button" class="btn btn-warning button140">Отмена</button></p>
 			</div>
 		</div>
 	</div>

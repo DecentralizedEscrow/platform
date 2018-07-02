@@ -89,6 +89,31 @@
 
   </div>
   
+<!-- окно жалобы на сообщение -->
+<div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Пожаловаться на сообщение<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>Вы уверены, что хотите отправить жалдобу на сообщение пользователя &laquo;Константин Пивоваров&raquo;?</p>
+				<p>
+					<select name="sField">
+					  <option selected disabled hidden>Укажите причину жалобы</option>
+					  <option>Спам</option>
+					  <option>Оскорбления</option>
+					  <option>Другая</option>
+					</select>
+				</p>
+				<p>Комментарий (необязательно):</p>
+				<textarea id="votefeedback" class="form-control" rows="2"></textarea><br/>
+				<center><button type="button" class="btn btn-warning btn-lg">Отправить</button></center>
+			</div>
+		</div>
+	</div>
+</div> 
+ 
 <!-- окно уведомлений от платформы -->
 <div class="modal fade" id="conversDesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
@@ -113,7 +138,7 @@
 							<p><a href="#"><b>Посмотреть полный отчет</b></a></p>
 							<hr/>
 							<p>Имейте в виду, что если вы не проголосуете до 28.05.2018, ваш голос будет автоматически засчитан как положительный!</p>
-							<a href="startup.php#tab_content5"><button type="button" class="btn btn-success btn-md">Перейти к голосованию</button>
+							<a href="startup.php#tab_content5"><button type="button" class="btn btn-success btn-md">Перейти к голосованию</button></a>
 						</div>
 					</div>
 				</div>
@@ -150,6 +175,7 @@
 						</div>
 						<div class="txt">
 							Nunc et mi in nisl semper elementum eu sed sapien. Mauris vehicula enim vel quam mollis lobortis. Vivamus consectetur purus id lacus efficitur, semper iaculis arcu pellentesque. Pellentesque sit amet purus eget nulla cursus molestie nec at sem. Sed congue dolor purus, sed tempor purus blandit id. Sed facilisis turpis a augue vestibulum, a imperdiet eros malesuada. Donec gravida hendrerit lacus nec dapibus?
+							<i class="fa fa-exclamation-circle repBtn text-danger" title="Пожаловаться на сообщение" data-dismiss="modal" data-toggle="modal" data-target="#reportModal"></i>
 						</div>
 					</div>
 				</div>

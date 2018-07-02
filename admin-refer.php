@@ -3,6 +3,7 @@
 					<div class="x_panel">
 						<div class="x_title">
 						  <h2>Партнерская программа</h2>
+						  <button type="button" class="changeInfo pull-right btn btn-info noborder"><i class="fa fa-list-alt"></i> &nbsp;Отчеты в csv</button>
 						</div>
 						<div class="x_content">
 							<div class="tabParent style1" role="tabpanel" data-example-id="togglable-tabs">
