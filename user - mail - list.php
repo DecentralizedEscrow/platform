@@ -107,7 +107,7 @@
 					</select>
 				</p>
 				<p>Комментарий (необязательно):</p>
-				<textarea id="votefeedback" class="form-control" rows="2"></textarea><br/>
+				<textarea class="form-control" rows="2"></textarea><br/>
 				<center><button type="button" class="btn btn-warning btn-lg">Отправить</button></center>
 			</div>
 		</div>

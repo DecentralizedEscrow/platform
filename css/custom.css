@@ -7078,3 +7078,16 @@ span.label {
     bottom: 4px;
     font-size: 16px;
 }
+
+table.style1 th {white-space: nowrap;}
+
+.announcement.info {background: #828282e6;}
+.announcement.info a {color: #fff;}
+.fChangedMark {border: 1px dashed red;}
+.select.lang.admin {
+	background: #ffffff8a;
+    color: #000;
+}
+.select.lang.admin table tr {background: none;}
+
+.label-info {color: #fff !important;}

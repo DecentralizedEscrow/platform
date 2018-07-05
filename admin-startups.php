@@ -234,7 +234,8 @@
 													<th><a href="#">Дата <i class="fa fa-caret-down"></i></a></th>
 													<th><a href="#">Название <i class="fa fa-caret-down"></i></a></th>
 													<th><a href="#">Организатор  <i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">Изменено полей  <i class="fa fa-caret-down"></i></a></th>
+													<th title="Изменено анкет"><a href="#"><i class="fa fa-recycle"></i> анкет  <i class="fa fa-caret-down"></i></a></th>
+													<th title="Изменено полей"><a href="#"><i class="fa fa-recycle"></i> полей  <i class="fa fa-caret-down"></i></a></th>
 													<th></th>
 												  </tr>
 												</thead>
@@ -243,8 +244,9 @@
 													<td>12.02.2018 13:57</td>
 													<td><a href="#">Фабрика стеклянных пылесосов</a></td>
 													<td><a href="#">Алексей Борисов</a></td>
+													<td>1</td>
 													<td>4</td>
-													<td><button type="button" class="btn btn-warning btn-sm noborder">Просмотр</button></td>
+													<td><a href="admin-startup-moderate.php"><button type="button" class="btn btn-warning btn-sm noborder">Просмотр</button></a></td>
 												  </tr>
 												</tbody>
 											</table>

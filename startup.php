@@ -1030,6 +1030,7 @@
 			<div class="modal-body">
 			
 				<div class="notice">
+					<p class="text-danger"><i class="fa fa-exclamation-triangle"></i> Внимание! Отправка спама и рекламы запрещена. Вас могут заблокировать.</p>
 					<p><i class="fa fa-check"></i> Если вы хотите обратиться к стартапу публично, воспользуйтесь формой &laquo;задать вопрос&raquo; на вкладке &laquo;вопросы&raquo;.</p>
 					<p><i class="fa fa-check"></i> Здесь вы можете написать личное сообщение стартапу:</p>
 				</div>

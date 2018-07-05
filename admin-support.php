@@ -25,6 +25,7 @@
 												  <option>А именно</option>
 												  <option>Причина</option>
 												  <option>Пожаловался</option>
+												  <option>Статус</option>
 												</select>
 												=
 												<input type="text">
@@ -36,7 +37,8 @@
 											<div class="col-md-4 pull-right text-right">
 												Отображать &nbsp;
 												<select name="sField">
-												  <option selected="">Нерешенные</option>
+												  <option selected>Нерешенные</option>
+												  <option>Решенные</option>
 												  <option>Все</option>
 												</select>
 											</div>
@@ -49,6 +51,7 @@
 												<th><a href="#">А именно <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#">Причина <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#">Пожаловался <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Статус <i class="fa fa-caret-down"></i></a></th>
 												<th></th>
 											  </tr>
 											</thead>
@@ -59,17 +62,26 @@
 												<td>Личное сообщение</td>
 												<td>Оскорбление</td>
 												<td><a href="#">Дмитрий Бородин</a></td>
-												<td><button type="button" class="btn btn-warning btn-sm noborder">Посмотреть</button></td>
+												<td>не присвоен</td>
+												<td><button type="button" class="btn btn-warning btn-sm noborder btn-block" data-toggle="modal" data-target="#viewRepModal">Посмотреть</button></td>
 											  </tr>
-											</tbody>
-											<tbody>
 											  <tr>
 												<td>12.02.2018 21:10:34</td>
 												<td><a href="#">Алексей Сабля</a></td>
 												<td>Вопрос стартапу</td>
 												<td>Спам</td>
 												<td><a href="#">Дмитрий Бородин</a></td>
-												<td><button type="button" class="btn btn-warning btn-sm noborder">Посмотреть</button></td>
+												<td>не присвоен</td>
+												<td><button type="button" class="btn btn-warning btn-sm noborder btn-block" data-toggle="modal" data-target="#viewRepModal">Посмотреть</button></td>
+											  </tr>
+											  <tr> <!-- пример отображения решенной жалобы -->
+												<td>12.02.2018 21:10:34</td>
+												<td><a href="#">Алексей Сабля</a></td>
+												<td>Вопрос стартапу</td>
+												<td>Спам</td>
+												<td><a href="#">Дмитрий Бородин</a></td>
+												<td>предупреж.</td>
+												<td><button type="button" class="btn btn-info btn-sm noborder btn-block" data-toggle="modal" data-target="#viewReplModal">Отчет</button></td>
 											  </tr>
 											</tbody>
 										</table>
@@ -88,6 +100,7 @@
 												  <option>Дата</option>
 												  <option>Отправитель</option>
 												  <option>Текст</option>
+												  <option>Статус</option>
 												</select>
 												=
 												<input type="text">
@@ -100,6 +113,7 @@
 												Отображать &nbsp;
 												<select name="sField">
 												  <option selected="">Нерешенные</option>
+												  <option>Решенные</option>
 												  <option>Все</option>
 												</select>
 											</div>
@@ -110,6 +124,7 @@
 												<th><a href="#">Дата <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#">Отправитель <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#">Текст <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Статус <i class="fa fa-caret-down"></i></a></th>
 												<th></th>
 											  </tr>
 											</thead>
@@ -118,7 +133,8 @@
 												<td>12.02.2018 21:10:34</td>
 												<td><a href="#">Алексей Сабля</a></td>
 												<td>Подскажите пожалуйста, как приготовить пельмени?</td>
-												<td><button type="button" class="btn btn-warning btn-sm noborder">Посмотреть</button></td>
+												<td>Не решен</td>
+												<td><button type="button" class="btn btn-warning btn-sm noborder" data-toggle="modal" data-target="#answModal">Посмотреть</button></td>
 											  </tr>
 											</tbody>
 										</table>
@@ -144,18 +160,153 @@
 
   </div>
 
-<!-- окно -->
-<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- окно просмотра жалобы -->
+<div class="modal fade" id="viewRepModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				Купить токены проекта &laquo;Металлургический завод&raquo;<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
-				<h4 class="modal-title" id="image-gallery-title"></h4>
+				Просмотр жалобы<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
 			</div>
 			<div class="modal-body">
-				<p>Купить <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">2.234 ETH</span></b></p>
+				<p>Жалоба на <b>личное сообщение</b> пользователя <b><a href="#">Алексей Сабля</a></b> по причине <b>СПАМ</b></p>
+				<p><b>Комментарий:</b> Данный пользователь отправляет мне сообщения рекламного характера последние несколько дней. Прошу принять меры!</p>
+				<p><b>Пожаловался:</b> <a href="#">Дмитрий Бородин</a>, 12.02.2018 21:10:34</p>
+				<p><b>Содержимое сообщения</b> (на которое жалоба):</p>
+				<p>Спешите купить по невероятно выгодной цене лучшие кормушки для летучих мышей! Только у нас и только до завтрашнего дня: используйте промокод "азбука" и получите трехмесячный запас питьевой воды лучшего качества! [ссылка удалена]</p>
+				<p><a href="#">Алексей Сабля</a>, 12.02.2018 21:08:13</p>
 				<hr/>
-				<p class="text-center"><button type="button" class="btn btn-success">Купить</button><button type="button" class="btn btn-warning" data-dismiss="modal">Отмена</button></p>
+				<p class="text-center">На пользователя <b><a href="#">Алексей Сабля</a></b>:<br/>
+				Жалоб: <span class="text-danger"><b>2</b></span> <a href="#">(посмотреть все)</a>.<br/>
+				Выдано предупреждений: <span class="text-danger"><b>1</b></span><br/>
+				Было блокировок: <span class="text-success"><b>0</b></span></p>
+				<hr/>
+				<p class="text-center">
+					<button type="button" class="btn btn-info button170" data-dismiss="modal" data-toggle="modal" data-target="#rejectRepModal">Отклонить жалобу</button>
+					<button type="button" class="btn btn-warning button170" data-dismiss="modal" data-toggle="modal" data-target="#warnUsrModal">Выдать предупреждение</button>
+					<button type="button" class="btn btn-danger button170" data-dismiss="modal" data-toggle="modal" data-target="#blockUsrModal">Заблокировать пользователя</button>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- окно отклонения жалобы -->
+<div class="modal fade" id="rejectRepModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Отклонить жалобу<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>Вы уверены, что хотите отклонить жалобу на пользователю <b><a href="#">Алексей Сабля</a></b>?</p>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning button140">Отклонить</button><button type="button" class="btn btn-warning button140" data-dismiss="modal" data-toggle="modal" data-target="#viewRepModal">Назад</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно выдачи предупреждения -->
+<div class="modal fade" id="warnUsrModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Выдать предупреждение<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>Вы уверены, что хотите выдать предупреждение пользователю <b><a href="#">Алексей Сабля</a></b>?</p>
+				<textarea class="form-control" rows="2" placeholder="Введите текст предупреждения"></textarea>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning button140">Выдать</button><button type="button" class="btn btn-warning button140" data-dismiss="modal" data-toggle="modal" data-target="#viewRepModal">Назад</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно подтверждения блокировки -->
+<div class="modal fade" id="blockUsrModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Заблокировать пользователя<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>Вы уверены, что хотите заблокировать пользователя <b><a href="#">Алексей Сабля</a></b>?</p>
+				<textarea class="form-control" rows="2" placeholder="Введите причину блокировки"></textarea><br/>
+				<p>Срок блокировки: <input type="text" class="" /> дней.</p>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-danger button140">Заблокировать</button><button type="button" class="btn btn-warning button140" data-dismiss="modal" data-toggle="modal" data-target="#viewRepModal">Назад</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно просмотра отчета о жалобе -->
+<div class="modal fade" id="viewReplModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Отчет о рассмотрении жалобы<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>Пользователю <b><a href="#">Алексей Сабля</a></b> было выдано предупреждение 14.02.2018 21:10:34</p>
+				<p>Оператор <b><a href="#">Роман Шпальников</a></b></p>
+				<p><b>Текст предупреждения</b>: отсутствует.</p>
+				<hr/>
+				<p>Жалоба на <b>личное сообщение</b> пользователя <b><a href="#">Алексей Сабля</a></b> по причине <b>СПАМ</b></p>
+				<p><b>Комментарий:</b> Данный пользователь отправляет мне сообщения рекламного характера последние несколько дней. Прошу принять меры!</p>
+				<p><b>Пожаловался:</b> <a href="#">Дмитрий Бородин</a>, 12.02.2018 21:10:34</p>
+				<p><b>Содержимое сообщения</b> (на которое жалоба):</p>
+				<p>Спешите купить по невероятно выгодной цене лучшие кормушки для летучих мышей! Только у нас и только до завтрашнего дня: используйте промокод "азбука" и получите трехмесячный запас питьевой воды лучшего качества! [ссылка удалена]</p>
+				<p><a href="#">Алексей Сабля</a>, 12.02.2018 21:08:13</p>
+				<hr/>
+				<p class="text-center">На пользователя <b><a href="#">Алексей Сабля</a></b>:<br/>
+				Жалоб: <span class="text-danger"><b>2</b></span> <a href="#">(посмотреть все)</a>.<br/>
+				Выдано предупреждений: <span class="text-danger"><b>1</b></span><br/>
+				Было блокировок: <span class="text-success"><b>0</b></span></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- окно ответа на вопрос пользователя -->
+<div class="modal fade" id="answModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Вопрос пользователя - Иван Грозный<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				
+				<div class="questions">
+					<div class="question">
+					<div class="ava"><img src="images/des/slider-1-photo.png" alt="" class="img-circle profile_img"></div>
+						<div class="header">
+							<div class="name">Алексей Сабля <span class="pull-right date text-muted">10.12.2017 10:55:24</span></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="txt">
+							Подскажите пожалуйста, как приготовить пельмени?
+						</div>
+					</div>
+					<div class="question bg-grey">
+						<div class="ava"><img src="images/des/des-user.jpg" alt="" class="img-circle profile_img"></div>
+						<div class="header">
+							<div class="name"><b>[Descrow]</b> Вирасетакул Апичатпонг <span class="pull-right date text-muted">10.12.2017 10:55:28</span></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="txt">
+							Вылейте в миску теплую воду и молоко, разбейте туда яйцо и добавьте соль. Перемешайте до растворения соли. 
+							Просейте муку на стол или в большую миску, сделайте в горке углубление и вылейте туда ранее приготовленный раствор. 
+							Сначала смешайте все ложкой, затем помесите немного руками. Добавьте растительного масла (оно даст эластичность) и продолжайте замешивать. Если вы замешиваете в хлебопечке, масло лейте прямо на мешалку (флажок, который крутится и замешивает тесто). 
+							Оставьте на 30–40 минут в теплом месте и начинайте делать фарш.
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="answer">
+					<textarea id="answer" required="required" class="form-control" rows="3" placeholder="Ваш ответ..."></textarea><br/>
+					<button type="button" class="btn btn-info">Ответить</button>
+					<button type="button" class="btn btn-warning pull-right">Пометить как решенный</button>
+				</div>
+				
 			</div>
 		</div>
 	</div>

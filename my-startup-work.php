@@ -425,10 +425,10 @@
 				Досрочное завершение этапа<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
 			</div>
 			<div class="modal-body">
-				<p><b>Вы цверены, что хотите завершить текущий этап досрочно?</b></p>
+				<p><b>Вы уверены, что хотите завершить текущий этап досрочно?</b></p>
 				<p>В случае досрочного завершения текущего этапа, сроки реализации последующих этапов будут перенесены на соответствующее количество дней (*) <!-- в скобках выводится количество дней, оставшееся до планового завершения данного этапа. Именно на это количество будут перенесены сроки последующих эьапов --></p>
 				<hr/>
-				<p class="text-center"><button type="button" class="btn btn-warning button140">Завершить</button><button type="button" class="btn btn-warning button140">Отмена</button></p>
+				<p class="text-center"><button type="button" class="btn btn-warning button140">Завершить</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button></p>
 			</div>
 		</div>
 	</div>
