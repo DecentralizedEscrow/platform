@@ -52,6 +52,7 @@
 					<input type="email" name="email" placeholder="E-mail">
 					<input type="password" name="pwd" placeholder="Пароль">
 					<button class="btn btn-success btn-block" name="auth">Авторизоваться</button>
+					<a href="javascript:void(0)" data-dismiss="modal" data-toggle="modal" data-target="#restoreModal">Забыли пароль?</a>
 					<hr>
 					<a class="btn btn-info btn-block" data-dismiss="modal" data-toggle="modal" data-target="#regModal">Регистрация</a>
 				</form>
@@ -77,6 +78,25 @@
 					<button class="btn btn-success btn-block" name="reg">Зарегистрироваться</button>
 					<hr>
 					<a class="btn btn-info btn-block" data-dismiss="modal" data-toggle="modal" data-target="#enterModal">Авторизация</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно восстановления пароля -->
+<div class="modal fade" id="restoreModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Восстановить пароль<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body">
+				<form method="POST" action="?mod=auth">
+					<input type="email" class="form-control" name="email" placeholder="Введите ваш e-mail"><br/>
+					<button class="btn btn-success btn-block" name="auth">Восстановить пароль</button>
+					<hr>
+					<a class="btn btn-info btn-block" data-dismiss="modal" data-toggle="modal" data-target="#enterModal">Назад</a>
 				</form>
 			</div>
 		</div>

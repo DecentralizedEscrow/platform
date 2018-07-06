@@ -6632,7 +6632,7 @@ ul.msg_list li a .time {right: 12px;}
 }
 
 /* xs */
-@media (max-width: 766px) {
+@media (max-width: 767px) {
 	.stats {margin: 20px 0 6px 0; padding: 0;}
 	.icoCard {margin-bottom: 20px;}
 	
@@ -7031,7 +7031,7 @@ span.label {
 	text-align: center;
 }
 .enterReg button {margin: 0;}
-#regModal .modal-dialog, #enterModal .modal-dialog {max-width: 314px;}
+#regModal .modal-dialog, #enterModal .modal-dialog, #restoreModal .modal-dialog {max-width: 314px;}
 #regModal .modal-dialog input, #enterModal .modal-dialog input {
     width: 100%;
     margin-bottom: 10px;

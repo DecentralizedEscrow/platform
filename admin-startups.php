@@ -32,10 +32,10 @@
 										</div>
 										<hr/>
 										<div class="row stat">
-											<div class="col-md-4"><h2>Сбор средств стартапами</h2></div>
+											<div class="col-md-3"><h2>Сбор средств стартапами</h2></div>
 											<div class="col-md-3">Проинвестировало: <b><span class="text-success">19</span></b></div>
 											<div class="col-md-3">Итого: <b><span class="text-success">27.6029 ETH</span></b></div>
-											<div class="col-md-2">Период: <select><option selected>неделя</option><option>месяц</option><option>год</option><option>все</option></select></div>
+											<div class="col-md-3">Период: <select><option selected>неделя</option><option>месяц</option><option>год</option><option>все</option></select> <button class="btn btn-info btn-xs noborder pull-right" data-toggle="modal" data-target="#rangeModal"><i class="fa fa-gear"></i></button></div>
 										</div><br/>
 										<div class="dChart"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
 											<canvas id="moneyChart" width="889" height="444"></canvas>

@@ -20,30 +20,30 @@
 									  <div class="x_content">
 										<hr/>
 										<div class="row stat">
-											<div class="col-md-4"><h2>Количество экспертов</h2></div>
+											<div class="col-md-3"><h2>Количество экспертов</h2></div>
 											<div class="col-md-3">Зарегистрировано: <b><span class="text-success">127</span></b></div>
 											<div class="col-md-3">За последние 24 часа: <b><span class="text-success">8</span></b></div>
-											<div class="col-md-2">Период: <select><option selected>неделя</option><option>месяц</option><option>год</option><option>все</option></select></div>
+											<div class="col-md-3">Период: <select><option selected>неделя</option><option>месяц</option><option>год</option><option>все</option></select><button class="btn btn-info btn-xs noborder pull-right" data-toggle="modal" data-target="#rangeModal"><i class="fa fa-gear"></i></button></div>
 										</div><br/>
 										<div class="dchart"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
 											<canvas id="expChart" width="889" height="444"></canvas>
 										</div>
 										<hr/>
 										<div class="row stat">
-											<div class="col-md-4"><h2>Количество заявок</h2></div>
+											<div class="col-md-3"><h2>Количество заявок</h2></div>
 											<div class="col-md-3">Заявок: <b><span class="text-success">19</span></b></div>
 											<div class="col-md-3">За последние 24 часа: <b><span class="text-success">2</span></b></div>
-											<div class="col-md-2">Период: <select><option selected>неделя</option><option>месяц</option><option>год</option><option>все</option></select></div>
+											<div class="col-md-3">Период: <select><option selected>неделя</option><option>месяц</option><option>год</option><option>все</option></select><button class="btn btn-info btn-xs noborder pull-right" data-toggle="modal" data-target="#rangeModal"><i class="fa fa-gear"></i></button></div>
 										</div><br/>
 										<div class="dchart"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
 											<canvas id="reqChart" width="889" height="444"></canvas>
 										</div>
 										<hr/>
 										<div class="row stat">
-											<div class="col-md-4"><h2>Отклики, сделки</h2></div>
+											<div class="col-md-3"><h2>Отклики, сделки</h2></div>
 											<div class="col-md-3">Количество откликов: <b><span class="text-success">112</span></b></div>
 											<div class="col-md-3">Количество сделок: <b><span class="text-success">8</span></b></div>
-											<div class="col-md-2">Период: <select><option selected>неделя</option><option>месяц</option><option>год</option><option>все</option></select></div>
+											<div class="col-md-3">Период: <select><option selected>неделя</option><option>месяц</option><option>год</option><option>все</option></select><button class="btn btn-info btn-xs noborder pull-right" data-toggle="modal" data-target="#rangeModal"><i class="fa fa-gear"></i></button></div>
 										</div><br/>
 										<div class="dchart"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
 											<canvas id="respChart" width="889" height="444"></canvas>
@@ -306,18 +306,18 @@
 
   </div>
 
-<!-- окно -->
-<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- окно выбора периода для отображения -->
+<div class="modal fade" id="rangeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				Купить токены проекта &laquo;Металлургический завод&raquo;<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				Выберите период для отображения<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
 				<h4 class="modal-title" id="image-gallery-title"></h4>
 			</div>
 			<div class="modal-body">
-				<p>Купить <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">2.234 ETH</span></b></p>
+				<p class="text-center">Период &nbsp; <input type="date"> - <input type="date"></p>
 				<hr/>
-				<p class="text-center"><button type="button" class="btn btn-success">Купить</button><button type="button" class="btn btn-warning" data-dismiss="modal">Отмена</button></p>
+				<p class="text-center"><button type="button" class="btn btn-info noborder">Показать</button></p>
 			</div>
 		</div>
 	</div>

@@ -177,6 +177,10 @@
 									<div class="x_panel">
 									  <div class="x_content">
 										<div>
+											<h2>Обложка проекта</h2>
+											<div class="row"><div class="col-sm-4 col-xs-12"><img src="http://daniellegibsonevents.com/wp-content/uploads/2014/06/16-9-dummy-image2.jpg" alt=""> Рекомендуемое соотншение сторон: 16:9<br/><br/>
+											<span class="btn btn-primary btn-file">Изменить <input type="file"></span></div></div>
+										</div><div><br/>
 											<h2>Видеопрезентация проекта (ссылка)</h2>
 											<input type="text" id="project-name" required="required" class="form-control col-xs-12" value ="https://www.youtube.com/watch?v=izv1Wh3vvTQ">
 											<div class="clearfix"></div>

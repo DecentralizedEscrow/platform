@@ -308,7 +308,12 @@
 									  </div>-->
 									</div><div id="step-4" class="wizard_content" style="display: none;">
 									  <form class="form-horizontal form-label-left">
-
+										<div class="form-group">
+										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="video">Обложка проекта <span class="required"></span></label>
+										  <div class="col-md-6 col-sm-6 col-xs-12">
+											<span class="btn btn-primary btn-file">Загрузить обложку проекта <input id="cover" type="file"></span> Рекомендуемое соотншение сторон: 16:9
+										  </div>
+										</div>
 										<div class="form-group">
 										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="docs">Документы проекта <span class="required"></span>
 										  </label>
