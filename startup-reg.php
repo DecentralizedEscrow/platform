@@ -172,20 +172,20 @@
 										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="project-name">Наименование проекта <span class="required"></span>
 										  </label>
 										  <div class="col-md-6 col-sm-6 col-xs-12">
-											<input type="text" id="project-name" required="required" class="form-control col-md-7 col-xs-12">
+											<input type="text" id="project-name" required="required" class="form-control col-md-7 col-xs-12 ntSaveForms">
 										  </div>
 										</div>
 										<div class="form-group">
 										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="short-descr">Краткое описание проекта <span class="required"></span>
 										  </label>
 										  <div class="col-md-6 col-sm-6 col-xs-12">
-											<textarea id="short-descr" required="required" class="form-control col-md-7 col-xs-12" rows="3" maxlength="1000"></textarea>
+											<textarea id="short-descr" required="required" class="form-control col-md-7 col-xs-12 ntSaveForms" rows="3" maxlength="1000"></textarea>
 										  </div>
 										</div>
 										<div class="form-group">
 										  <label for="full-descr" class="control-label col-md-4 col-sm-4 col-xs-12">Подробное описание проекта</label>
 										  <div class="col-md-6 col-sm-6 col-xs-12">
-											<textarea id="full-descr" required="required" class="form-control col-md-7 col-xs-12" rows="10" maxlength="5000"></textarea>
+											<textarea id="full-descr" required="required" class="form-control col-md-7 col-xs-12 ntSaveForms" rows="10" maxlength="5000"></textarea>
 										  </div>
 										</div>
 										<!--<div class="form-group">
@@ -205,7 +205,7 @@
 										  <label for="problems" class="control-label col-md-4 col-sm-4 col-xs-12">Проблемы, которые решает проект <span class="required"></span>
 										  </label>
 										  <div class="col-md-6 col-sm-6 col-xs-12">
-											<input id="problems" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+											<input id="problems" class="date-picker form-control col-md-7 col-xs-12 ntSaveForms" required="required" type="text">
 										  </div>
 										</div>
 										
@@ -213,14 +213,14 @@
 										  <label for="problems-how" class="control-label col-md-4 col-sm-4 col-xs-12">Каким образом решаются эти проблемы <span class="required"></span>
 										  </label>
 										  <div class="col-md-6 col-sm-6 col-xs-12">
-											<input id="problems-how" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+											<input id="problems-how" class="date-picker form-control col-md-7 col-xs-12 ntSaveForms" required="required" type="text">
 										  </div>
 										</div>
 										<div class="form-group">
 										  <label for="tech" class="control-label col-md-4 col-sm-4 col-xs-12">Технология / описание продукта <span class="required"></span>
 										  </label>
 										  <div class="col-md-6 col-sm-6 col-xs-12">
-											<input id="tech" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+											<input id="tech" class="date-picker form-control col-md-7 col-xs-12 ntSaveForms" required="required" type="text">
 										  </div>
 										</div>
 										<div class="form-group">
@@ -259,7 +259,7 @@
 										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="project-name">Тэги проекта (через запятую)<span class="required"></span>
 										  </label>
 										  <div class="col-md-6 col-sm-6 col-xs-12">
-											<input type="text" id="tags" class="form-control col-md-7 col-xs-12 optional">
+											<input type="text" id="tags" class="form-control col-md-7 col-xs-12 optional ntSaveForms">
 										  </div>
 										</div>
 										<div class="form-group">
@@ -277,9 +277,9 @@
 										  </label>
 										  <div class="col-md-10 col-sm-8 col-xs-12" style="margin-bottom: 20px;">
 											<div class="row">
-												<div class="addDoc col-md-4 col-xs-12"><input type="text" id="teamName_1" class="docName form-control" placeholder="ФИО" /></div>
-												<div class="addDoc col-md-5 col-xs-12"><input type="text" id="teamLink_1" class="docLink form-control" placeholder="Должность в проекте" /></div>
-												<div class="addDoc col-md-3 col-xs-12"><input type="text" id="teamLink_2" class="docLink form-control" placeholder="Контакты" /></div>
+												<div class="addDoc col-md-4 col-xs-12"><input type="text" id="teamName_1" class="docName form-control ntSaveForms" placeholder="ФИО" /></div>
+												<div class="addDoc col-md-5 col-xs-12"><input type="text" id="teamLink_1" class="docLink form-control ntSaveForms" placeholder="Должность в проекте" /></div>
+												<div class="addDoc col-md-3 col-xs-12"><input type="text" id="teamLink_2" class="docLink form-control ntSaveForms" placeholder="Контакты" /></div>
 											</div>
 											<div class="teamList"></div>
 											<span class="addDocBtn btn btn-primary" onclick="addTeam()">Добавить строку</span>
@@ -290,9 +290,9 @@
 										  </label>
 										  <div class="col-md-10 col-sm-8 col-xs-12" style="margin-bottom: 20px;">
 											<div class="row">
-												<div class="addDoc col-md-4 col-xs-12"><input type="text" id="advName_1" class="docName form-control optional" placeholder="ФИО" /></div>
-												<div class="addDoc col-md-5 col-xs-12"><input type="text" id="advLink_1" class="docLink form-control optional" placeholder="Должность в проекте" /></div>
-												<div class="addDoc col-md-3 col-xs-12"><input type="text" id="advLink_2" class="docLink form-control optional" placeholder="Контакты" /></div>
+												<div class="addDoc col-md-4 col-xs-12"><input type="text" id="advName_1" class="docName form-control optional ntSaveForms" placeholder="ФИО" /></div>
+												<div class="addDoc col-md-5 col-xs-12"><input type="text" id="advLink_1" class="docLink form-control optional ntSaveForms" placeholder="Должность в проекте" /></div>
+												<div class="addDoc col-md-3 col-xs-12"><input type="text" id="advLink_2" class="docLink form-control optional ntSaveForms" placeholder="Контакты" /></div>
 											</div>
 											<div class="advList"></div>
 											<span class="addDocBtn btn btn-primary" onclick="addAdv()">Добавить строку</span>
@@ -311,7 +311,7 @@
 										<div class="form-group">
 										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="video">Обложка проекта <span class="required"></span></label>
 										  <div class="col-md-6 col-sm-6 col-xs-12">
-											<span class="btn btn-primary btn-file">Загрузить обложку проекта <input id="cover" type="file"></span> Рекомендуемое соотншение сторон: 16:9
+											<span class="btn btn-primary btn-file">Загрузить обложку проекта <input id="cover" type="file" class="optional"></span> Рекомендуемое соотншение сторон: 16:9
 										  </div>
 										</div>
 										<div class="form-group">
@@ -319,8 +319,8 @@
 										  </label>
 										  <div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 20px;">
 											<div class="row">
-												<div class="addDoc col-md-4 col-xs-12"><input type="text" id="docName_1" class="docName form-control" placeholder="Название" /></div>
-												<div class="addDoc col-md-8 col-xs-12"><input type="text" id="docLink_1" class="docLink form-control" placeholder="Ссылка на документ" /></div>
+												<div class="addDoc col-md-4 col-xs-12"><input type="text" id="docName_1" class="docName form-control ntSaveForms" placeholder="Название" /></div>
+												<div class="addDoc col-md-8 col-xs-12"><input type="text" id="docLink_1" class="docLink form-control ntSaveForms" placeholder="Ссылка на документ" /></div>
 											</div>
 											<div class="docList"></div>
 											<span class="addDocBtn btn btn-primary" onclick="addDoc()">Добавить строку</span>
@@ -328,13 +328,13 @@
 										  <script>
 											//чисто для примера. здесь нужно реализовать присвоение адекватных id спаунящимся инпутам, прописать ограничения, критерии для появления и исчезновения строк
 											function addDoc() {
-												$('.docList').append('<div class="row"><div class="addDoc col-md-4 col-xs-12"><input type="text" id="docName" class="form-control" placeholder="Название" /></div><div class="addDoc col-md-8 col-xs-12"><input type="text" id="docLink" class="form-control" placeholder="Ссылка на документ" /></div></div>');
+												$('.docList').append('<div class="row"><div class="addDoc col-md-4 col-xs-12"><input type="text" id="docName" class="form-control ntSaveForms" placeholder="Название" /></div><div class="addDoc col-md-8 col-xs-12"><input type="text" id="docLink" class="form-control ntSaveForms" placeholder="Ссылка на документ" /></div></div>');
 											}
 											function addTeam() {
-												$('.teamList').append('<div class="row"><div class="addDoc col-md-4 col-xs-12"><input type="text" id="teamName_1" class="docName form-control" placeholder="ФИО" /></div><div class="addDoc col-md-5 col-xs-12"><input type="text" id="teamLink_1" class="docLink form-control" placeholder="Должность в проекте" /></div><div class="addDoc col-md-3 col-xs-12"><input type="text" id="teamLink_1" class="docLink form-control" placeholder="Контакты" /></div></div>');
+												$('.teamList').append('<div class="row"><div class="addDoc col-md-4 col-xs-12"><input type="text" id="teamName_1" class="docName form-control ntSaveForms" placeholder="ФИО" /></div><div class="addDoc col-md-5 col-xs-12"><input type="text" id="teamLink_1" class="docLink form-control ntSaveForms" placeholder="Должность в проекте" /></div><div class="addDoc col-md-3 col-xs-12"><input type="text" id="teamLink_1" class="docLink form-control ntSaveForms" placeholder="Контакты" /></div></div>');
 											}
 											function addAdv() {
-												$('.advList').append('<div class="row"><div class="addDoc col-md-4 col-xs-12"><input type="text" id="advName_1" class="docName form-control" placeholder="ФИО" /></div><div class="addDoc col-md-5 col-xs-12"><input type="text" id="advLink_1" class="docLink form-control" placeholder="Должность в проекте" /></div><div class="addDoc col-md-3 col-xs-12"><input type="text" id="advLink_1" class="docLink form-control" placeholder="Контакты" /></div></div>');
+												$('.advList').append('<div class="row"><div class="addDoc col-md-4 col-xs-12"><input type="text" id="advName_1" class="docName form-control ntSaveForms" placeholder="ФИО" /></div><div class="addDoc col-md-5 col-xs-12"><input type="text" id="advLink_1" class="docLink form-control ntSaveForms" placeholder="Должность в проекте" /></div><div class="addDoc col-md-3 col-xs-12"><input type="text" id="advLink_1" class="docLink form-control ntSaveForms" placeholder="Контакты" /></div></div>');
 											}
 										  </script>
 										</div>
@@ -342,14 +342,14 @@
 										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="video">Видеопрезентация <span class="required"></span>
 										  </label>
 										  <div class="col-md-6 col-sm-6 col-xs-12">
-											<input id="video" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="Ссылка на видеопрезентацию">
+											<input id="video" class="date-picker form-control col-md-7 col-xs-12 ntSaveForms" required="required" type="text" placeholder="Ссылка на видеопрезентацию">
 										  </div>
 										</div>
 										<div class="form-group">
 										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="website">Сайт проекта <span class="required"></span>
 										  </label>
 										  <div class="col-md-6 col-sm-6 col-xs-12">
-											<input id="website" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="Ссылка на сайт проекта">
+											<input id="website" class="date-picker form-control col-md-7 col-xs-12 ntSaveForms" required="required" type="text" placeholder="Ссылка на сайт проекта">
 										  </div>
 										</div>
 										
@@ -360,17 +360,17 @@
 									  <div class="row">
 										<div class="col-md-3 col-sm-3 col-xs-12">
 										  <div class="form-group">
-											<input id="fio" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="ФИО">
+											<input id="fio" class="date-picker form-control col-md-7 col-xs-12 ntSaveForms" required="required" type="text" placeholder="ФИО">
 										  </div>
 										</div>
 										<div class="col-md-3 col-sm-3 col-xs-12">
 										  <div class="form-group">
-											<input id="phone" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="Телефон">
+											<input id="phone" class="date-picker form-control col-md-7 col-xs-12 ntSaveForms" required="required" type="text" placeholder="Телефон">
 										  </div>
 										</div>
 										<div class="col-md-3 col-sm-3 col-xs-12">
 										  <div class="form-group">
-											<input id="social" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="Профиль в соц. сетях">
+											<input id="social" class="date-picker form-control col-md-7 col-xs-12 ntSaveForms" required="required" type="text" placeholder="Профиль в соц. сетях">
 										  </div>
 										</div>
 										<div class="col-md-3 col-sm-3 col-xs-12">
@@ -443,6 +443,8 @@
   <script type="text/javascript" src="js/wizard/jquery.smartWizard.js"></script>
   <!-- jq validate -->
   <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+  <!-- save input -->
+  <script type='text/javascript' src='js/ntsaveforms.js'></script>
   
   <script type="text/javascript">
     $(document).ready(function() {
@@ -505,6 +507,7 @@
 	
       function onFinishCallback() {
 		  if (validateSteps(5)){  
+			 //$(".ntSaveForms").each(function(i) {$.Storage.remove("ntSaveForms"+i);}); //clear saved form data
 			alert('здесь вызов отправки формы');
 		  }
       }
