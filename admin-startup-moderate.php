@@ -1,4 +1,4 @@
-<?php require_once('_top-startup.php'); ?>
+<?php require_once('_top-admin.php'); ?>
 				<section class="startupMod startupEdit col-md-12">
 					<div class="announcement info">
 						<h4>Анкета стартапа &laquo;Тормозной завод им. Годара&raquo;</h4>

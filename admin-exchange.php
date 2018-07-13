@@ -143,8 +143,8 @@
 												<td>Оффер buy</td>
 												<td>12</td>
 												<td>2.12335 ETH</td>
-												<td><a href="#">Andrew Webber</a></td>
 												<td></td>
+												<td><a href="#">Andrew Webber</a></td>
 											  </tr>
 											  <tr>
 												<td>12.02.2018 21:10:34</td>

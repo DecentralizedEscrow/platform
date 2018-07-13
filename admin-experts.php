@@ -95,33 +95,18 @@
 												<th><a href="#" title="Проектов"><i class="fa fa-institution"></i> <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#" title="Предложений"><i class="fa fa-bell"></i> <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#" title="Отзывов"><i class="fa fa-thumbs-up"></i> <i class="fa fa-caret-down"></i></a></th>
-												<th><a href="#">Операции <i class="fa fa-caret-down"></i></a></th>
 											  </tr>
 											</thead>
 											<tbody>
 											  <tr>
 												<td>1</td>
-												<td><a href="#">Арсений Мамонт</a></td>
+												<td><a href="expert-info.php">Арсений Мамонт</a></td>
 												<td>12.04.2018</td>
 												<td>22.06.2018</td>
 												<td>Модерация</td>
 												<td><a href="#">2</a></td>
 												<td><a href="#">12</a></td>
 												<td><a href="#">1</a></td>
-												<td>
-													<select name="oper">
-													  <option selected disabled hidden>Выберите операцию</option>
-													  <option>Показать анкету</option>
-													  <option>Показать проекты</option>
-													  <option>Показать отзывы</option>
-													  <option>Показать предложения</option>
-													  <option>Привязать к проекту</option>
-													  <option>Открыть карточку</option>
-													  <option>Отправить сообщение</option>
-													  <option>Просмотр личных сообщений</option>
-													  <option>Блокировать пользователя</option>
-													</select>
-												</td>
 											  </tr>
 											</tbody>
 										</table>
@@ -187,7 +172,7 @@
 													<td><a href="#">13</a></td>
 													<td><a href="#">4</a></td>
 													<td><a href="#">Борис Бритва</a></td>
-													<td><button type="button" class="btn btn-warning btn-sm noborder">Посмотреть</button></td>
+													<td><button type="button" class="btn btn-warning btn-sm noborder" data-toggle="modal" data-target="#exOfferModal">Посмотреть</button></td>
 												  </tr>
 												</tbody>
 											</table>
@@ -240,7 +225,7 @@
 													<td>Стартап</td>
 													<td><a href="#">Владимир Прохоров</a></td>
 													<td><a href="#">Система дистанционного регулирования</a></td>
-													<td><button type="button" class="btn btn-warning btn-sm noborder">Посмотреть</button></td>
+													<td><button type="button" class="btn btn-warning btn-sm noborder" data-toggle="modal" data-target="#exFeedbackModal">Посмотреть</button></td>
 												  </tr>
 												</tbody>
 											</table>
@@ -264,14 +249,16 @@
 												<button>Поиск</button>
 											</div>
 										</div><hr/>
-											<button type="button" class="btn btn-info" data-toggle="modal" data-target="#Modal"><i class="fa fa-envelope"></i> &nbsp;Добавить компетенцию</button>
+											<button type="button" class="btn btn-info" data-toggle="modal" data-target="#addCompModal"><i class="fa fa-envelope"></i> &nbsp;Добавить компетенцию</button>
 											<table class="table table-striped valign-m">
 												<thead>
 												  <tr>
 													<th><a href="#">id <i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">Название <i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">Проектов нуждается<i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">Экспертов <i class="fa fa-caret-down"></i></a></th>
+													<th><a href="#">Название RU <i class="fa fa-caret-down"></i></a></th>
+													<th><a href="#">Название EN <i class="fa fa-caret-down"></i></a></th>
+													<th><a href="#">Добавлена <i class="fa fa-caret-down"></i></a></th>
+													<th title="Проектов нуждается"><a href="#"><i class="fa fa-eye"></i> <i class="fa fa-caret-down"></i></a></th>
+													<th title="Экспертов"><a href="#"><i class="fa fa-graduation-cap"></i> <i class="fa fa-caret-down"></i></a></th>
 													<th></th>
 												  </tr>
 												</thead>
@@ -279,9 +266,11 @@
 												  <tr>
 													<td>1</td>
 													<td>Программист C#</td>
+													<td>C# developer</td>
+													<td>12.02.2018</td>
 													<td><a href="#">4</a></td>
 													<td><a href="#">12</a></td>
-													<td><button type="button" class="btn btn-warning btn-sm noborder">Изменить</button><button type="button" class="btn btn-danger btn-sm noborder">Удалить</button></td>
+													<td><button type="button" class="btn btn-warning btn-sm noborder" data-toggle="modal" data-target="#editCompModal">Изменить</button><button type="button" class="btn btn-danger btn-sm noborder" data-toggle="modal" data-target="#delCompModal">Удалить</button></td>
 												  </tr>
 												</tbody>
 											</table>
@@ -322,7 +311,110 @@
 		</div>
 	</div>
 </div>
-  
+<!-- окно просмотра отзыва -->
+<div class="modal fade" id="exFeedbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Отзыв о работе<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>Отзыв о работе на проекте «<a href="startup.php"><b>Гидравлический аннигилятор</b></a>» на позиции <span class="text-success">«<b>Администратор&nbsp;серверного&nbsp;парка</b>»</span></p>
+				<hr>
+				<h2>Отзыв заказчика</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p><i>Алексей Кузнецов. Исполнительный директор ООО «Гидравлический аннигилятор»</i></p>
+				<hr>
+				<h2>Отзыв эксперта</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно просмотра предложения -->
+<div class="modal fade" id="exOfferModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Предложение сотрудничества<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<h3>$ 2 000 в месяц, 2-3 месяца</h3>
+				<hr>
+				<p>Проект «<a href="startup.php"><b>Гидравлический аннигилятор</b></a>» ищет специалиста на должность <span class="text-success">«<b>Администратор&nbsp;серверного&nbsp;парка</b>»</span>.</p>
+				<p><a href="expert-feedback.php">Посмотреть отзывы о сотрудничестве</a></p>
+				<hr>
+				<p>
+					<b>Требования:</b>
+					</p><ul><li>Опыт администрирования серверов Linux/Windows.</li>
+						<li>Опыт настройки сетевого оборудования.</li>
+						<li>Знание языка SQL.</li>
+						<li>Опыт работы со СКУД и системами физической безопасности.</li></ul>
+				<p></p>
+				<hr>
+				<p>
+					<b>Обязанности:</b>
+					</p><ul><li>Администрирование серверов на базе Linux и MS Windows Server.</li>
+						<li>Администрирование баз данных (MySQL, MS SQL).</li>
+						<li>Администрирование сети (около 100 машин).</li>
+						<li>Администрирование средств контроля доступа, учета рабочего времени, систем наблюдения.</li></ul>
+				<p></p>
+				<hr>
+				<p><b>Примечание:</b></p>
+				<p>Проектная занятость 2-3 месяца. График 5/2, восьмичасовой рабочий день. Плюсом будет наличие сертификатов (Cisco, Microsoft и т.д.), знание блокчейн и технических нюансов майнинга.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно добавления компетенции -->
+<div class="modal fade" id="addCompModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Добавить компетенцию<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>Название RU <input type="text" class="col-xs-12"></p><div class="clear"></div><p></p>
+				<p>Название EN <input type="text" class="col-xs-12"></p><div class="clear"></div><p></p>
+				<hr>
+				<p class="text-center"><button type="button" class="btn btn-warning button140">Добавить</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно изменения компетенции -->
+<div class="modal fade" id="editCompModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Изменить компетенцию<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>Название RU <input type="text" class="col-xs-12" value="Программист C#"></p><div class="clear"></div><p></p>
+				<p>Название EN <input type="text" class="col-xs-12" value="C# developer"></p><div class="clear"></div><p></p>
+				<hr>
+				<p class="text-center"><button type="button" class="btn btn-warning button140">Принять</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно удаления компетенции -->
+<div class="modal fade" id="delCompModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Удилить компетенцию<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>Вы уверены, что хотите удалить компетенцию &laquo;Программист C#&raquo;?</p>
+				<hr>
+				<p class="text-center"><button type="button" class="btn btn-danger button140">Удалить</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
   <script src="js/bootstrap.min.js"></script>
 
   <!-- bootstrap progress js -->

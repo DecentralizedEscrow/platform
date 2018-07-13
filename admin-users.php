@@ -163,7 +163,7 @@
 													<td><a href="admin-user-moderate.php">Алексей Сабля</a></td>
 													<td>12.02.2018 21:10:34</td>
 													<td>Продам медные ложки недорого...</td>
-													<td><button type="button" class="btn btn-warning btn-sm noborder">Посмотреть</button></td>
+													<td><button type="button" class="btn btn-warning btn-sm noborder" data-toggle="modal" data-target="#viewMesModal">Посмотреть</button></td>
 												  </tr>
 												</tbody>
 											</table>
@@ -174,26 +174,44 @@
 								<div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="tab4">
 									<div class="x_panel">
 									  <div class="x_content">
-											<button type="button" class="btn btn-info" data-toggle="modal" data-target="#Modal"><i class="fa fa-envelope"></i> &nbsp;Новая рассылка</button>
-											<table class="table table-striped valign-m">
-												<thead>
-												  <tr>
-													<th><a href="#">Дата <i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">Название <i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">Сообщение  <i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">Отправил  <i class="fa fa-caret-down"></i></a></th>
-													<th></th>
-												  </tr>
-												</thead>
-												<tbody>
-												  <tr>
-													<td>12.02.2018</td>
-													<td>Промо рассылка 2</td>
-													<td>Теперь вы можете пользоваться нашим новым сервисом...</td>
-													<td><a href="admin-user-moderate.php">Алексей Борисов</a></td>
-												  </tr>
-												</tbody>
-											</table>
+										<div class="row">
+											<div class="col-md-6">
+												<button type="button" class="btn btn-info" data-toggle="modal" data-target="#newPromoModal"><i class="fa fa-envelope"></i> &nbsp;Новая рассылка</button>
+											</div>
+											<div class="col-md-6 text-right">
+												Период &nbsp; <input type="date"> - <input type="date"> <button>&gt;</button>
+											</div>
+											<div class="col-md-4 pull-right text-right">
+												Отображать &nbsp;
+												<select name="sField">
+												  <option selected="">Все</option>
+												  <option>Стартапы</option>
+												  <option>Эксперты</option>
+												</select>
+											</div>
+										</div>
+										<table class="table table-striped valign-m">
+											<thead>
+											  <tr>
+												<th><a href="#">Дата <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Кому <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Название <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Сообщение  <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Отправил  <i class="fa fa-caret-down"></i></a></th>
+												<th></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td>12.02.2018</td>
+												<td>Стартапы</td>
+												<td>Промо рассылка 2</td>
+												<td>Теперь вы можете пользоваться нашим новым сервисом...</td>
+												<td><a href="admin-user-moderate.php">Алексей Борисов</a></td>
+												<td><button type="button" class="btn btn-warning btn-sm noborder" data-toggle="modal" data-target="#viewPromoModal">Посмотреть</button></td>
+											  </tr>
+											</tbody>
+										</table>
 										</div>
 									</div>
 								</div>
@@ -254,12 +272,97 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				Выберите период для отображения<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
-				<h4 class="modal-title" id="image-gallery-title"></h4>
 			</div>
 			<div class="modal-body">
 				<p class="text-center">Период &nbsp; <input type="date"> - <input type="date"></p>
 				<hr/>
 				<p class="text-center"><button type="button" class="btn btn-info noborder">Показать</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно создания рассылки -->
+<div class="modal fade" id="newPromoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Новая рассылка<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<input type="text" class="form-control" placeholder="Название рассылки"/><br/>
+				<textarea rows="4" class="form-control" placeholder="Текст рассылки"></textarea><br/>
+				Кто увидит рассылку
+				<select>
+				  <option selected>Все</option>
+				  <option>Стартапы</option>
+				  <option>Эксперты</option>
+				</select><br/><br/>
+				Язык рассылки
+				<select>
+				  <option selected>Русский</option>
+				  <option>English</option>
+				</select>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning noborder button140">Разослать</button><button type="button" class="btn btn-warning noborder button140">Отмена</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно просмотра рассылки -->
+<div class="modal fade" id="viewPromoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Рассылка &laquo;Промо рассылка 2&raquo;<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<input type="text" class="form-control" placeholder="Название рассылки" value="Промо рассылка 2" /><br/>
+				<textarea rows="4" class="form-control" placeholder="Текст рассылки">Теперь вы можете пользоваться нашим новым сервисом генерации идей для ICO.</textarea><br/>
+				Кто видит рассылку
+				<select>
+				  <option selected>Все</option>
+				  <option>Стартапы</option>
+				  <option>Эксперты</option>
+				</select><br/><br/>
+				Язык рассылки
+				<select>
+				  <option selected>Русский</option>
+				  <option>English</option>
+				</select>
+				<hr/>
+				Рассылка редактировалась пользователем: <a href="admin-user-moderate.php">Андрей Логинов</a> (12.02.2018 12:36), <a href="admin-user-moderate.php">Василий Константинов</a> (12.02.2018 12:36)
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning noborder button140">Изменить</button><button type="button" class="btn btn-danger noborder button140" data-dismiss="modal" data-toggle="modal" data-target="#delPromoModal">Удалить</button><button type="button" class="btn btn-warning noborder button140" data-dismiss="modal">Отмена</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно удаления рассылки -->
+<div class="modal fade" id="delPromoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Рассылка &laquo;Промо рассылка 2&raquo;<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				Вы уверены, что хотите удалить данную рассылку?
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-danger noborder button140">Удалить</button><button type="button" class="btn btn-warning noborder button140" data-dismiss="modal" data-toggle="modal" data-target="#viewPromoModal">Отмена</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно просмотра сообщения -->
+<div class="modal fade" id="viewMesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Сообщение - Алексей Сабля, 12.02.2018 21:08:13<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>Продам медные ложки недорого! Также спешите купить по невероятно выгодной цене лучшие кормушки для летучих мышей! Только у нас и только до завтрашнего дня: используйте промокод "азбука" и получите трехмесячный запас питьевой воды лучшего качества! [ссылка удалена]</p>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-danger noborder button140">Удалить</button><button type="button" class="btn btn-warning noborder button140" data-dismiss="modal" data-toggle="modal" data-target="#viewPromoModal">Отмена</button></p>
 			</div>
 		</div>
 	</div>

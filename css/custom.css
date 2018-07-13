@@ -7091,3 +7091,5 @@ table.style1 th {white-space: nowrap;}
 .select.lang.admin table tr {background: none;}
 
 .label-info {color: #fff !important;}
+
+.userMod .p-block {display: none;}

@@ -89,7 +89,7 @@
 											<tbody>
 											  <tr>
 												<td>1</td>
-												<td><a href="#" title="Система дистанционного траспортного окнтроля">Система дис...</a></td>
+												<td><a href="#" title="Система дистанционного траспортного контроля">Система дис...</a></td>
 												<td><a href="#">IT</a></td>
 												<td>312.2 ETH</td>
 												<td><a href="#">ICO</a></td>
@@ -141,7 +141,6 @@
 												<thead>
 												  <tr>
 													<th><a href="#">Название <i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">uri <i class="fa fa-caret-down"></i></a></th>
 													<th><a href="#">Проектов <i class="fa fa-caret-down"></i></a></th>
 													<th></th>
 												  </tr>
@@ -149,7 +148,6 @@
 												<tbody>
 												  <tr>
 													<td>IT</td>
-													<td>it</td>
 													<td><a href="#">13</a></td>
 													<td><button type="button" class="btn btn-warning btn-sm noborder">Изменить</button><button type="button" class="btn btn-danger btn-sm noborder">Удалить</button></td>
 												  </tr>
