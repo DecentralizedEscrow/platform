@@ -9,8 +9,7 @@
 							<div class="tabParent tp1" role="tabpanel" data-example-id="togglable-tabs">
 								<ul id="infoTab" class="nav nav-tabs" role="tablist">
 								  <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Я сотрудничаю</a></li>
-								  <li role="presentation" class=""><a href="#tab_content2" role="tab" id="tab2" data-toggle="tab" aria-expanded="false">Я хочу сотрудничать</a></li>
-								  <li role="presentation" class=""><a href="#tab_content3" role="tab" id="tab3" data-toggle="tab" aria-expanded="false">Я сотрудничал</a></li>
+								  <li role="presentation" class=""><a href="#tab_content2" role="tab" id="tab2" data-toggle="tab" aria-expanded="false">Я сотрудничал</a></li>
 								</ul>
 								<div id="infoTabContent" class="tab-content">
 
@@ -56,35 +55,8 @@
 									  </div>
 									</div>
 								  </div>
-
-								  <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="tab2">
-									<div class="x_panel">
-									  <div class="x_content over-x-auto">
-											<table class="table table-striped valign-m">
-												<thead>
-												  <tr>
-													<th><a href="#">Проект <i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">Позиция  <i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">Откликнулся  <i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">Статус  <i class="fa fa-caret-down"></i></a></th>
-													<th></th>
-												  </tr>
-												</thead>
-												<tbody>
-												  <tr>
-													<td><a href="startup.php">Название проекта</a></td>
-													<td>Программист блокчейн</td>
-													<td>03.08.2018</td>
-													<td>Просмотрено проектом <i class="fa fa-question-circle" title="Менеждер проекта увидел ваше согласие. Ожидайте ответа."></i></td>
-													<td><button type="button" class="btn btn-warning noborder btn-sm" data-toggle="modal" data-target="#offerDismissModal">Отменить</button></td>
-												  </tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								  </div>
 								  
-								  <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="tab3">
+								  <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="tab2">
 									<div class="x_panel">
 									  <div class="x_content over-x-auto">
 											<table class="table table-striped valign-m">

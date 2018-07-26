@@ -6355,7 +6355,7 @@ ul.msg_list li a .time {right: 12px;}
 	color: #00AF3B;
 	font-weight: bold;
 }
-.userRef .x_content i {color: #00AF3B;}
+/* .userRef .x_content i {color: #00AF3B;} */
 #getLinkModal .err a {
 	text-decoration: underline;
 	color: #00AF3B;

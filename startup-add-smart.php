@@ -40,7 +40,7 @@
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-md-12 text-right">Rоличество токенов, которое будет продано: <b>33 000 000</b></div>
+										<div class="col-md-12 text-right">Количество токенов, которое будет продано: <b>33 000 000</b></div>
 									</div>
 									<div class="row">
 										<div class="col-md-11 col-sm-11 col-xs-12">

@@ -11,15 +11,9 @@
 								<p>Реферальная ставка стартапа</p> 
 								<div class="refLink"><span id="plnk">5%</span> <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#changeRefModal">Изменить</button></div>
 							</div>
-							<p><i class="fa fa-check"></i> Реферальная ставка определяет процент вознаграждения пользователя от суммы вложений привлеченных им клиентов.</p>
-							<p><i class="fa fa-check"></i> Вознаграждение поступает пользователю по факту очередных траншей токенами платформы Descrow (DES) по текущему на тот момент курсу.</p>
-							
+							<p><i class="text-success fa fa-check"></i> Реферальная ставка определяет процент вознаграждения пользователя от суммы вложений привлеченных им клиентов.</p>
+							<p><i class="text-success fa fa-check"></i> Вознаграждение поступает пользователю по факту очередных траншей токенами платформы Descrow (DES) по текущему на тот момент курсу.</p>
 							<hr/>
-							
-							
-							
-							<hr/>
-							
 							<div class="tabParent" role="tabpanel" data-example-id="togglable-tabs">
 								<ul id="infoTab" class="nav nav-tabs" role="tablist">
 								  <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Текущий проект</a>
@@ -34,9 +28,10 @@
 									  <div class="x_content">
 									    <hr/>
 										<div class="row stat">
-											<div class="col-md-4"><h2>Рефералы текущего проекта</h2></div>
-											<div class="col-md-4">В программе: <span>27 человек</span></div>
-											<div class="col-md-4">Реферальные транзакции: <span>8</span></div>
+											<div class="col-md-3"><h2>Рефералы текущего проекта</h2></div>
+											<div class="col-md-3">В программе: <span>27 человек</span></div>
+											<div class="col-md-3">Реферальные транзакции: <span>8</span></div>
+											<div class="col-md-3">Период: <select><option selected="">неделя</option><option>месяц</option><option>год</option><option>все</option></select><button class="btn btn-info btn-xs noborder pull-right" data-toggle="modal" data-target="#rangeModal"><i class="fa fa-gear"></i></button></div>
 										</div>
 										<div class="refChart">
 											<canvas id="lineChart"></canvas>
@@ -45,11 +40,36 @@
 										
 										<div class="row stat">
 											<div class="col-md-4"><h2>Реферально привлеченные средства</h2></div>
-											<div class="col-md-4"><span>1239</span> ETH</div>
+											<div class="col-md-5"><span>1239</span> USD</div>
+											<div class="col-md-3">Период: <select><option selected="">неделя</option><option>месяц</option><option>год</option><option>все</option></select><button class="btn btn-info btn-xs noborder pull-right" data-toggle="modal" data-target="#rangeModal"><i class="fa fa-gear"></i></button></div>
 										</div>
 										<div class="refChart">
 											<canvas id="lineChart2"></canvas>
 										</div>
+										<hr/>
+										<h2>Лучшие рефоводы проекта</h2>
+										<table class="table table-striped valign-m">
+											<thead>
+											  <tr>
+												<th><a href="#">Участник <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Рефералов <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Первый реф. <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Последний реф. <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Реф. инвест <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Реф. сумма <i class="fa fa-caret-down"></i></a></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td><a href="#">Валентин Медведев</a></td>
+												<td><a href="#">54</a></td>
+												<td>12.05.2018</td>
+												<td>10.06.2018</td>
+												<td>100.0394 ETH</td>
+												<td>7.0122 ETH</td>
+											</tr>
+											</tbody>
+										</table>
 									  </div>
 									</div>
 								  </div>
@@ -59,9 +79,10 @@
 									  <div class="x_content">
 										<hr/>
 										<div class="row stat">
-											<div class="col-md-4"><h2>Рефералы текущего проекта</h2></div>
-											<div class="col-md-4">В программе: <span>27 человек</span></div>
-											<div class="col-md-4">Реферальные транзакции: <span>8</span></div>
+											<div class="col-md-3"><h2>Рефералы текущего проекта</h2></div>
+											<div class="col-md-3">В программе: <span>27 человек</span></div>
+											<div class="col-md-3">Реферальные транзакции: <span>8</span></div>
+											<div class="col-md-3">Период: <select><option selected="">неделя</option><option>месяц</option><option>год</option><option>все</option></select><button class="btn btn-info btn-xs noborder pull-right" data-toggle="modal" data-target="#rangeModal"><i class="fa fa-gear"></i></button></div>
 										</div>
 										<div class="refChart">
 											<canvas id="lineChart3"></canvas>
@@ -70,11 +91,36 @@
 										
 										<div class="row stat">
 											<div class="col-md-4"><h2>Реферально привлеченные средства</h2></div>
-											<div class="col-md-4"><span>1239</span> ETH</div>
+											<div class="col-md-5"><span>1239</span> USD</div>
+											<div class="col-md-3">Период: <select><option selected="">неделя</option><option>месяц</option><option>год</option><option>все</option></select><button class="btn btn-info btn-xs noborder pull-right" data-toggle="modal" data-target="#rangeModal"><i class="fa fa-gear"></i></button></div>
 										</div>
 										<div class="refChart">
 											<canvas id="lineChart4"></canvas>
 										</div>
+										<hr/>
+										<h2>Лучшие рефоводы проекта</h2>
+										<table class="table table-striped valign-m">
+											<thead>
+											  <tr>
+												<th><a href="#">Участник <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Рефералов <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Первый реф. <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Последний реф. <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Реф. инвест <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Реф. сумма <i class="fa fa-caret-down"></i></a></th>
+											  </tr>
+											</thead>
+											<tbody>
+											  <tr>
+												<td><a href="#">Валентин Медведев</a></td>
+												<td><a href="#">54</a></td>
+												<td>12.05.2018</td>
+												<td>10.06.2018</td>
+												<td>100.0394 ETH</td>
+												<td>7.0122 ETH</td>
+											</tr>
+											</tbody>
+										</table>
 									  </div>
 									</div>
 								</div>
@@ -112,8 +158,24 @@
 				<hr/>
 				<div class="notice">
 					<p><i class="fa fa-check"></i> Реферальная ставка определяет процент вознаграждения пользователя от суммы вложений привлеченных им клиентов.</p>
-					<p><i class="fa fa-check"></i> Вознаграждение поступает пользователю по факту очередных траншей токенами платформы Descrow (DES) по текущему на тот момент курсу.</p>
+					<!--<p><i class="fa fa-check"></i> Вознаграждение поступает пользователю по факту очередных траншей токенами платформы Descrow (DES) по текущему на тот момент курсу.</p>-->
 				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно выбора периода отображения -->
+<div class="modal fade" id="rangeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Выберите период для отображения<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body">
+				<p class="text-center">Период &nbsp; <input type="date"> - <input type="date"></p>
+				<hr>
+				<p class="text-center"><button type="button" class="btn btn-info noborder">Показать</button></p>
 			</div>
 		</div>
 	</div>
@@ -176,7 +238,7 @@
       data: {
         labels: ["10.02.17", "", "", "", "", "15.02.17", "", "", "", "", "20.02.17", "", "", "", "", "25.02.17"],
         datasets: [{
-          label: "Зарегистрировалось",
+          label: "Привлечено средств, USD",
           backgroundColor: "rgba(38, 185, 154, 0.31)",
           borderColor: "rgba(38, 185, 154, 0.7)",
           pointBorderColor: "rgba(38, 185, 154, 0.7)",
@@ -185,6 +247,16 @@
           pointHoverBorderColor: "rgba(220,220,220,1)",
           pointBorderWidth: 1,
           data: [6, 44, 67, 146, 245, 296, 321, 450, 510, 713, 822, 877, 998, 1039, 1139, 1239]
+        }, {
+          label: "Реферальные отчисления, USD",
+          backgroundColor: "rgba(3, 88, 106, 0.3)",
+          borderColor: "rgba(3, 88, 106, 0.70)",
+          pointBorderColor: "rgba(3, 88, 106, 0.70)",
+          pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
+          pointHoverBackgroundColor: "#fff",
+          pointHoverBorderColor: "rgba(151,187,205,1)",
+          pointBorderWidth: 1,
+          data: [10, 21, 31, 41, 51, 51, 61, 61, 63, 64, 74, 85, 96, 98, 98, 108]
         }]
       },
     });
@@ -225,7 +297,7 @@
       data: {
         labels: ["10.02.17", "", "", "", "", "15.02.17", "", "", "", "", "20.02.17", "", "", "", "", "25.02.17"],
         datasets: [{
-          label: "Зарегистрировалось",
+          label: "Привлечено средств, USD",
           backgroundColor: "rgba(38, 185, 154, 0.31)",
           borderColor: "rgba(38, 185, 154, 0.7)",
           pointBorderColor: "rgba(38, 185, 154, 0.7)",
@@ -234,6 +306,16 @@
           pointHoverBorderColor: "rgba(220,220,220,1)",
           pointBorderWidth: 1,
           data: [6, 44, 67, 146, 245, 296, 321, 450, 510, 713, 822, 877, 998, 1039, 1139, 1239]
+        }, {
+          label: "Реферальные отчисления, USD",
+          backgroundColor: "rgba(3, 88, 106, 0.3)",
+          borderColor: "rgba(3, 88, 106, 0.70)",
+          pointBorderColor: "rgba(3, 88, 106, 0.70)",
+          pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
+          pointHoverBackgroundColor: "#fff",
+          pointHoverBorderColor: "rgba(151,187,205,1)",
+          pointBorderWidth: 1,
+          data: [10, 21, 31, 41, 51, 51, 61, 61, 63, 64, 74, 85, 96, 98, 98, 108]
         }]
       },
     });

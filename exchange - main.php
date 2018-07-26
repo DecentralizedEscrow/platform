@@ -19,6 +19,10 @@
 								  <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
 									<div class="x_panel">
 									  <div class="x_content">
+										<div class="icoSearch">
+											<input type="text" class="form-control" placeholder="Поиск по аббревиатуре токена"><div class="icoSBtn"><i class="fa fa-search"></i></div>
+											<div class="clear"></div>
+										</div>
 										<table class="table table-striped valign-m">
 											<thead>
 											  <tr>

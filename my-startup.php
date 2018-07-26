@@ -66,7 +66,7 @@
 							  <div class="clearfix"></div>
 							</div>
 							<div class="x_content">
-								<button type="button" class="btn btn-warning btn-md pr">Установить</button> Реферальная ставка для проекта еще не установлена
+								<button type="button" class="btn btn-warning btn-md pr" data-toggle="modal" data-target="#changeRefModal">Установить</button> Реферальная ставка для проекта еще не установлена
 							</div>
 						</div>
 						<div class="tabParent" role="tabpanel" data-example-id="togglable-tabs">
@@ -163,7 +163,29 @@
 			</div>
 		</div>
 	</div>
-</div>  
+</div>
+<!-- окно установки реф ставки -->
+<div class="modal fade" id="changeRefModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Реферальная ставка<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body">
+			
+				<p>Реферальная ставка проекта:</p>
+				<p><input type="text" placeholder="%"></p>
+				<p><button type="button" class="btn btn-success">Установить</button></p>
+				<hr>
+				<div class="notice">
+					<p><i class="fa fa-check"></i> Реферальная ставка определяет процент вознаграждения пользователя от суммы вложений привлеченных им клиентов.</p>
+					<!--<p><i class="fa fa-check"></i> Вознаграждение поступает пользователю по факту очередных траншей токенами платформы Descrow (DES) по текущему на тот момент курсу.</p>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
   
   <script src="js/bootstrap.min.js"></script>
 

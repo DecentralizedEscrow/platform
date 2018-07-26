@@ -12,7 +12,7 @@
 						  <div role="tabpanel" class="main tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
 							<div class="x_panel">
 								<div class="x_title">
-								  <h2>Проекты на стадии привлечения инвестиций</h2>
+								  <h2>Проекты на платформе</h2>
 								  <ul class="nav navbar-right panel_toolbox">
 									  <!--<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Суммы в USD <i class="fa fa-caret-down"></i></a>

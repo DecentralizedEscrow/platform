@@ -43,7 +43,7 @@
 							  <div class="clearfix"></div>
 							</div>
 							<div class="x_content">
-								Установлена реферальная ставка в 5% от финансирования, полученного от приглашенных пользователей <button type="button" class="btn btn-warning noborder btn-xs">Изменить</button>
+								Установлена реферальная ставка в 5% от финансирования, полученного от приглашенных пользователей <button type="button" class="btn btn-warning noborder btn-xs" data-toggle="modal" data-target="#changeRefModal">Изменить</button>
 							</div>
 						</div>
 						<div class="tabParent" role="tabpanel" data-example-id="togglable-tabs">
@@ -94,7 +94,7 @@
 										  </tr>
 										</tbody>
 									  </table>
-									  <div class="pull-right" style="margin-top: 20px;"><button type="button" class="btn btn-info btn-md">Загрузить новый отчет</button></div>
+									  <div class="pull-right" style="margin-top: 20px;"><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#addReportModal">Загрузить новый отчет</button></div>
 									  <div class="clearfix"></div>
 								  </div>
 								</div>
@@ -479,6 +479,45 @@
 				<div class="text-center"><span class="btn btn-primary btn-sm btn-file">Прикрепить отчет об изменениях<input type="file" multiple=""></span></div>
 				<hr/>
 				<div class="text-center"><button class="btn btn-success">Изменить</button></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="addReportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Добавление отчета<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body">
+				<p>Срок выполнения: <input type="date"> - <input type="date"></p>
+				<p><textarea class="form-control col-xs-12" rows="4" placeholder="Описание"></textarea></p><div class="clear"></div><p></p>
+				<span class="btn btn-primary btn-file button170">Прикрепить файл <input type="file" multiple=""></span>
+				<span class="btn btn-success noborder pull-right button170">Отправить отчет</span>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно установки реф ставки -->
+<div class="modal fade" id="changeRefModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Реферальная ставка<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body">
+			
+				<p>Реферальная ставка проекта:</p>
+				<p><input type="text" placeholder="%"></p>
+				<p><button type="button" class="btn btn-success">Установить</button></p>
+				<hr>
+				<div class="notice">
+					<p><i class="fa fa-check"></i> Реферальная ставка определяет процент вознаграждения пользователя от суммы вложений привлеченных им клиентов.</p>
+					<!--<p><i class="fa fa-check"></i> Вознаграждение поступает пользователю по факту очередных траншей токенами платформы Descrow (DES) по текущему на тот момент курсу.</p>-->
+				</div>
 			</div>
 		</div>
 	</div>

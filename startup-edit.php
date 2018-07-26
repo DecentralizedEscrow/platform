@@ -147,7 +147,7 @@
 											  <label class="btn btn-default active" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
 												<input type="radio" name="reg-purpose" value="2" checked=""> Скрывать
 											  </label>
-											</div>
+											</div> &nbsp; * изменение значения данного поля не приводит к отправке проекта на повторную модерацию
 										</div>
 									  </div>
 									</div>
