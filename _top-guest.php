@@ -228,6 +228,10 @@
 			  </div>
 			  
 			  <div class="col-xs-12 col-md-12 right col-offset">
+				<div class="announcement error">
+					<h4>Ошибка подключения к базе данных</h4>
+					На сайте ведутся технические работы.
+				</div>
 				  <!-- top navigation -->
 				  <div class="top_nav">
 

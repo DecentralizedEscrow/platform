@@ -7103,3 +7103,7 @@ table.style1 th {white-space: nowrap;}
 	color: #fff;
 	text-decoration: none;
 }
+.announcement.error {
+	margin-top: 10px;
+	background: #ea540c;
+}
