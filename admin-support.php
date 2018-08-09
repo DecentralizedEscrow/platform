@@ -3,7 +3,13 @@
 					<div class="x_panel">
 						<div class="x_title">
 						  <h2>Вопросы технической поддержке</h2>
-						  <button type="button" class="changeInfo pull-right btn btn-info noborder"><i class="fa fa-list-alt"></i> &nbsp;Отчеты в csv</button>
+						  <div class="btn-group pull-right csvRep" role="group">
+								<button id="btnGroupDrop1" type="button" class="btn btn-info noborder dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list-alt"></i> &nbsp;Отчеты в csv&nbsp; <i class="fa fa-caret-down"></i></button>
+								<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+									<a class="dropdown-item" href="#">Вопросы</a>
+									<a class="dropdown-item" href="#">Жалобы</a>
+								</div>
+							</div>
 						</div>
 						<div class="x_content">
 							<div class="tabParent style1" role="tabpanel" data-example-id="togglable-tabs">

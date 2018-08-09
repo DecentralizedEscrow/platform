@@ -7093,3 +7093,13 @@ table.style1 th {white-space: nowrap;}
 .label-info {color: #fff !important;}
 
 .userMod .p-block {display: none;}
+
+.csvRep .dropdown-menu a {
+	display: block;
+    padding: 4px 6px;
+}
+.csvRep .dropdown-menu a:hover {
+	background: #4fb5d3;
+	color: #fff;
+	text-decoration: none;
+}
