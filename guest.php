@@ -255,6 +255,35 @@
   <script src="js/nicescroll/jquery.nicescroll.min.js"></script>
 
   <script src="js/custom.js"></script>
+  
+  <script>
+	// ajax error output
+	$("form").submit(function(e){
+		e.preventDefault();
+		// $(this).attr('action') // экшн формы можно передать в php для обработки, напр. 'url: $(this).attr('action')'
+		var fID = ($(this).attr('id'));
+		var formData = new FormData(this);
+		$.ajax({
+			type: 'POST',
+			cache: false,
+			contentType: false,
+			processData: false,
+			url: '_php_example-response.php',
+			data: formData,
+			dataType: 'json',
+			success: function(data){
+				if(data.res == 'ok') {location.href = data.rURL;} // url для редиректа при успешном выполнении отдает php вторым параметром data;
+				if (fID) { // если форма имеет id, добавляем блок с ошибкой в ее начало
+					if ($('#'+fID+' .innerError').length === 0) {$('#'+fID).prepend('<div class="innerError"></div>');}
+					$('#'+fID+' .innerError').html(data.res);
+				} else { // иначе открываем модалку с текстом ошибки
+					$('#ajErrorTxt').html(data.res);
+					$('#ajErrorModal').modal('show');
+				}
+			}
+		});
+	});
+  </script>
 
 </body>
 

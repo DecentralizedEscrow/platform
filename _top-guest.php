@@ -39,6 +39,19 @@
 </head>
 
 <body class="nav-md">
+<!-- окно вывода ошибок -->
+<div class="modal fade" id="ajErrorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Ошибка!<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<h4 id="ajErrorTxt"></h4>
+			</div>
+		</div>
+	</div>
+</div>
 <!-- окно авторизации -->
 <div class="modal fade" id="enterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
@@ -48,9 +61,9 @@
 				<h4 class="modal-title" id="image-gallery-title"></h4>
 			</div>
 			<div class="modal-body">
-				<form method="POST" action="?mod=auth">
-					<input type="email" name="email" placeholder="E-mail">
-					<input type="password" name="pwd" placeholder="Пароль">
+				<form method="POST" action="?mod=auth" id="fAuth">
+					<input type="email" name="email" placeholder="E-mail" required>
+					<input type="password" name="pwd" placeholder="Пароль" required>
 					<button class="btn btn-success btn-block" name="auth">Авторизоваться</button>
 					<a href="javascript:void(0)" data-dismiss="modal" data-toggle="modal" data-target="#restoreModal">Забыли пароль?</a>
 					<hr>
@@ -69,11 +82,11 @@
 				<h4 class="modal-title" id="image-gallery-title"></h4>
 			</div>
 			<div class="modal-body">
-				<form method="POST" action="?mod=register">
-					<input type="email" name="email" placeholder="E-mail">
-					<input type="password" name="pwd" placeholder="Пароль">
-					<input type="password" name="pwdC" placeholder="Подтверждение пароля">
-					<input type="checkbox" name="rules" checked="">&nbsp;Согласен с <a href="#">правилами сайта</a>
+				<form method="POST" action="?mod=register" id="fReg">
+					<input type="email" name="email" placeholder="E-mail" required>
+					<input type="password" name="pwd" placeholder="Пароль" required>
+					<input type="password" name="pwdC" placeholder="Подтверждение пароля" required>
+					<input type="checkbox" name="rules" checked="" required>&nbsp;Согласен с <a href="#">правилами сайта</a>
 					<input type="hidden" name="rid" value="">
 					<button class="btn btn-success btn-block" name="reg">Зарегистрироваться</button>
 					<hr>
@@ -92,7 +105,7 @@
 				<h4 class="modal-title" id="image-gallery-title"></h4>
 			</div>
 			<div class="modal-body">
-				<form method="POST" action="?mod=auth">
+				<form method="POST" action="?mod=auth" id="fRestore">
 					<input type="email" class="form-control" name="email" placeholder="Введите ваш e-mail"><br/>
 					<button class="btn btn-success btn-block" name="auth">Восстановить пароль</button>
 					<hr>
