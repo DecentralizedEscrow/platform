@@ -121,7 +121,7 @@
 						<li><a href="admin-money.php"><i class="fa fa-dollar"></i> Финансы <span class="fa"></span></a></li>
 						<li><a href="admin-exchange.php"><i class="fa fa-area-chart"></i> Биржа <span class="fa"></span></a></li>
 						<li><a href="admin-support.php"><i class="fa fa-question-circle"></i> Поддержка <span class="fa"></span><span class="label label-danger">3</span></a></li>
-						<li><a href="#"><i class="fa fa-gear"></i> Настройки <span class="fa"></span></a></li>
+						<li><a href="admin-settings.php"><i class="fa fa-gear"></i> Настройки <span class="fa"></span></a></li>
 					  </ul>
 					</div>
 

@@ -445,7 +445,8 @@
 			<div class="modal-body">
 			
 				<div class="notice">
-					<p><i class="fa fa-check"></i> Вы можете изменить дату выполнения этапов Roadmap.</p>
+					<p><i class="fa fa-check"></i> Вы можете изменить дату выполнения текущего этапа Roadmap.</p>
+					<p><i class="fa fa-check"></i> Даты последующих этапов сдвинутся на соответствующее количество дней.</p>
 					<p><i class="fa fa-check"></i> За изменение Roadmap взимается плата в DES в размере, установленном Платформой.</p>
 				</div>
 				<hr/>
