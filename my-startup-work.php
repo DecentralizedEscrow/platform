@@ -451,27 +451,28 @@
 				</div>
 				<hr/>
 				<div>
+					<center>Перенести выполнение текущего этапа на <input id="chdn" type="number" min="0" style="width: 60px;" onchange="calcNewDate();" onkeyup="calcNewDate();" /> дней</center>
 					<div class="stage">
 						<h4>Этап #1</h4>
 						<div>
-							<span class="col-md-6 col-xs-12">Текущая&nbsp;дата - <input type="date" value="2017-06-01" disabled></span>
-							<span class="col-md-6 col-xs-12">Новая&nbsp;дата - <input type="date"></span>
+							Текущая&nbsp;дата - <input class="oldDate" type="date" value="2017-06-01" disabled>
+							Новая&nbsp;дата - <input class="newDate" type="date" disabled>
 						<div class="clear"></div>
 						</div>
 					</div>
 					<div class="stage">
 						<h4>Этап #2</h4>
 						<div>
-							<span class="col-md-6 col-xs-12">Текущая&nbsp;дата - <input type="date" value="2017-06-01" disabled></span>
-							<span class="col-md-6 col-xs-12">Новая&nbsp;дата - <input type="date" disabled></span>
+							Текущая&nbsp;дата - <input class="oldDate" type="date" value="2017-07-05" disabled>
+							Новая&nbsp;дата - <input class="newDate" type="date" disabled>
 						<div class="clear"></div>
 						</div>
 					</div>
 					<div class="stage">
 						<h4>Этап #3</h4>
 						<div>
-							<span class="col-md-6 col-xs-12">Текущая&nbsp;дата - <input type="date" value="2017-06-01" disabled></span>
-							<span class="col-md-6 col-xs-12">Новая&nbsp;дата - <input type="date" disabled></span>
+							Текущая&nbsp;дата - <input class="oldDate" type="date" value="2017-12-30" disabled>
+							Новая&nbsp;дата - <input class="newDate" type="date" disabled>
 						<div class="clear"></div>
 						</div>
 					</div>
@@ -599,6 +600,25 @@
         }]
       },
     });
+	
+	// рассчет новых дат выполнения этапов
+	function calcNewDate() {
+		$('.newDate').each(function(){
+			$(this).val(formatDate(new Date($(this).prevAll('.oldDate').val()).setDate(new Date($(this).prevAll('.oldDate').val()).getDate() + parseInt($('#chdn').val()))));
+		});
+	}
+	
+	function formatDate(date) {
+		var d = new Date(date),
+			month = '' + (d.getMonth() + 1),
+			day = '' + d.getDate(),
+			year = d.getFullYear();
+
+		if (month.length < 2) month = '0' + month;
+		if (day.length < 2) day = '0' + day;
+
+		return [year, month, day].join('-');
+	}
 	</script>
 
 </body>
