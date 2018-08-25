@@ -21,14 +21,22 @@
 								<div class="col-md-2 col-xs-12"><button class="btn btn-success">Сохранить</button></div>
 							</div> -->
 							<div class="row">
-								<div class="oper col-md-6 col-xs-12">
+								<div class="oper col-md-10 col-xs-12">
 									<div class="eth row">
 										<div class="col-md-3 col-xs-12"><h6><b>49.26351&nbsp;ETH</b></h6></div>
-										<div class="col-md-7 col-xs-12"><button class="btn btn-success">Пополнить</button> <button class="btn btn-warning">Перевести</button></div>
+										<div class="col-md-7 col-xs-12"><button class="btn btn-success">Пополнить</button> <button class="btn btn-warning">Перевести</button> <button class="btn btn-info">Архив операций</button></div>
+									</div>
+									<div class="btc row">
+										<div class="col-md-3 col-xs-12"><h6><b>203&nbsp;912&nbsp;BTC</b></h6></div>
+										<div class="col-md-7 col-xs-12"><button class="btn btn-success">Пополнить</button> <button class="btn btn-warning">Перевести</button> <button class="btn btn-info">Архив операций</button></div>
+									</div>
+									<div class="ltc row">
+										<div class="col-md-3 col-xs-12"><h6><b>203&nbsp;912&nbsp;LTC</b></h6></div>
+										<div class="col-md-7 col-xs-12"><button class="btn btn-success">Пополнить</button> <button class="btn btn-warning">Перевести</button> <button class="btn btn-info">Архив операций</button></div>
 									</div>
 									<div class="des row">
 										<div class="col-md-3 col-xs-12"><h6><b>203&nbsp;912&nbsp;DES</b></h6></div>
-										<div class="col-md-7 col-xs-12"><button class="btn btn-success">Пополнить</button> <button class="btn btn-warning">Перевести</button></div>
+										<div class="col-md-7 col-xs-12"><button class="btn btn-success">Пополнить</button> <button class="btn btn-warning">Перевести</button> <button class="btn btn-info">Архив операций</button></div>
 									</div>
 								</div>
 							</div>
