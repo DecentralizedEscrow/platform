@@ -34,22 +34,15 @@
 							<ul class="nav navbar-right panel_toolbox">
 							  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
 							  </li>
-							  <li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-								<ul class="dropdown-menu" role="menu">
-								  <li><a href="#">Settings 1</a>
-								  </li>
-								  <li><a href="#">Settings 2</a>
-								  </li>
-								</ul>
-							  </li>
+							  
 							  <li><a class="close-link"><i class="fa fa-close"></i></a>
 							  </li>
 							</ul>
 							<div class="clearfix"></div>
 						  </div>
 						  <div class="x_content">
-							<table class="table table-striped valign-m">
+							<!-- пример вывода проектов -->
+							<!--<table class="table table-striped valign-m">
 								<tbody>
 								  <tr>
 									<td><a href="startup.php">Test project 1</a></td>
@@ -61,7 +54,13 @@
 								  </tr>
 								</tbody>
 							</table>
-							<div class="clearfix"></div>
+							<div class="clearfix"></div>-->
+							
+							<!-- пример вывода, когда в блоке нечего отображать -->
+							<div class="widget-ph">
+								Вы еще не приняли участия ни в одном проекте<br/>
+								<a href="ico-list.php"><i class="fa fa-plus-circle"></i><br/>Посмотреть все проекты</a>
+							</div>
 						  </div>
 						</div>
 					</div>
@@ -72,22 +71,15 @@
 							<ul class="nav navbar-right panel_toolbox">
 							  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
 							  </li>
-							  <li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-								<ul class="dropdown-menu" role="menu">
-								  <li><a href="#">Settings 1</a>
-								  </li>
-								  <li><a href="#">Settings 2</a>
-								  </li>
-								</ul>
-							  </li>
+							  
 							  <li><a class="close-link"><i class="fa fa-close"></i></a>
 							  </li>
 							</ul>
 							<div class="clearfix"></div>
 						  </div>
 						  <div class="x_content">
-							<table class="table table-striped valign-m">
+							<!-- пример вывода избранных проектов -->
+							<!--<table class="table table-striped valign-m">
 								<tbody>
 								  <tr>
 									<td><a href="startup.php">Test project 4</a></td>
@@ -130,7 +122,13 @@
 								  </tr>
 								</tbody>
 							</table>
-							<div class="clearfix"></div>
+							<div class="clearfix"></div>-->
+							
+							<!-- пример вывода, когда в блоке нечего отображать -->
+							<div class="widget-ph">
+								Вы еще не добавили ни одного проекта в избранное<br/>
+								<a href="ico-list.php"><i class="fa fa-plus-circle"></i><br/>Посмотреть все проекты</a>
+							</div>
 						  </div>
 						</div>
 					</div>
@@ -141,15 +139,7 @@
 							<ul class="nav navbar-right panel_toolbox">
 							  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
 							  </li>
-							  <li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-								<ul class="dropdown-menu" role="menu">
-								  <li><a href="#">Settings 1</a>
-								  </li>
-								  <li><a href="#">Settings 2</a>
-								  </li>
-								</ul>
-							  </li>
+							  
 							  <li><a class="close-link"><i class="fa fa-close"></i></a>
 							  </li>
 							</ul>
@@ -220,15 +210,7 @@
 							<ul class="nav navbar-right panel_toolbox">
 							  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
 							  </li>
-							  <li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-								<ul class="dropdown-menu" role="menu">
-								  <li><a href="#">Settings 1</a>
-								  </li>
-								  <li><a href="#">Settings 2</a>
-								  </li>
-								</ul>
-							  </li>
+							  
 							  <li><a class="close-link"><i class="fa fa-close"></i></a>
 							  </li>
 							</ul>
@@ -258,15 +240,7 @@
 							<ul class="nav navbar-right panel_toolbox">
 							  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
 							  </li>
-							  <li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-								<ul class="dropdown-menu" role="menu">
-								  <li><a href="#">Settings 1</a>
-								  </li>
-								  <li><a href="#">Settings 2</a>
-								  </li>
-								</ul>
-							  </li>
+							  
 							  <li><a class="close-link"><i class="fa fa-close"></i></a>
 							  </li>
 							</ul>

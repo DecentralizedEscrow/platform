@@ -634,7 +634,7 @@ li.current-page a {
 }
 .panel_toolbox {
   float: right;
-  min-width: 70px;
+  /* min-width: 70px; */
 }
 .panel_toolbox>li {
   float: left;
@@ -7119,3 +7119,6 @@ table.style1 th {white-space: nowrap;}
 }
 
 #roadChange1Modal .stage .oldDate {margin-right: 20px;}
+
+.widget-ph {text-align: center; margin-top: 20px;}
+.widget-ph i {font-size: 80px; opacity: .4; margin: 20px 0 8px 0;}
