@@ -3,23 +3,25 @@
 				<div class="row">
 					<div class="topStat col-md-12 col-sm-12 col-xs-12">
 						<div class="row">
-							<div class="col-md-6 col-sm-12 col-xs-12">
-							  <div class="col-md-4 col-sm-4 col-xs-4 tsc">
-								  <span class="count_top">Баланс - токены</span>
+							<div class="col-md-12 col-sm-12 col-xs-12">
+							  <div class="col-md-3 col-sm-3 col-xs-3 tsc"><a href="user - wallet.php#tab_content04">
+								  <span class="count_top">Баланс - DES</span>
 								  <div class="count">25 500</div>
-							  </div>
-							  <div class="col-md-4 col-sm-4 col-xs-4 tsc">
-								  <span class="count_top">Баланс - Eth</span>
+							  </a></div>
+							  <div class="col-md-3 col-sm-3 col-xs-3 tsc"><a href="user - wallet.php#tab_content01">
+								  <span class="count_top">Баланс - ETH</span>
 								  <div class="count">3.055</div>
-							  </div>
-							  <div class="col-md-4 col-sm-4 col-xs-4 tsc">
-								  <span class="count_top">Доход от ДУ</span>
-								  <div class="count">+6%</div>
-							  </div>
+							  </a></div>
+							  <div class="col-md-3 col-sm-3 col-xs-3 tsc"><a href="user - wallet.php#tab_content02">
+								  <span class="count_top">Баланс - BTC</span>
+								  <div class="count">1.012</div>
+							  </a></div>
+							  <div class="col-md-3 col-sm-3 col-xs-3 tsc"><a href="user - wallet.php#tab_content03">
+								  <span class="count_top">Баланс - LTC</span>
+								  <div class="count">42.600</div>
+							  </a></div>
 							</div>
-							<div class="notice col-md-6 col-sm-12 col-xs-12"><div>
-								Ожидается подтверждение двухфакторной авторизации
-							</div></div>
+							
 							<div class="clearfix"></div>
 						</div>
 					</div>
@@ -246,8 +248,8 @@
 							</ul>
 							<div class="clearfix"></div>
 						  </div>
-						  <div class="x_content">
-							
+						  <div class="x_content tweets">
+							<a class="twitter-timeline" data-height="590" data-width="590" href="https://twitter.com/Descrow3?ref_src=twsrc%5Etfw" data-chrome="noheader"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 							<div class="clearfix"></div>
 						  </div>
 						</div>

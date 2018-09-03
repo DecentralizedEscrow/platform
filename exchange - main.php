@@ -39,32 +39,32 @@
 												<td><a href="#">Test project 6</a></td>
 												<td><span class="buy">Продажа</span></td>
 												<td>22.04.2018</td>
-												<td><img src="https://s2.coinmarketcap.com/static/img/coins/16x16/1.png" alt="" /> 100 XBR<span class="mobile"> токенов</span></td>
-												<td>$ 15</td>
+												<td><img src="images/des/default-coin.png" alt="" /> 100 XBR<span class="mobile"> токенов</span></td>
+												<td>15 ETH</td>
 												<td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#tBuyModal">Купить</button></td>
 											  </tr>
 											  <tr>
 												<td><a href="#">Test project 1</a></td>
 												<td><span class="sell">Покупка</span></td>
 												<td>22.04.2018</td>
-												<td><img src="https://s2.coinmarketcap.com/static/img/coins/16x16/1.png" alt="" /> 500 XBR<span class="mobile"> токенов</span></td>
-												<td>$ 154</td>
+												<td><img src="images/des/default-coin.png" alt="" /> 500 XBR<span class="mobile"> токенов</span></td>
+												<td>154 ETH</td>
 												<td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#tSellModal">Продать</button></td>
 											  </tr>
 											  <tr>
 												<td><a href="#">Test project 2</a></td>
 												<td><span class="sell">Покупка</span></td>
 												<td>22.04.2018</td>
-												<td><img src="https://s2.coinmarketcap.com/static/img/coins/16x16/1.png" alt="" /> 320 XBR<span class="mobile"> токенов</span></td>
-												<td>$ 321</td>
+												<td><img src="images/des/default-coin.png" alt="" /> 320 XBR<span class="mobile"> токенов</span></td>
+												<td>321 ETH</td>
 												<td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#tSellModal">Продать</button></td>
 											  </tr>
 											  <tr>
 												<td><a href="#">Test project 6</a></td>
 												<td><span class="buy">Продажа</span></td>
 												<td>22.04.2018</td>
-												<td><img src="https://s2.coinmarketcap.com/static/img/coins/16x16/1.png" alt="" /> 400 XBR<span class="mobile"> токенов</span></td>
-												<td>$ 123</td>
+												<td><img src="images/des/default-coin.png" alt="" /> 400 XBR<span class="mobile"> токенов</span></td>
+												<td>123 ETH</td>
 												<td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#tBuyModal">Купить</button></td>
 											  </tr>
 											</tbody>
@@ -92,16 +92,16 @@
 													<td><a href="#">Название проекта</a></td>
 													<td><span class="buy">Покупка</span></td>
 													<td>12.02.2018</td>
-													<td><img src="https://s2.coinmarketcap.com/static/img/coins/16x16/1.png" alt="" /> 10 000 XBR<span class="mobile"> токенов</span></td>
-													<td>$ 12</td>
+													<td><img src="images/des/default-coin.png" alt="" /> 10 000 XBR<span class="mobile"> токенов</span></td>
+													<td>12 ETH</td>
 													<td><a href="#">Отменить</a></td>
 												  </tr>
 												  <tr>
 													<td><a href="#">Название проекта</a></td>
 													<td><span class="sell">Продажа</span></td>
 													<td>12.02.2018</td>
-													<td><img src="https://s2.coinmarketcap.com/static/img/coins/16x16/1.png" alt="" /> 10 000 XBR<span class="mobile"> токенов</span></td>
-													<td>$ 10</td>
+													<td><img src="images/des/default-coin.png" alt="" /> 10 000 XBR<span class="mobile"> токенов</span></td>
+													<td>10 ETH</td>
 													<td><a href="#">Отменить</a></td>
 												  </tr>
 												</tbody>
@@ -138,7 +138,7 @@
 			</div>
 			<div class="modal-body">
 				<p><i class="fa fa-check"></i> За покупку замороженных токенов взимается комиссия в размере <b>20 DES</b>.</p>
-				<p>Купить <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">$ 223</span> = 0.02 ETH</b></p>
+				<p>Купить <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">223 ETH</span> = 0.02 ETH</b></p>
 				<p>Оплата с кошелька<br>
 					<select style="width:100%;">
 					  <option selected="">ETH - 0xcae6a24603c9c7c43c6f9381f3598b97eeeaa848</option>
@@ -162,7 +162,7 @@
 			</div>
 			<div class="modal-body">
 				<p><i class="fa fa-check"></i> За продажу замороженных токенов взимается комиссия в размере <b>20 DES</b>.</p>
-				<p>Продать <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">$ 214</span></b></p>
+				<p>Продать <b><span class="text-success">10 000</span></b> токенов проеката <b>&laquo;Металлургический завод&raquo;</b> за <b><span class="text-success">214 ETH</span></b></p>
 				<hr/>
 				<p class="text-center"><button type="button" class="btn btn-success">Продать</button><button type="button" class="btn btn-warning" data-dismiss="modal">Отмена</button></p>
 			</div>
@@ -198,8 +198,8 @@
 					<input type="text" id="tokenAmount" placeholder="сумма">
 					<div class="clear"></div>
 					<br/>
-					<p class="text-left">Минимальная стоимость продажи токена XDR: <b>$ 1</b><br/>
-					Минимальная сумма продажи 120 токенов XDR: <b>$ 120</b></p>
+					<p class="text-left">Минимальная стоимость продажи токена XDR: <b>1 ETH</b><br/>
+					Минимальная сумма продажи 120 токенов XDR: <b>120 ETH</b></p>
 					<hr/>
 					<p class="text-center"><button type="button" class="btn btn-success button140">Подать заявку</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button></p>
 				</div>

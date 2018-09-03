@@ -43,7 +43,7 @@
 					// добавление и удаление этапов
 					var sNum = 1;
 					function addRow () {
-						$('#roadmap tr:last').after('<tr><th scope="row" style="text-align: center;"><span class="mobile">Номер этапа</span>' + sNum + '</th><td><span class="mobile">Срок выполнения (дней)</span><input id="date-'+sNum+'"></td><td style="width: 100%;"><span class="mobile">Что будет сделано</span><textarea id="descr-'+sNum+'" style="width: 100%; resize: vertical;"></textarea></td><td><span class="mobile">необходимый % от общей суммы</span><input type="number" max="30" id="percent-'+sNum+'" style="max-width: 40px;"></td></tr>');
+						$('#roadmap tr:last').after('<tr><th scope="row" style="text-align: center;"><span class="mobile">Номер этапа</span>' + sNum + '</th><td><span class="mobile">Срок выполнения (дней)</span><input id="date-'+sNum+'"></td><td style="width: 100%;"><span class="mobile">Что будет сделано</span><textarea id="descr-'+sNum+'" style="width: 100%; resize: vertical;"></textarea></td><td><span class="mobile">необходимый % от общей суммы</span><input type="number" min="1" max="30" id="percent-'+sNum+'" style="max-width: 40px;"></td></tr>'); // max="30" для input процента актуально только для первого этапа
 						sNum++;
 					}
 					function delRow () {

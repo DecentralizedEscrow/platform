@@ -168,6 +168,17 @@ function copyToClipboard(elem) {
 	copyNotice();
 	return succeed;
 }
+
+//copy-text-to-clipboard for modals
+function copytext(text, context) {
+    var textField = document.createElement('textarea');
+    textField.innerText = text;
+    if (context) {context.parentNode.insertBefore(textField, context);} else {document.body.appendChild(textField);}
+    textField.select();
+    document.execCommand('copy');
+    textField.parentNode.removeChild(textField);
+	copyNotice();
+}
 	
 	var inProcess = false;
 	function copyNotice() {

@@ -190,7 +190,7 @@
 												Период &nbsp; <input type="date"/> - <input type="date"/> <button>></button>
 											</div>
 										</div><hr/>
-										<button type="button" class="btn btn-info" data-toggle="modal" data-target="#Modal"><i class="fa fa-envelope"></i> &nbsp;Добавить токен</button>
+										<!--<button type="button" class="btn btn-info" data-toggle="modal" data-target="#Modal"><i class="fa fa-envelope"></i> &nbsp;Добавить токен</button>-->
 										<table class="table table-striped valign-m">
 											<thead>
 											  <tr>
@@ -198,8 +198,8 @@
 												<th><a href="#">Токен <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#">Стартап <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#">Количество <i class="fa fa-caret-down"></i></a></th>
-												<th><a href="#">Цена <i class="fa fa-caret-down"></i></a></th>
-												<th><a href="#">Hard cap <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Цена на ICO <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Заявок <i class="fa fa-caret-down"></i></a></th>
 												<th></th>
 											  </tr>
 											</thead>
@@ -210,7 +210,7 @@
 												<td>Фабрика бездонных бочек</td>
 												<td>1 600</td>
 												<td>0.002 ETH</td>
-												<td>800 ETH</td>
+												<td>8</td>
 												<td><button type="button" class="btn btn-warning btn-sm noborder">Подробнее</button></td>
 											  </tr>
 											</tbody>

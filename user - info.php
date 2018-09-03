@@ -7,7 +7,7 @@
 							  <div class="clearfix"></div>
 							</div>
 							<div class="data x_content">
-								<img width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKcNnSlMixF0LnvpNF9Rlg_tGKH8xtCCIwuttEsAYQbwllp4IQjA" alt="" />
+								<img width="100%" src="images/des/default-ava.png" alt="" />
 								<div class="ava">
 									<button class="btn btn-warning btn-block">Изменить аватар</button>
 								</div>

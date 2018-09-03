@@ -2,11 +2,47 @@
 				<section class="aSupport col-md-12">
 					<div class="x_panel">
 						<div class="x_title">
+						  <h2>Комиссия платформы с траншей</h2>
+						  <div class="clearfix"></div>
+						</div>
+						<div class="x_content text-justify">
+							Установлена комиссия в размере <span class="text-success">1.5%</span> с траншей стартапов платформы <button type="button" class="btn btn-warning noborder btn-xs" data-toggle="modal" data-target="#changePlatFeeModal">Изменить</button>
+						</div>
+					</div>
+					<div class="x_panel">
+						<div class="x_title">
 						  <h2>Комиссия за изменение дорожной карты проекта</h2>
 						  <div class="clearfix"></div>
 						</div>
 						<div class="x_content text-justify">
 							Установлена комиссия в размере <span class="text-success">200 DES</span> за внесение изменений в дорожную карту проекта <button type="button" class="btn btn-warning noborder btn-xs" data-toggle="modal" data-target="#changeRoadFeeModal">Изменить</button>
+						</div>
+					</div>
+					<div class="x_panel">
+						<div class="x_title">
+						  <h2>Комиссия за создание смарт-контракта</h2>
+						  <div class="clearfix"></div>
+						</div>
+						<div class="x_content text-justify">
+							Установлена комиссия в размере <span class="text-success">500 DES</span> за создание смарт-контракта <button type="button" class="btn btn-warning noborder btn-xs" data-toggle="modal" data-target="#changeSmartFeeModal">Изменить</button>
+						</div>
+					</div>
+					<div class="x_panel">
+						<div class="x_title">
+						  <h2>Комиссия за размещение ордеров на бирже</h2>
+						  <div class="clearfix"></div>
+						</div>
+						<div class="x_content text-justify">
+							Установлена комиссия в размере <span class="text-success">20 DES</span> за размещение ордеров и совершение операций купли/продажи на бирже <button type="button" class="btn btn-warning noborder btn-xs" data-toggle="modal" data-target="#changeExchangeFeeModal">Изменить</button>
+						</div>
+					</div>
+					<div class="x_panel">
+						<div class="x_title">
+						  <h2>Размер страховки на покупку токенов</h2>
+						  <div class="clearfix"></div>
+						</div>
+						<div class="x_content text-justify">
+							Установлен размер страховки на покупку токенов <span class="text-success">5%</span> <button type="button" class="btn btn-warning noborder btn-xs" data-toggle="modal" data-target="#changeEnsuranceModal">Изменить</button>
 						</div>
 					</div>
 				</section>
@@ -23,7 +59,25 @@
 
   </div>
 
-<!-- окно отклонения жалобы -->
+<!-- окно изменения комиссии с траншей -->
+<div class="modal fade" id="changePlatFeeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Изменить комиссию<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<center>
+				<p>Введите размер комиссии с траншей стартапов:</p>
+				<input class="form-contlol" type="number" min="0" placeholder="1.5" /> %
+				</center>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning button140">Принять</button><button type="button" class="btn btn-warning button140" data-dismiss="modal" data-toggle="modal" data-target="#viewRepModal">Отмена</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно изменения комиссии за изменение родмапа -->
 <div class="modal fade" id="changeRoadFeeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -33,7 +87,61 @@
 			<div class="modal-body">
 				<center>
 				<p>Введите размер комиссии за изменение дорожной карты проекта:</p>
-				<input class="form-contlol" type="number" placeholder="200" /> DES
+				<input class="form-contlol" type="number" min="0" placeholder="200" /> DES
+				</center>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning button140">Принять</button><button type="button" class="btn btn-warning button140" data-dismiss="modal" data-toggle="modal" data-target="#viewRepModal">Отмена</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно изменения размера страховки -->
+<div class="modal fade" id="changeEnsuranceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Изменить комиссию<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<center>
+				<p>Введите размер страховки на покупку токенов:</p>
+				<input class="form-contlol" type="number" min="0" placeholder="5" /> %
+				</center>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning button140">Принять</button><button type="button" class="btn btn-warning button140" data-dismiss="modal" data-toggle="modal" data-target="#viewRepModal">Отмена</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно изменения комиссии за смарт -->
+<div class="modal fade" id="changeSmartFeeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Изменить комиссию<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<center>
+				<p>Введите размер комиссии за создание смарт-контракта:</p>
+				<input class="form-contlol" type="number" min="0" placeholder="500" /> DES
+				</center>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning button140">Принять</button><button type="button" class="btn btn-warning button140" data-dismiss="modal" data-toggle="modal" data-target="#viewRepModal">Отмена</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно изменения комиссии за ордер биржи -->
+<div class="modal fade" id="changeExchangeFeeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Изменить комиссию<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<center>
+				<p>Введите размер комиссии за размещение ордеров на бирже:</p>
+				<input class="form-contlol" type="number" min="0" placeholder="20" /> DES
 				</center>
 				<hr/>
 				<p class="text-center"><button type="button" class="btn btn-warning button140">Принять</button><button type="button" class="btn btn-warning button140" data-dismiss="modal" data-toggle="modal" data-target="#viewRepModal">Отмена</button></p>

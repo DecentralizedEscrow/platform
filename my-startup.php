@@ -26,6 +26,8 @@
 									</div>
 									<div class="btns"><div>
 										<div>
+											<button type="button" class="btn btn-success noborder btn-sm"> Запустить ICO</button> <!-- отображается в случае, если выбран ручной запуск ICO и оно еще не было запущено -->
+											<button type="button" class="btn btn-danger noborder btn-sm"> Завершить ICO</button> <!-- отображается в случае, если выбрано ручное завершение ICO и оно уже было запущено но не было завершено -->
 											<a href="startup.php"><button type="button" class="btn btn-info noborder btn-sm"> Страница стартапа</button></a>
 											<a href="startup-edit.php"><button type="button" class="btn btn-warning noborder btn-sm"> Изменить информацию</button></a>
 										</div>
@@ -53,11 +55,19 @@
 						</div>
 						<div class="x_panel">
 							<div class="x_title">
-							  <h2>Иконка токена</h2>
+							  <h2>Токен проекта</h2>
 							  <div class="clearfix"></div>
 							</div>
 							<div class="x_content">
-								<span class="btn btn-primary btn-file">Загрузить икоку токена <input type="file"></span>
+								<p><b>Стоимость токена:</b> $ 1 <button type="button" class="btn btn-success btn-xs noborder" data-toggle="modal" data-target="#tPriceChangeModal">Изменить</button> <!-- Кнопка отображается если выбрана возможность ручного изменения цены токена --></p>
+								<p><b>Всего токенов:</b> 1000000</p>
+								<p><b>Токенов для команды:</b> 100000</p>
+								<p><b>Токенов на продажу:</b> 900000</p>
+								<p><b>Токенов продано:</b> 48</p>
+								<p><b>Осталось токенов:</b> 899952</p>
+								<hr/>
+								<h4>Иконка токена</h4>
+								<img src="images/des/default-coin.png" width="40" alt=""> &nbsp; <span class="btn btn-xs btn-primary btn-file">Загрузить иконку токена <input type="file"></span>
 							</div>
 						</div>
 						<div class="x_panel">
@@ -102,33 +112,43 @@
 							  </div>
 							</div>
 						</div>
-						<div class="x_panel">
-							<div class="x_title">
-							  <h2>Кошелек проекта</h2>
-							  <div class="clearfix"></div>
-							</div>
-							<div class="wallet x_content">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="x_panel tile">
+							  <div class="x_title">
+								<h2>Кошелек проекта</h2>
+								<ul class="nav navbar-right panel_toolbox">
+								  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+								  </li>
+								  
+								  <li><a class="close-link"><i class="fa fa-close"></i></a>
+								  </li>
+								</ul>
+								<div class="clearfix"></div>
+							  </div>
+							  <div class="wallet x_content">
 								<div class="balance">
-									Ваш баланс: <b>49&nbsp;ETH | 203&nbsp;912&nbsp;DES</b>
+									Ваш баланс: <b>49&nbsp;ETH | 203&nbsp;DES</b>
 								</div>
-								<hr/>
-								<div class="ethAddr row">
-									<div class="col-md-2 col-xs-12">Ethereum адрес</div>
-									<div class="col-md-8 col-xs-12"><input type="text" id="ethAddr" placeholder="0x..."> <i class="fa fa-info-circle" title="подсказка"></i></div>
-									<div class="col-md-2 col-xs-12"><button class="btn btn-success">Сохранить</button></div>
+								<hr>
+								<div class="ethAddr">
+									<div class="oper col-md-12 col-xs-12">
+									<div>Ethereum адрес</div>
+									<div><input class="col-md-12 col-xs-12" type="text" id="ethAddr" value="0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BA9" disabled=""></div>
+									</div>
 								</div>
-								<div class="row">
+								<div class="">
 									<div class="oper col-md-6 col-xs-12">
 										<div class="eth row">
-											<div class="col-md-5 col-xs-12"><input type="text" id="ethAmount" placeholder="Кол-во"> ETH</div>
-											<div class="col-md-7 col-xs-12"><button class="btn btn-warning">Пополнить</button> <button class="btn btn-success">Перевести</button></div>
+											<div class="col-md-6 col-xs-12"><input type="text" id="ethAmount" placeholder="Кол-во"> ETH</div>
+											<div class="col-md-6 col-xs-12"><button class="btn btn-warning" data-toggle="modal" data-target="#cryptoAddModal">Пополнить</button> <button class="btn btn-success" data-toggle="modal" data-target="#cryptoTransferModal">Перевести</button></div>
 										</div>
 										<div class="des row">
-											<div class="col-md-5 col-xs-12"><input type="text" id="ethAmount" placeholder="Кол-во"> DES</div>
-											<div class="col-md-7 col-xs-12"><button class="btn btn-warning">Пополнить</button> <button class="btn btn-success">Перевести</button></div>
+											<div class="col-md-6 col-xs-12"><input type="text" id="desAmount" placeholder="Кол-во"> DES</div>
+											<div class="col-md-6 col-xs-12"><button class="btn btn-warning" data-toggle="modal" data-target="#cryptoAddModal">Пополнить</button> <button class="btn btn-success" data-toggle="modal" data-target="#cryptoTransferModal">Перевести</button></div>
 										</div>
 									</div>
 								</div>
+							  </div>
 							</div>
 						</div>
 					</div>
@@ -164,6 +184,25 @@
 		</div>
 	</div>
 </div>
+<!-- окно изменения стоимости токена -->
+<div class="modal fade in" id="tPriceChangeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Изменить цену токена<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body text-center">
+				<h2>Новая цена</h2>
+				<p><input type="text" placeholder="$"></p>
+				<hr/>
+				<button type="button" class="btn btn-warning button140">Изменить</button>
+				<button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
 <!-- окно установки реф ставки -->
 <div class="modal fade" id="changeRefModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
@@ -180,12 +219,52 @@
 				<hr>
 				<div class="notice">
 					<p><i class="fa fa-check"></i> Реферальная ставка определяет процент вознаграждения пользователя от суммы вложений привлеченных им клиентов.</p>
+					<p><i class="fa fa-check"></i> Имейте в виду, что после начала ICO вы не сможете изменить размер реферальной ставки.</p>
 					<!--<p><i class="fa fa-check"></i> Вознаграждение поступает пользователю по факту очередных траншей токенами платформы Descrow (DES) по текущему на тот момент курсу.</p>-->
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+<!-- окно пополнения кошелька -->
+<div class="modal fade" id="cryptoAddModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Пополнить кошелек ETH<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body"><center>
+				<p>Для пополнения кошелька, переведите ETH на адрес:</p>
+				<p><b><span id="yaddress">moxKA6C8DAfLAfvxk1uf1ErHgFgCMoKU5g</span></b> &nbsp;<button type="button" class="btn btn-success btn-xs noborder" onclick="copytext('moxKA6C8DAfLAfvxk1uf1ErHgFgCMoKU5g', this);">Скопировать</button></p>
+			</center></div>
+		</div>
+	</div>
+</div>
+<!-- окно перевода с кошелька -->
+<div class="modal fade" id="cryptoTransferModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Вывести ETH<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body">
+				
+				<div class="row">
+					<div class="col-sm-9 col-xs-12">
+						<div><span>Перевести</span> <input type="text" placeholder="Сумма"></div>
+						<div><span>На адрес</span> <input type="text" placeholder="0x..."></div>
+					</div>
+					<div class="col-sm-3 col-xs-12">
+						<div><button type="button" class="btn btn-success btn-lg">Перевести</button></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div> 
   
   <script src="js/bootstrap.min.js"></script>
 

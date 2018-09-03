@@ -18,7 +18,7 @@
 								  <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Сводка</a></li>
 								  <li role="presentation" class=""><a href="#tab_content2" role="tab" id="tab2" data-toggle="tab" aria-expanded="false">Пользователи</a></li>
 								  <li role="presentation" class=""><a href="#tab_content3" role="tab" id="tab3" data-toggle="tab" aria-expanded="false">Сообщения</a></li>
-								  <li role="presentation" class=""><a href="#tab_content4" role="tab" id="tab4" data-toggle="tab" aria-expanded="false">Рыссылки</a></li>
+								  <li role="presentation" class=""><a href="#tab_content4" role="tab" id="tab4" data-toggle="tab" aria-expanded="false">Рассылки</a></li>
 								  <li role="presentation" class=""><a href="#tab_content5" role="tab" id="tab5" data-toggle="tab" aria-expanded="false">Роли</a></li>
 								</ul>
 								<div id="infoTabContent" class="tab-content">
@@ -301,6 +301,7 @@
 				Кто увидит рассылку
 				<select>
 				  <option selected>Все</option>
+				  <option>Активные инвесторы</option>
 				  <option>Стартапы</option>
 				  <option>Эксперты</option>
 				</select><br/><br/>

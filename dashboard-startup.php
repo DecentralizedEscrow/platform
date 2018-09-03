@@ -10,7 +10,7 @@
 							<div class="add">
 								<a href="startup-reg.php" class=""><button type="button" class="btn btn-success"><i class="fa fa-plus-square"></i> Добавить свой стартап</button></a>
 								<!-- уведомление о проверке заявки -->
-								<div class="notice hidden">Ваша заявка проверяется</div>
+								<div class="notice hidden">Анкета вашего стартапа находится на модерации.</div>
 							</div>
 						</div>
 					</div>
@@ -26,15 +26,7 @@
 								<ul class="nav navbar-right panel_toolbox">
 								  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
 								  </li>
-								  <li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-									<ul class="dropdown-menu" role="menu">
-									  <li><a href="#">Settings 1</a>
-									  </li>
-									  <li><a href="#">Settings 2</a>
-									  </li>
-									</ul>
-								  </li>
+								  
 								  <li><a class="close-link"><i class="fa fa-close"></i></a>
 								  </li>
 								</ul>
@@ -57,15 +49,7 @@
 								<ul class="nav navbar-right panel_toolbox">
 								  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
 								  </li>
-								  <li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-									<ul class="dropdown-menu" role="menu">
-									  <li><a href="#">Settings 1</a>
-									  </li>
-									  <li><a href="#">Settings 2</a>
-									  </li>
-									</ul>
-								  </li>
+								  
 								  <li><a class="close-link"><i class="fa fa-close"></i></a>
 								  </li>
 								</ul>
@@ -142,15 +126,7 @@
 								<ul class="nav navbar-right panel_toolbox">
 								  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
 								  </li>
-								  <li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-									<ul class="dropdown-menu" role="menu">
-									  <li><a href="#">Settings 1</a>
-									  </li>
-									  <li><a href="#">Settings 2</a>
-									  </li>
-									</ul>
-								  </li>
+								  
 								  <li><a class="close-link"><i class="fa fa-close"></i></a>
 								  </li>
 								</ul>
@@ -193,15 +169,7 @@
 								<ul class="nav navbar-right panel_toolbox">
 								  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
 								  </li>
-								  <li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-									<ul class="dropdown-menu" role="menu">
-									  <li><a href="#">Settings 1</a>
-									  </li>
-									  <li><a href="#">Settings 2</a>
-									  </li>
-									</ul>
-								  </li>
+								  
 								  <li><a class="close-link"><i class="fa fa-close"></i></a>
 								  </li>
 								</ul>
@@ -281,15 +249,7 @@
 								<ul class="nav navbar-right panel_toolbox">
 								  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
 								  </li>
-								  <li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-									<ul class="dropdown-menu" role="menu">
-									  <li><a href="#">Settings 1</a>
-									  </li>
-									  <li><a href="#">Settings 2</a>
-									  </li>
-									</ul>
-								  </li>
+								  
 								  <li><a class="close-link"><i class="fa fa-close"></i></a>
 								  </li>
 								</ul>
@@ -310,11 +270,11 @@
 									<div class="oper col-md-12 col-xs-12">
 										<div class="eth row">
 											<div class="col-md-6 col-xs-12"><input type="text" id="ethAmount" placeholder="Кол-во"> ETH</div>
-											<div class="col-md-6 col-xs-12"><button class="btn btn-warning">Пополнить</button> <button class="btn btn-success">Перевести</button></div>
+											<div class="col-md-6 col-xs-12"><button class="btn btn-warning" data-toggle="modal" data-target="#cryptoAddModal">Пополнить</button> <button class="btn btn-success" data-toggle="modal" data-target="#cryptoTransferModal">Перевести</button></div>
 										</div>
 										<div class="des row">
 											<div class="col-md-6 col-xs-12"><input type="text" id="ethAmount" placeholder="Кол-во"> DES</div>
-											<div class="col-md-6 col-xs-12"><button class="btn btn-warning">Пополнить</button> <button class="btn btn-success">Перевести</button></div>
+											<div class="col-md-6 col-xs-12"><button class="btn btn-warning" data-toggle="modal" data-target="#cryptoAddModal">Пополнить</button> <button class="btn btn-success" data-toggle="modal" data-target="#cryptoTransferModal">Перевести</button></div>
 										</div>
 									</div>
 								</div>
@@ -328,15 +288,7 @@
 								<ul class="nav navbar-right panel_toolbox">
 								  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
 								  </li>
-								  <li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-									<ul class="dropdown-menu" role="menu">
-									  <li><a href="#">Settings 1</a>
-									  </li>
-									  <li><a href="#">Settings 2</a>
-									  </li>
-									</ul>
-								  </li>
+								  
 								  <li><a class="close-link"><i class="fa fa-close"></i></a>
 								  </li>
 								</ul>
@@ -411,6 +363,45 @@
 		</div>
 	</div>
 </div>
+<!-- окно пополнения кошелька -->
+<div class="modal fade" id="cryptoAddModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Пополнить кошелек ETH<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body"><center>
+				<p>Для пополнения кошелька, переведите ETH на адрес:</p>
+				<p><b><span id="yaddress">moxKA6C8DAfLAfvxk1uf1ErHgFgCMoKU5g</span></b> &nbsp;<button type="button" class="btn btn-success btn-xs noborder" onclick="copytext('moxKA6C8DAfLAfvxk1uf1ErHgFgCMoKU5g', this);">Скопировать</button></p>
+			</center></div>
+		</div>
+	</div>
+</div>
+<!-- окно перевода с кошелька -->
+<div class="modal fade" id="cryptoTransferModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Вывести ETH<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body">
+				
+				<div class="row">
+					<div class="col-sm-9 col-xs-12">
+						<div><span>Перевести</span> <input type="text" placeholder="Сумма"></div>
+						<div><span>На адрес</span> <input type="text" placeholder="0x..."></div>
+					</div>
+					<div class="col-sm-3 col-xs-12">
+						<div><button type="button" class="btn btn-success btn-lg">Перевести</button></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>  
 
   </div>
   

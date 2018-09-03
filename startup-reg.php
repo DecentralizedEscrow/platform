@@ -273,30 +273,18 @@
 									  <form class="form-horizontal form-label-left">
 
 										<div class="form-group">
-										  <label class="control-label col-md-2 col-sm-2 col-xs-12" for="docs">Команда проекта <span class="required"></span>
-										  </label>
-										  <div class="col-md-10 col-sm-8 col-xs-12" style="margin-bottom: 20px;">
-											<div class="row">
-												<div class="addDoc col-md-4 col-xs-12"><input type="text" id="teamName_1" class="docName form-control ntSaveForms" placeholder="ФИО" /></div>
-												<div class="addDoc col-md-5 col-xs-12"><input type="text" id="teamLink_1" class="docLink form-control ntSaveForms" placeholder="Должность в проекте" /></div>
-												<div class="addDoc col-md-3 col-xs-12"><input type="text" id="teamLink_2" class="docLink form-control ntSaveForms" placeholder="Контакты" /></div>
+											<h2>Команда проекта</h2>
+											<div class="row team">
 											</div>
-											<div class="teamList"></div>
-											<span class="addDocBtn btn btn-primary" onclick="addTeam()">Добавить строку</span>
-										  </div>
-										</div>
-										<div class="form-group">
-										  <label class="control-label col-md-2 col-sm-2 col-xs-12" for="docs">Советники проекта <span class="required"></span>
-										  </label>
-										  <div class="col-md-10 col-sm-8 col-xs-12" style="margin-bottom: 20px;">
-											<div class="row">
-												<div class="addDoc col-md-4 col-xs-12"><input type="text" id="advName_1" class="docName form-control optional ntSaveForms" placeholder="ФИО" /></div>
-												<div class="addDoc col-md-5 col-xs-12"><input type="text" id="advLink_1" class="docLink form-control optional ntSaveForms" placeholder="Должность в проекте" /></div>
-												<div class="addDoc col-md-3 col-xs-12"><input type="text" id="advLink_2" class="docLink form-control optional ntSaveForms" placeholder="Контакты" /></div>
+											<br/><button type="button" class="btn btn-success noborder" data-toggle="modal" data-target="#addTeamModal">Добавить нового члена команды</button>
+											
+											<hr>
+											
+											<h2>Советники проекта</h2>
+											<div class="row adv">
 											</div>
-											<div class="advList"></div>
-											<span class="addDocBtn btn btn-primary" onclick="addAdv()">Добавить строку</span>
-										  </div>
+											<br/><button type="button" class="btn btn-success noborder" data-toggle="modal" data-target="#addAdvModal">Добавить нового советника</button>
+									    </div>
 										</div>
 										
 									  </form>
@@ -308,6 +296,12 @@
 									  </div>-->
 									</div><div id="step-4" class="wizard_content" style="display: none;">
 									  <form class="form-horizontal form-label-left">
+										<div class="form-group">
+										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="video">Логотип проекта <span class="required"></span></label>
+										  <div class="col-md-6 col-sm-6 col-xs-12">
+											<span class="btn btn-primary btn-file">Загрузить  логотип проекта <input id="slogo" type="file" class="optional"></span> Рекомендуемое соотншение сторон: 1:1
+										  </div>
+										</div>
 										<div class="form-group">
 										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="video">Обложка проекта <span class="required"></span></label>
 										  <div class="col-md-6 col-sm-6 col-xs-12">
@@ -427,6 +421,90 @@
 		</div>
 	</div>
 </div>
+<!-- окно добавления члена команды -->
+<div class="modal fade" id="addTeamModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Добавить члена команды<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>ФИО</p>
+				<input type="text" class="a1 col-xs-12" />
+				<p>Должность в проекте</p>
+				<input type="text" class="a2 col-xs-12" />
+				<p>Описание</p>
+				<input type="text" class="a3 col-xs-12" />
+				<p>Контакты</p>
+				<div class="contacts">
+					<button type="button" class="btn btn-primary noborder addContactBtn" onclick="$('#addTeamModal .addContact').slideDown('fast'); $(this).slideUp('fast');">Добавить новый контакт</button>
+					<div class="row addContact">
+						<div class="col-md-3 col-xs-12">
+							<select class="form-control">
+							  <option>Facebook</option>
+							  <option>Twitter</option>
+							  <option>Google+</option>
+							</select>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<input type="text" id="teamLink_1" class="form-control" />
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<button type="button" class="btn btn-success noborder vx" onclick="addContact(this);"><i class="fa fa-check" aria-hidden="true"></i></button>
+							<button type="button" class="btn btn-warning noborder vx" onclick="$('#addTeamModal .addContact').slideUp('fast'); $('.addContactBtn').slideDown('fast');"><i class="fa fa-times" aria-hidden="true"></i></button>
+						</div>
+					</div>
+				</div>
+				<p>Фото</p>
+				<span class="btn btn-primary btn-file">Добавить фото <input type="file" /></span>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning button140" onclick="addMan(this, 'team');" data-dismiss="modal">Добавить</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно добавления советника -->
+<div class="modal fade" id="addAdvModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Добавить советника<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>ФИО</p>
+				<input type="text" class="col-xs-12" />
+				<p>Должность в проекте</p>
+				<input type="text" class="col-xs-12" />
+				<p>Описание</p>
+				<input type="text" class="col-xs-12" />
+				<p>Контакты</p>
+				<div class="contacts">
+					<button type="button" class="btn btn-primary noborder addContactBtn" onclick="$('#addAdvModal .addContact').slideDown('fast'); $(this).slideUp('fast');">Добавить новый контакт</button>
+					<div class="row addContact">
+						<div class="col-md-3 col-xs-12">
+							<select class="form-control">
+							  <option>Facebook</option>
+							  <option>Twitter</option>
+							  <option>Google+</option>
+							</select>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<input type="text" id="advLink_1" class="form-control" />
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<button type="button" class="btn btn-success noborder vx" onclick="addContact(this);"><i class="fa fa-check" aria-hidden="true"></i></button>
+							<button type="button" class="btn btn-warning noborder vx" onclick="$('#addAdvModal .addContact').slideUp('fast'); $('.addContactBtn').slideDown('fast');"><i class="fa fa-times" aria-hidden="true"></i></button>
+						</div>
+					</div>
+				</div>
+				<p>Фото</p>
+				<span class="btn btn-primary btn-file">Добавить фото <input type="file" /></span>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning button140" onclick="addMan(this, 'adv');" data-dismiss="modal">Добавить</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button></p>
+			</div>
+		</div>
+	</div>
+</div>
   
   <style>#wizardForm .warning {background: #fff3f3;}</style>
   
@@ -529,6 +607,31 @@
 			alert('Максимально допустимое количество символов для данного поля:' + limit);
 		}  
 	});
+	
+	// add team/adv and their contacts
+	function addContact(e) {
+		var blk = $(e).closest('.contacts');
+		if (blk.find('input').val()){
+			blk.prepend('<p class="linkType ' + blk.find('select').val() + '">' + blk.find('select').val() + ' - <span class="link">' + blk.find('input').val() + '</span> <a href="javascript:void(0)"><span class="text-danger" onclick="removeContact(this)">удалить</span></a><br/></p>');
+			blk.find('input').val('');
+		}
+	}
+	function removeContact (e) {
+		$(e).closest('p').remove();
+	}
+	// требуется реализовать подгрузку фото на сервер. также не помешает валидация.
+	function addMan (e, type) {
+		if (type == 'team') {
+			var target = $('.team.row');
+		} else {
+			var target = $('.adv.row');
+		}
+		// здесь иконки должны отображаться при наличии ссылок соответствующих социалок. В связи со сроками реализовано частично.
+		$(target).append('<div class="teamCard col-md-3 col-sm-4 col-xs-12"><div><div class="img"><img src="http://www.epochtimes.ru/eet-content/uploads/06/cinema/161_PV.jpg" alt=""></div><div class="name">' + $(e).closest('.modal-body').find('.a1').val() + '</div><div class="position">' + $(e).closest('.modal-body').find('.a2').val() + '</div><div class="desc">' + $(e).closest('.modal-body').find('.a3').val() + '</div><div class="social"><a href="' + $(e).closest('.modal-body').find('.linkType .link').text() + '"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a></div><div class="edit"><a href="#">изменить</a><!-- предполагается вызов такого же окна, как при добавлении, но с имеющимися данными --> | <a href="javascript:void(0)" onclick="delMan(this)">удалить</a></div></div></div>')
+	}
+	function delMan(e) {
+		e.closest('.teamCard').remove();
+	}
   </script>
 
 </body>

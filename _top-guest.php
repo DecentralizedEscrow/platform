@@ -221,6 +221,7 @@
 					<div class="menu_section">
 					  <ul class="nav side-menu">
 						<li><a href="ico-list.php"><i class="fa fa-database"></i> Все проекты на ICO <span class="fa"></span></a></li>
+						<li><a href="exchange - main.php"><i class="fa fa-area-chart"></i> Биржа токенов <span class="fa"></span></a></li>
 					  </ul>
 					  <div class="menu_section support">
 						  <ul class="nav side-menu">

@@ -131,7 +131,7 @@
 				  <!-- menu prile quick info -->
 				  <div class="profile darkblue">
 					<div class="profile_pic">
-					  <img src="images/des/slider-1-photo.png" alt="" class="img-circle profile_img">
+					  <img src="images/des/default-ava.png" alt="" class="img-circle profile_img">
 					</div>
 					<div class="profile_info">
 					  <span>Приветствую!</span>

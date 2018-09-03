@@ -5721,11 +5721,11 @@ ul.msg_list li a .time {
 ul.msg_list li a .time {right: 12px;}
 
 /* dashboard */
-.dashboard .topStat {margin: 10px 0;}
-.dashboard .topStat .tsc {border-left: 1px solid #cecece;}
-.dashboard .topStat .tsc:first-child {border-left: none;}
-.dashboard .topStat .count{font-size: 24px;}
-.dashboard .topStat .notice > div {
+.topStat {margin: 10px 0; text-align: center;}
+.topStat .tsc {border-left: 1px solid #cecece;}
+.topStat .tsc:first-child {border-left: none;}
+.topStat .count{font-size: 24px;}
+.topStat .notice > div {
 	height: 54px;
     background: #f0ad4e;
     color: #fff;
@@ -6250,7 +6250,7 @@ ul.msg_list li a .time {right: 12px;}
 .userWallet .oper input {width: 80%;}
 .userWallet .oper .row, .userWallet .pTokens {margin-top: 20px;}
 
-.tokenList {margin-top: 40px;}
+/* .tokenList {margin-top: 40px;} */
 .tokenList .table .btn {
 	margin-top: -2px;
     margin-left: 6px;
@@ -6261,13 +6261,13 @@ ul.msg_list li a .time {right: 12px;}
 	display: inline-block;
 }
 
-#transferModal .modal-body, #buyFreezeModalList .modal-body {text-align: center;}
-#transferModal .modal-body span {
+#transferModal .modal-body, #buyFreezeModalList .modal-body, #cryptoTransferModal .modal-body {text-align: center;}
+#transferModal .modal-body span, #cryptoTransferModal .modal-body span {
 	min-width: 80px;
     display: inline-block;
 }
-#transferModal input, #tSellModal input, #tBuyModal input, #buyFreezeModal input {min-width: 200px;}
-#transferModal .modal-body .col-sm-9 > div, #tSellModal .modal-body .col-sm-9 > div, #tBuyModal .modal-body .col-sm-9 > div, #buyFreezeModal .modal-body .col-sm-8 > div {margin-bottom: 10px;}
+#transferModal input, #tSellModal input, #tBuyModal input, #buyFreezeModal input, #cryptoTransferModal input {min-width: 200px;}
+#transferModal .modal-body .col-sm-9 > div, #tSellModal .modal-body .col-sm-9 > div, #tBuyModal .modal-body .col-sm-9 > div, #buyFreezeModal .modal-body .col-sm-8 > div, #cryptoTransferModal .modal-body .col-sm-9 > div {margin-bottom: 10px;}
 
 /* инфо */
 .userInfo.r1 .x_panel {min-height: 384px;}
@@ -6387,6 +6387,7 @@ ul.msg_list li a .time {right: 12px;}
 .copyPopup {
 	position: absolute;
 	color: #00AF3B;
+	z-index: 1056;
 }
 
 /* стартап */
@@ -6828,7 +6829,7 @@ ul.msg_list li a .time {right: 12px;}
 .expertInfo table {min-width: 580px;}
 .expertInfo .x_panel, .expertOffers .x_panel, .expertProjects .x_panel {padding: 10px;}
 select {height: 25px;}
-.startupExperts .btn-info {min-width: 165px;}
+/* .startupExperts .btn-info {min-width: 165px;} */
 
 .tabParent.tp1 .x_panel {border: none;} 
 .tabParent.tp1 {
@@ -6949,7 +6950,7 @@ span.label {
 .addSmart .announcement {margin-top: 0;}
 
 .btn.vx i {width: 14px; height: 14px;}
-#addTeamModal .addContact {display: none;}
+#addTeamModal .addContact, #addAdvModal .addContact {display: none;}
 
 /* lang/currency change menus */
 .toggle {width: auto;}
@@ -7124,3 +7125,28 @@ table.style1 th {white-space: nowrap;}
 .widget-ph i {font-size: 80px; opacity: .4; margin: 20px 0 8px 0;}
 
 .pDetails .block_content .descr {width: 100%;}
+
+.dashboard .tweets {overflow: hidden;}
+.userWallet .tabParent p {margin-bottom: 6px;}
+.pDetails .doc {margin-right: 40px;}
+.pDetails .x_panel.startupDocs {
+	padding: 11px 20px 16px 20px;
+    background: #f7f7f7;
+	border: 1px solid #eee;
+}
+#offerReplyModal a {text-decoration: underline;}
+.modal-body.text-center {text-align: center;}
+
+.startupCard .x_title h2, .startupCard .pShortInfo {padding-left: 130px;}
+.startupCard .startupLogo {
+	position: absolute;
+    top: 18px;
+	width: 115px;
+}
+.startupCard .startupLogo img {width: 100%;}
+
+.teamCard .desc {
+	height: 114px;
+	overflow: hidden;
+}
+#rmModal .percentage {padding-left: 20px;}

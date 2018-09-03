@@ -121,8 +121,8 @@
 						<!-- пункты эксперта -->
 						<!--<li><a href="dashboard-startup.php"><i class="fa fa-dashboard"></i> Главная <span class="fa"></span></a></li>-->
 						<li><a href="expert-info.php"><i class="fa fa-newspaper-o"></i> Моя анкета <span class="fa"></span></a></li>
-						<li><a href="expert-projects.php"><i class="fa fa-list-alt	"></i> Мои проекты <span class="fa"></span></a></li>
-						<li><a href="expert-offers.php"><i class="fa fa-group"></i> Мои предложения <span class="fa"></span></a></li>
+						<li><a href="expert-projects.php"><i class="fa fa-list-alt	"></i> Проекты <span class="fa"></span><span class="label label-danger">3</span></a></li>
+						<!--<li><a href="expert-offers.php"><i class="fa fa-group"></i> Мои предложения <span class="fa"></span></a></li>-->
 					  </ul>
 					  <div class="menu_section support">
 						  <ul class="nav side-menu">

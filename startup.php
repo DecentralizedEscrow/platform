@@ -8,6 +8,9 @@
 				  </div>
 				  
 				  <div class="x_panel">
+					<div class="startupLogo"> <!-- отображается в случае, если стартап загрузил лого. иначе скрывается и применяется стиль .startupCard .x_title h2, .startupCard .pShortInfo {padding-left: 0;} -->
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEXMzMyUlJTPz8+WlpbCwsKjo6O6urqampqSkpK2trbJycmpqam8vLytra2cnJzLy8uxsbE1oJnGAAAD90lEQVR4nO3YAXejKBSGYUEiiIj+/1+794Iadcyks52kObvvc05bakT5RIHYNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKz93n777farB3snNw7pK/v14zhd1h8Gt/0zjvOHRLT3i+1C+Eqr7BDaePVBCqHb/mnN7dmx7EU/X237ntiLVC+9M6b/UkLzIKEx94T+aUKnp3bPt32TC0ZlPeqbE3Zy6jAedrKjbuse1fhXnGlbIz/t9AMJ5dTnhNqcv55wiL0cVp7ANyecopzwmLCZpt68IKG1s2lvb09YbppTwsa+JqH+9v/xhO0x4fHhOBVqwsPkXv/eE9p9wuuD1ZP/VB+m2Vnn6qA9dXM3HQolYey7pR+tW8f3LaHWXxNKtWUZoUeM8773dwnTem1e9Bymw3M4BBPmHLyWnZd/5BrUgnc1oU86ANdcgw7wuseW8CZ79ktCJzuGrLHsLfhkwmVC24ewll6S0OX9WCqbdPpos5RtlmFW22+zaWWvW00oH7Z10aKDlCiLoSVht9TXjyfflmq65631/lHC0Sxd/pKEXlrbmm0+1LPNjUxMmtDJnJViV1YGnaQxriSUHaRiljqTVI4xt75ZE0oS0zdDuSskrUlyQM0l21vfuelw8vUulWtc7+WXJJT7qN5xSx9KC2U1V/pQ05Y2SMHHJhrtau1Dp70rW2ojl+g1oWa21pU+lF3zduXkuMmeTv6ekSaPc5qae8Ks2abyW1tVnjZ7M1mGzPJwLWPpTTNrg6ROzVZ/R6/ZppowSwUby9KlVviRhMM62teEW9s0oTxDpVVSyF3X+TY3x4TSe6nUnNecsTx2y1gqabuujjpaYTqf/G2zxcOEMlDUhFIIQUZNf0o4XiUctoQ6Tmm1cj+Y/NkJ81w8Sjg+SLhU+6g+9Jd3qT5Q9evpH92lknat9jEJdaRprkYa+TMP5z68jzT2NNKUhLnMoPPQf1TCB7OF3q65TP67hBezRaOzRbPNFq1erfD0Ll3b8I6EZcbXpYrO+KnM+Nr6IBuXHfYJddHinN/P+IPuVWf82sWyVktP+jDm7N6WcFm1+fuqTUcOGfeNlLWNh4R6KWTBsF+1Ja3v66pNbgWpZvyT5/Clq7YQtu9xy7s2fVkS+m3lvbxM0YKsuMtIE4wmXN64Dfqep668l3dtsvI2XVuOa3WJbuqCXVbe54T39Xaoi/dS+rsJY0puV66LjjQn65btUb40xa1QWuGSroFkh/plys3yZelQv9NvX7W+jf28bHXp/BJtd/Kun06NeK3ffgP+de9f33r+9lMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPA/8A+7oidFiCpvzgAAAABJRU5ErkJggg==" alt="">
+					</div>
 					<div class="x_title text-left">
 					  <h2>Test project 8</h2>
 						<!-- смена языка анкеты, здесь отображаются доступные языки -->
@@ -142,7 +145,7 @@
 							</div>
 							<div class="row"><hr></div>
 							<div class="footer row">
-								<div class="pull-left"><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-eye"></i> Следить</button></div>
+								<div class="pull-left"><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-eye"></i> Следить</button><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-external-link"></i> Сайт проекта</button><button type="button" class="btn btn-info noborder btn-xs" data-toggle="modal" data-target="#getLinkModal"><i class="fa fa-money"></i> 7% партнеру</button></div>
 								<div class="pull-right social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-link"></i></a></div>
 							</div>
 						</div>
@@ -174,7 +177,7 @@
 							</div>
 							<div class="row"><hr></div>
 							<div class="footer row">
-								<div class="pull-left"><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-eye"></i> Следить</button></div>
+								<div class="pull-left"><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-eye"></i> Следить</button><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-external-link"></i> Сайт проекта</button><button type="button" class="btn btn-info noborder btn-xs" data-toggle="modal" data-target="#getLinkModal"><i class="fa fa-money"></i> 7% партнеру</button></div>
 								<div class="pull-right social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-link"></i></a></div>
 							</div>
 						</div>
@@ -191,6 +194,7 @@
 							<div class="earn row">
 								<div class="num">$ 1 900</div>
 								<div class="txt">собрано из запрашиваемой суммы<br/>$ 3 800</div>
+								Стоимость токена: $ 0.4
 							</div>
 							<div class="btns row">
 								<div class="col-xs-3" style="padding-right: 10px;"><button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#askModal"><i class="fa fa-envelope"></i></button></div>
@@ -208,7 +212,7 @@
 							</div>
 							<div class="row"><hr></div>
 							<div class="footer row">
-								<div class="pull-left"><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-eye"></i> Следить</button></div>
+								<div class="pull-left"><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-eye"></i> Следить</button><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-external-link"></i> Сайт проекта</button><button type="button" class="btn btn-info noborder btn-xs" data-toggle="modal" data-target="#getLinkModal"><i class="fa fa-money"></i> 7% партнеру</button></div>
 								<div class="pull-right social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-link"></i></a></div>
 							</div>
 						</div>
@@ -242,7 +246,7 @@
 							</div>
 							<div class="row"><hr></div>
 							<div class="footer row">
-								<div class="pull-left"><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-eye"></i> Следить</button></div>
+								<div class="pull-left"><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-eye"></i> Следить</button><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-external-link"></i> Сайт проекта</button></div>
 								<div class="pull-right social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-link"></i></a></div>
 							</div>
 						</div>
@@ -272,7 +276,7 @@
 							</div>
 							<div class="row"><hr></div>
 							<div class="footer row">
-								<div class="pull-left"><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-eye"></i> Следить</button></div>
+								<div class="pull-left"><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-eye"></i> Следить</button><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-external-link"></i> Сайт проекта</button></div>
 								<div class="pull-right social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-link"></i></a></div>
 							</div>
 						</div>
@@ -301,7 +305,7 @@
 							</div>
 							<div class="row"><hr></div>
 							<div class="footer row">
-								<div class="pull-left"><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-eye"></i> Следить</button></div>
+								<div class="pull-left"><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-eye"></i> Следить</button><button type="button" class="btn btn-info noborder btn-xs"><i class="fa fa-external-link"></i> Сайт проекта</button></div>
 								<div class="pull-right social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-link"></i></a></div>
 							</div>
 						</div>
@@ -335,6 +339,16 @@
 						
 						  <!-- описание -->
 						  <div role="tabpanel" class="info tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
+						  <div class="x_panel startupDocs">
+							  <div class="x_title">
+								<h2>Документы проекта</h2>
+								<div class="clearfix"></div>
+							  </div>
+							  <div class="x_content"><b>
+								<span class="doc"><i class="fa fa-file"></i> &nbsp;<a href="#">White Paper</span></a>
+								<span class="doc"><i class="fa fa-file"></i> &nbsp;<a href="#">Onepage</span></a>
+							  </b></div>
+						  </div>
 							<div class="x_panel">
 							  <div class="x_title">
 								<h2>Описание проекта</h2>
@@ -775,12 +789,13 @@
 			</div>
 			<div class="modal-body">
 				<table class="table valign-m" style="width:100%"><tbody>
-				  <tr><td colspan="2">Оплата с кошелька<br/>
+				  <tr><td colspan="2"><!--Оплата с кошелька<br/>
 					<select style="width:100%;">
 					  <option selected="">ETH - 0xcae6a24603c9c7c43c6f9381f3598b97eeeaa848</option>
 					  <option>BTC - 1ExAmpLe0FaBiTco1NADr3sSV5tsGaMF6hd</option>
 					</select>
-					<div class="text-right" style="margin-top:4px;">Баланс коешелька: 12.4353 ETH</div>
+					<div class="text-right" style="margin-top:4px;">Баланс коешелька: 12.4353 ETH</div>-->
+					<div class="text-right">Ваш баланс: 12.4353 ETH</div>
 				  </td></tr>
 				  <tr>
 					<td>
@@ -806,7 +821,7 @@
 						<div>$ 0.3</div>
 					</td>
 				  </tr>
-				  <tr>
+				  <!--<tr>
 					<td>
 						<div class="checkbox">
 						  <label class="">
@@ -822,10 +837,10 @@
 					<td>
 						<div><span id="insurancePrice">$ 0.1</span></div>
 					</td>
-				  </tr>
+				  </tr>-->
 				  <tr>
 					<td colspan="2" align="right">
-						<div><b>Итого: <span id="tokenSum">$ 0.5</span> = 0.0014 ETH</b></div>
+						<div><b>Итого: <span id="tokenSum">$ 0.4</span> = 0.0014 ETH</b></div>
 					</td>
 				  </tr>
 				</tbody></table>
@@ -1038,6 +1053,30 @@
 				   <div class="clear"></div></p>
 				<p class="text-center"><button type="button" class="btn btn-success">Отправить</button></p>
 				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно получения реф ссылки на проект -->
+<div class="modal fade" id="getLinkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Ваша ссылка<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body">
+			
+				<!-- ошибка показывается вместо grl блока в случае, когда пользователь не привязал eth-кошелек -->
+				<div class="err hidden">Для участия в реферальной программе вам необходимо <a href="#">привязать</a> ваш Ethereum кошелек, на который будут перечисляться бонусы.</div>
+				
+				<div class="grl">
+					<div class="rBlock">
+						<p>Ваша реферальная ссылка для проекта &laquo;Металлургический завод&raquo;</p> 
+						<div class="refLink"><span id="p2lnk">https://descrow.com/project/pid?rid=userId</span> <button type="button" class="btn btn-success btn-xs" onclick="copyToClipboard(document.getElementById('p2lnk'));">Скопировать</button></div>
+					</div>
+					<p><i class="fa fa-check"></i> Приглашая пользователей перейти по данной ссылке вы получите 7% от их вложений в данный проект</p>
+				</div>
 			</div>
 		</div>
 	</div>

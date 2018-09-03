@@ -117,7 +117,7 @@
 						<!-- пункты стартапа -->
 						<li><a href="my-startup-all.php"><i class="fa fa-file-text-o"></i> Мои проекты <span class="fa"></span></a></li>
 						<li><a href="startup-refer.php"><i class="fa fa-group"></i> Реферальная программа <span class="fa"></span></a></li>
-						<li><a href="exchange - main.php"><i class="fa fa-area-chart"></i> Биржа токенов <span class="fa"></span></a></li>
+						<!--<li><a href="exchange - main.php"><i class="fa fa-area-chart"></i> Биржа токенов <span class="fa"></span></a></li>-->
 						<li><a href="startup-experts.php"><i class="fa fa-wrench"></i> Найти эксперта <span class="fa"></span></a></li>
 					  </ul>
 					  <div class="menu_section support">

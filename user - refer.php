@@ -17,10 +17,12 @@
 							<p><i class="fa fa-check"></i> Ваше вознаграждение поступает по факту очередных траншей в проекты.</p>
 							
 							<hr/>
+							<h2>Ваши рефералы</h2>
 							<div class="row stat">
-								<div class="col-md-4"><h2>Ваши рефералы</h2></div>
-								<div class="col-md-4">Зарегистрировалось: <span>27 человек</span></div>
-								<div class="col-md-4">Совершило транзакции: <span>8 человек</span></div>
+								<div class="col-md-3">Перешло по ссылке: <span>74</span></div>
+								<div class="col-md-3">Зарегистрировалось: <span>27</span></div>
+								<div class="col-md-3">Совершило транзакции: <span>8</span></div>
+								<div class="col-md-3">Период: <select><option selected="">неделя</option><option>месяц</option><option>год</option><option>все</option></select><button class="btn btn-info btn-xs noborder pull-right" data-toggle="modal" data-target="#rangeModal"><i class="fa fa-gear"></i></button></div>
 							</div>
 							
 							<div class="refChart">
@@ -91,28 +93,28 @@
 												  <tr>
 													<th>Название проекта</th>
 													<th>Бонуная ставка</th>
-													<th>Учтено (токенов)</th>
-													<th>Выплачено (токенов)</th>
-													<th>Ваша ссылка</th>
+													<th>Учтено</th>
+													<th>Выплачено</th>
 												  </tr>
 												</thead>
 												<tbody>
 												  <tr>
-													<td><a href="#">Test project 6</a></td>
+													<td><a href="startup.php">Test project 6</a></td>
 													<td><span>Ставка: </span>8%</td>
-													<td><span>Учтено (токенов): </span>1 200</td>
-													<td><span>Выплачено (токенов): </span>800</td>
-													<td><button class="btn btn-warning btn-xs">Ваша ссылка</button></td>
+													<td><span>Учтено: </span>$ 1 200</td>
+													<td><span>Выплачено: </span>$ 800</td>
 												  </tr>
 												  <tr>
-													<td><a href="#">Test project 1</a></td>
-													<td>4%</td>
-													<td>100</td>
-													<td>0</td>
-													<td><button class="btn btn-warning btn-xs">Ваша ссылка</button></td>
+													<td><a href="startup.php">Test project 1</a></td>
+													<td><span>Ставка: </span>4%</td>
+													<td><span>Учтено: </span>$ 100</td>
+													<td><span>Выплачено: </span>$ 0</td>
 												  </tr>
 												</tbody>
 											  </table>
+											  <hr/>
+											  <h4 class="text-right">Итого заработано: $ 1 300</h4>
+											  <div class="text-right">из которых $ 500 ожидает выплаты</div>
 										</div>
 									</div>
 								</div>
@@ -134,7 +136,7 @@
 
   </div>
 
-<!-- окно вывода токенов -->
+<!-- окно получения реф ссылки на проект -->
 <div class="modal fade" id="getLinkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -152,10 +154,24 @@
 						<p>Ваша реферальная ссылка для проекта &laquo;Металлургический завод&raquo;</p> 
 						<div class="refLink"><span id="p2lnk">https://descrow.com/project/pid?rid=userId</span> <button type="button" class="btn btn-success btn-xs" onclick="copyToClipboard(document.getElementById('p2lnk'));">Скопировать</button></div>
 					</div>
-					<p align="center">Приглашая пользователей перейти по данной ссылке:</p>
-					<p><i class="fa fa-check"></i> Вы получите 7% от их вложений в данный проект</p>
-					<p><i class="fa fa-check"></i> Вы получите 2% от суммы их вложений в любые другие проекты на платформе</p>
+					<p><i class="fa fa-check"></i> Приглашая пользователей перейти по данной ссылке вы получите 7% от их вложений в данный проект</p>
 				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно выбора периода отображения -->
+<div class="modal fade" id="rangeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Выберите период для отображения<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body">
+				<p class="text-center">Период &nbsp; <input type="date"> - <input type="date"></p>
+				<hr>
+				<p class="text-center"><button type="button" class="btn btn-info noborder">Показать</button></p>
 			</div>
 		</div>
 	</div>
@@ -187,9 +203,9 @@
     var lineChart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ["10.04.17", "", "", "", "", "15.04.17", "", "", "", "", "20.04.17", "", "", "", "", "25.04.17"],
+        labels: ["10.04.17", "11.04.17", "12.04.17", "13.04.17", "14.04.17", "15.04.17", "16.04.17", "17.04.17", "18.04.17", "19.04.17", "20.04.17", "21.04.17", "22.04.17", "23.04.17", "24.04.17", "25.04.17"],
         datasets: [{
-          label: "Зарегистрировалось",
+          label: "Перешло по ссылке",
           backgroundColor: "rgba(38, 185, 154, 0.31)",
           borderColor: "rgba(38, 185, 154, 0.7)",
           pointBorderColor: "rgba(38, 185, 154, 0.7)",
@@ -197,9 +213,9 @@
           pointHoverBackgroundColor: "#fff",
           pointHoverBorderColor: "rgba(220,220,220,1)",
           pointBorderWidth: 1,
-          data: [6, 7, 8, 9, 10, 13, 15, 16, 18, 21, 21, 22, 23, 24, 26, 27]
+          data: [16, 27, 48, 79, 31, 23, 35, 56, 78, 64, 55, 77, 42, 31, 60, 127]
         }, {
-          label: "Совершило транзакции",
+          label: "Зарегистрировалось",
           backgroundColor: "rgba(3, 88, 106, 0.3)",
           borderColor: "rgba(3, 88, 106, 0.70)",
           pointBorderColor: "rgba(3, 88, 106, 0.70)",
@@ -207,7 +223,17 @@
           pointHoverBackgroundColor: "#fff",
           pointHoverBorderColor: "rgba(151,187,205,1)",
           pointBorderWidth: 1,
-          data: [0, 1, 1, 1, 1, 1, 1, 1, 3, 4, 4, 5, 6, 8, 8, 8]
+          data: [6, 7, 8, 19, 10, 13, 15, 20, 24, 21, 21, 22, 14, 12, 26, 37]
+        }, {
+          label: "Совершило транзакции",
+          backgroundColor: "rgba(3, 44, 88, 0.3)",
+          borderColor: "rgba(3, 44, 88, 0.70)",
+          pointBorderColor: "rgba(3, 44, 88, 0.70)",
+          pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
+          pointHoverBackgroundColor: "#fff",
+          pointHoverBorderColor: "rgba(151,187,205,1)",
+          pointBorderWidth: 1,
+          data: [0, 1, 1, 3, 1, 1, 1, 1, 5, 3, 2, 1, 1, 1, 3, 6]
         }]
       },
     });

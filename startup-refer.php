@@ -12,7 +12,7 @@
 								<div class="refLink"><span id="plnk">5%</span> <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#changeRefModal">Изменить</button></div>
 							</div>
 							<p><i class="text-success fa fa-check"></i> Реферальная ставка определяет процент вознаграждения пользователя от суммы вложений привлеченных им клиентов.</p>
-							<p><i class="text-success fa fa-check"></i> Вознаграждение поступает пользователю по факту очередных траншей токенами платформы Descrow (DES) по текущему на тот момент курсу.</p>
+							<p><i class="text-success fa fa-check"></i> Вознаграждение поступает пользователю по факту очередных траншей.</p>
 							<hr/>
 							<div class="tabParent" role="tabpanel" data-example-id="togglable-tabs">
 								<ul id="infoTab" class="nav nav-tabs" role="tablist">
@@ -29,9 +29,12 @@
 									    <hr/>
 										<div class="row stat">
 											<div class="col-md-3"><h2>Рефералы текущего проекта</h2></div>
-											<div class="col-md-3">В программе: <span>27 человек</span></div>
-											<div class="col-md-3">Реферальные транзакции: <span>8</span></div>
+											<div class="col-md-3">Рефоводов в программе: <span>27</span></div>
+											<div class="col-md-3">Всего реф. переходов: <span>127</span></div>
 											<div class="col-md-3">Период: <select><option selected="">неделя</option><option>месяц</option><option>год</option><option>все</option></select><button class="btn btn-info btn-xs noborder pull-right" data-toggle="modal" data-target="#rangeModal"><i class="fa fa-gear"></i></button></div>
+											<div class="col-md-3"></div>
+											<div class="col-md-3">Всего реф. регистраций: <span>31</span></div>
+											<div class="col-md-3">Всего реф. транзакций: <span>8</span></div>
 										</div>
 										<div class="refChart">
 											<canvas id="lineChart"></canvas>
@@ -207,9 +210,9 @@
     var lineChart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ["10.02.17", "", "", "", "", "15.02.17", "", "", "", "", "20.02.17", "", "", "", "", "25.02.17"],
+        labels: ["10.04.17", "11.04.17", "12.04.17", "13.04.17", "14.04.17", "15.04.17", "16.04.17", "17.04.17", "18.04.17", "19.04.17", "20.04.17", "21.04.17", "22.04.17", "23.04.17", "24.04.17", "25.04.17"],
         datasets: [{
-          label: "Зарегистрировалось",
+          label: "Переходов",
           backgroundColor: "rgba(38, 185, 154, 0.31)",
           borderColor: "rgba(38, 185, 154, 0.7)",
           pointBorderColor: "rgba(38, 185, 154, 0.7)",
@@ -217,9 +220,9 @@
           pointHoverBackgroundColor: "#fff",
           pointHoverBorderColor: "rgba(220,220,220,1)",
           pointBorderWidth: 1,
-          data: [6, 7, 8, 9, 10, 13, 15, 16, 18, 21, 21, 22, 23, 24, 26, 27]
+          data: [16, 27, 48, 79, 31, 23, 35, 56, 78, 64, 55, 77, 42, 31, 60, 127]
         }, {
-          label: "Совершило транзакции",
+          label: "Регистраций",
           backgroundColor: "rgba(3, 88, 106, 0.3)",
           borderColor: "rgba(3, 88, 106, 0.70)",
           pointBorderColor: "rgba(3, 88, 106, 0.70)",
@@ -227,10 +230,20 @@
           pointHoverBackgroundColor: "#fff",
           pointHoverBorderColor: "rgba(151,187,205,1)",
           pointBorderWidth: 1,
-          data: [0, 1, 1, 1, 1, 1, 1, 1, 3, 4, 4, 5, 6, 8, 8, 8]
+          data: [6, 7, 8, 19, 10, 13, 15, 20, 24, 21, 21, 22, 14, 12, 26, 37]
+        }, {
+          label: "Транзакций",
+          backgroundColor: "rgba(3, 44, 88, 0.3)",
+          borderColor: "rgba(3, 44, 88, 0.70)",
+          pointBorderColor: "rgba(3, 44, 88, 0.70)",
+          pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
+          pointHoverBackgroundColor: "#fff",
+          pointHoverBorderColor: "rgba(151,187,205,1)",
+          pointBorderWidth: 1,
+          data: [0, 1, 1, 3, 1, 1, 1, 1, 5, 3, 2, 1, 1, 1, 3, 6]
         }]
       },
-    });
+	});
 	// Line chart 2
     var ctx = document.getElementById("lineChart2");
     var lineChart = new Chart(ctx, {

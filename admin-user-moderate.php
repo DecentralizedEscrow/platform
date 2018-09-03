@@ -185,6 +185,7 @@
 								<thead>
 								  <tr>
 									<th><a href="#">Создан <i class="fa fa-caret-down"></i></a></th>
+									<th><a href="#">Валюта <i class="fa fa-caret-down"></i></a></th>
 									<th><a href="#">Адрес <i class="fa fa-caret-down"></i></a></th>
 									<th><a href="#">Тип <i class="fa fa-caret-down"></i></a></th>
 									<th><a href="#">Баланс <i class="fa fa-caret-down"></i></a></th>
@@ -195,12 +196,40 @@
 								<tbody>
 								  <tr>
 									<td>27.05.2018 12:43</td>
+									<td>ETH</td>
 									<td><a href="#">0х2354072043569...</a></td>
 									<td>Инвестор</td>
 									<td>10.2493 ETH</td>
 									<td>7.1232 ETH</td>
 									<td title="Ожидается подтверждение транша">Ожидается...</td>
-								</tr>
+								  </tr>
+								  <tr>
+									<td>27.05.2018 12:43</td>
+									<td>BTC</td>
+									<td><a href="#">0х2354072043569...</a></td>
+									<td>Инвестор</td>
+									<td>10.2493 BTC</td>
+									<td>7.1232 BTC</td>
+									<td title="Ожидается подтверждение транша">Ожидается...</td>
+								  </tr>
+								  <tr>
+									<td>27.05.2018 12:43</td>
+									<td>LTC</td>
+									<td><a href="#">0х2354072043569...</a></td>
+									<td>Инвестор</td>
+									<td>10.2493 LTC</td>
+									<td>7.1232 LTC</td>
+									<td title="Ожидается подтверждение транша">Ожидается...</td>
+								  </tr>
+								  <tr>
+									<td>27.05.2018 12:43</td>
+									<td>DES</td>
+									<td><a href="#">0х2354072043569...</a></td>
+									<td>Инвестор</td>
+									<td>10.2493 DES</td>
+									<td>7.1232 DES</td>
+									<td title="Ожидается подтверждение транша">Ожидается...</td>
+								  </tr>
 								</tbody>
 							</table>
 						</div>

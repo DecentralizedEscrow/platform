@@ -19,7 +19,8 @@
 								  <li role="presentation" class=""><a href="#tab_content3" role="tab" id="tab3" data-toggle="tab" aria-expanded="false">Категории</a></li>
 								  <li role="presentation" class=""><a href="#tab_content4" role="tab" id="tab4" data-toggle="tab" aria-expanded="false">Тэги</a></li>
 								  <li role="presentation" class=""><a href="#tab_content5" role="tab" id="tab5" data-toggle="tab" aria-expanded="false">Голосования</a></li>
-								  <li role="presentation" class=""><a href="#tab_content6" role="tab" id="tab6" data-toggle="tab" aria-expanded="false">Модерация <span class="label label-danger">1</span></a></li>
+								  <li role="presentation" class=""><a href="#tab_content6" role="tab" id="tab6" data-toggle="tab" aria-expanded="false">Анкеты <span class="label label-danger">1</span></a></li>
+								  <li role="presentation" class=""><a href="#tab_content7" role="tab" id="tab7" data-toggle="tab" aria-expanded="false">Roadmap <span class="label label-danger">1</span></a></li>
 								</ul>
 								<div id="infoTabContent" class="tab-content">
 								  <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
@@ -200,29 +201,23 @@
 												<th><a href="#">Дата <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#">Стартап <i class="fa fa-caret-down"></i></a></th>
 												<th><a href="#">Этап <i class="fa fa-caret-down"></i></a></th>
-												<th><a href="#">Пользователь <i class="fa fa-caret-down"></i></a></th>
-												<th><a href="#">Вес <i class="fa fa-caret-down"></i></a></th>
-												<th><a href="#">Решение <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#">Голосов <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#" title="За">+ <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#" title="Против">- <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#" title="Воздержались">~ <i class="fa fa-caret-down"></i></a></th>
+												<th><a href="#" title="Процент - за">% <i class="fa fa-caret-down"></i></a></th>
 											  </tr>
 											</thead>
 											<tbody>
 											  <tr>
-												<td>12.02.2018 13:57</td>
-												<td><a href="#">Фабрика стеклянных пылесосов</a></td>
-												<td>2</td>
-												<td><a href="#">Алексей Борисов</a></td>
-												<td>0.4%</td>
-												<td>+</td>
-												<td></td>
-											  </tr>
-											  <tr>
 												<td>12.02.2018 14:57</td>
 												<td><a href="#">Фабрика стеклянных пылесосов</a></td>
 												<td>2</td>
-												<td><a href="#">Федор Коновалов</a></td>
-												<td>0.7%</td>
-												<td>-</td>
-												<td><button type="button" class="btn btn-warning btn-sm noborder">Отзыв</button></td>
+												<td>100</td>
+												<td>69</td>
+												<td>29</td>
+												<td>2</td>
+												<td>71</td>
 											  </tr>
 											</tbody>
 										</table>
@@ -232,13 +227,21 @@
 								<div role="tabpanel" class="tab-pane fade" id="tab_content6" aria-labelledby="tab6">
 									<div class="x_panel">
 									  <div class="x_content">
+											<div class="col-md-4 pull-right text-right">
+												Отображать &nbsp;
+												<select name="sField">
+												  <option selected="">Все</option>
+												  <option>Первичная модерация</option>
+												  <option>Вторичная модерация</option>
+												</select>
+											</div>
 											<table class="table table-striped valign-m">
 												<thead>
 												  <tr>
 													<th><a href="#">Дата <i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">Название <i class="fa fa-caret-down"></i></a></th>
+													<th><a href="#">Стартап <i class="fa fa-caret-down"></i></a></th>
 													<th><a href="#">Организатор  <i class="fa fa-caret-down"></i></a></th>
-													<th title="Изменено анкет"><a href="#"><i class="fa fa-recycle"></i> анкет  <i class="fa fa-caret-down"></i></a></th>
+													<th title="Порядковый номер модерации"><a href="#"><i class="fa fa-recycle"></i> мод. <i class="fa fa-caret-down"></i></a></th>
 													<th title="Изменено полей"><a href="#"><i class="fa fa-recycle"></i> полей  <i class="fa fa-caret-down"></i></a></th>
 													<th></th>
 												  </tr>
@@ -251,6 +254,32 @@
 													<td>1</td>
 													<td>4</td>
 													<td><a href="admin-startup-moderate.php"><button type="button" class="btn btn-warning btn-sm noborder">Просмотр</button></a></td>
+												  </tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="tab_content7" aria-labelledby="tab7">
+									<div class="x_panel">
+									  <div class="x_content">
+											<table class="table table-striped valign-m">
+												<thead>
+												  <tr>
+													<th><a href="#">Дата <i class="fa fa-caret-down"></i></a></th>
+													<th><a href="#">Стартап <i class="fa fa-caret-down"></i></a></th>
+													<th><a href="#">Организатор  <i class="fa fa-caret-down"></i></a></th>
+													<th title="Изменено полей"><a href="#">Этапов  <i class="fa fa-caret-down"></i></a></th>
+													<th></th>
+												  </tr>
+												</thead>
+												<tbody>
+												  <tr>
+													<td>12.02.2018 13:57</td>
+													<td><a href="#">Фабрика стеклянных пылесосов</a></td>
+													<td><a href="#">Алексей Борисов</a></td>
+													<td>3</td>
+													<td><button type="button" class="btn btn-warning btn-sm noborder" data-toggle="modal" data-target="#rmModal">Просмотр</button></td>
 												  </tr>
 												</tbody>
 											</table>
@@ -287,6 +316,113 @@
 				<p class="text-center">Период &nbsp; <input type="date"> - <input type="date"></p>
 				<hr/>
 				<p class="text-center"><button type="button" class="btn btn-info noborder">Показать</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно модерации roadmap -->
+<div class="modal fade" id="rmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				RoadMap проекта &laquo;Лучшие автобусные номера на заказ&raquo; <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body">
+				<div class="x_panel">
+				  <div class="x_content">
+					<table class="table table-striped">
+						<thead>
+						  <tr>
+							<th width="135">Этап</th>
+							<th>Что будет сделано</th>
+							<th class="text-right">Сколько нужно<br>средств в % от сборов</th>
+						  </tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+					<ul class="list-unstyled timeline">
+					  <li>
+						<div class="block">
+						  <div class="tags">
+							<a href="" class="tag inprogress">
+							  <span>#3 - 01.11.2018</span>
+							</a>
+						  </div>
+						  <div class="block_content">
+							<table><tbody><tr>
+								<td class="descr">
+									<h2 class="title"><a>Заголовок этапа</a></h2>
+									<p class="excerpt">Краткое содержание этапа. Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward</p>
+								</td>
+								<td class="percentage">
+									<span class="align-middle">25%</span>
+								</td>
+							</tr></tbody></table>
+						  </div>
+						</div>
+					  </li>
+					  <li>
+						<div class="block">
+						  <div class="tags">
+							<a href="" class="tag done">
+							  <span>#2 - 01.10.2018</span>
+							</a>
+						  </div>
+						  <div class="block_content">
+							<table><tbody><tr>
+								<td class="descr">
+									<h2 class="title"><a>Заголовок этапа</a></h2>
+									<p class="excerpt">Краткое содержание этапа. Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward</p>
+								</td>
+								<td class="percentage">
+									<span class="align-middle">25%</span>
+								</td>
+							</tr></tbody></table>
+						  </div>
+						</div>
+					  </li>
+					  <li>
+						<div class="block">
+						  <div class="tags">
+							<a href="" class="tag done">
+							  <span>#1 - 01.08.2018</span>
+							</a>
+						  </div>
+						  <div class="block_content">
+							<table><tbody><tr>
+								<td class="descr">
+									<h2 class="title"><a>Заголовок этапа</a></h2>
+									<p class="excerpt">Краткое содержание этапа. Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward</p>
+								</td>
+								<td class="percentage">
+									<span class="align-middle">25%</span>
+								</td>
+							</tr></tbody></table>
+						  </div>
+						</div>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+				<p class="text-center"><button type="button" class="btn btn-success button140" data-dismiss="modal">Принять</button><button type="button" class="btn btn-danger button140" data-dismiss="modal" data-toggle="modal" data-target="#rejModal">Отклонить</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно отклонения модерации roadmap -->
+<div class="modal fade" id="rejModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Отклонить RoadMap<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<p>Вы уверены, что хотите отклонить RoadMap проекта <b>«Тормозной завод им. Годара»</b>?</p>
+				<textarea class="form-control" rows="2" placeholder="Введите причину отклонения"></textarea>
+				<hr>
+				<p class="text-center"><button type="button" class="btn btn-danger button140">Отклонить</button><button type="button" class="btn btn-warning button140" data-dismiss="modal" data-toggle="modal" data-target="#rmModal">Назад</button></p>
 			</div>
 		</div>
 	</div>

@@ -8,6 +8,7 @@
 							<button class="btn btn-info btn-xs noborder"><a href="#">Личные</a></button>
 							<button class="btn btn-info btn-xs noborder"><a href="#">Системные</a></button>
 							<button class="btn btn-info btn-xs noborder"><a href="#">Проект <span class="label label-danger">3</span></a></button>
+							<button class="btn btn-info btn-xs noborder"><a href="#">Избранные</a></button>
 						  </div>
 						  <div class="msgAttr pull-right">
 							<span class="date"></span>

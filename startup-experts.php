@@ -36,7 +36,7 @@
 													<td>$ 2 000</td>
 													<td>03.08.2018</td>
 													<td>23</td>
-													<td><button type="button" class="btn btn-warning noborder btn-sm" data-toggle="modal" data-target="#searchInfoModal">Подробнее</button></td>
+													<td><button type="button" class="btn btn-warning noborder btn-sm">Отменить</button><button type="button" class="btn btn-info noborder btn-sm" data-toggle="modal" data-target="#searchInfoModal">Подробнее</button></td>
 												  </tr>
 												  <tr>
 													<td><a href="startup.php">Маркетолог</a></td>
@@ -44,7 +44,7 @@
 													<td>$ 1 400</td>
 													<td>05.08.2018</td>
 													<td>12</td>
-													<td><button type="button" class="btn btn-warning noborder btn-sm" data-toggle="modal" data-target="#searchInfoModal">Подробнее</button></td>
+													<td><button type="button" class="btn btn-warning noborder btn-sm">Отменить</button><button type="button" class="btn btn-info noborder btn-sm" data-toggle="modal" data-target="#searchInfoModal">Подробнее</button></td>
 												  </tr>
 												</tbody>
 											</table>
@@ -89,7 +89,7 @@
 												<thead>
 												  <tr>
 													<th><a href="#">ФИО <i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">Компетенции  <i class="fa fa-caret-down"></i></a></th>
+													<th><a href="#">Специальность  <i class="fa fa-caret-down"></i></a></th>
 													<th><a href="#">Дата  <i class="fa fa-caret-down"></i></a></th>
 													<th></th>
 												  </tr>
@@ -121,7 +121,7 @@
 												<thead>
 												  <tr>
 													<th><a href="#">ФИО <i class="fa fa-caret-down"></i></a></th>
-													<th><a href="#">Компетенции  <i class="fa fa-caret-down"></i></a></th>
+													<th><a href="#">Специальность  <i class="fa fa-caret-down"></i></a></th>
 													<th><a href="#">Дата  <i class="fa fa-caret-down"></i></a></th>
 													<th></th>
 												  </tr>
@@ -199,12 +199,12 @@
 				Поиск нового специалиста<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
 			</div>
 			<div class="modal-body">
-				<p>Требуемые компетенции (одного конкретного) специалиста</p>
+				<p>Требуемая специальность</p>
 				<div class="comps">
 					<div class="row">
 						<div class="col-md-12">
 							<select class="w-100">
-							  <option selected disabled hidden>Укажите компетенцию</option>
+							  <option selected disabled hidden>Выберите специальность</option>
 							  <option>Программист</option>
 							  <option>Юрист</option>
 							  <option>Маркетолог</option>
@@ -212,21 +212,20 @@
 						</div>
 					</div>
 				</div>
-				<p><button type="button" class="btn btn-primary noborder addCompBtn">Добавить еще компетенцию</button></p>
-				<script>
-					$('.addCompBtn').click(function () {
-						$('.comps').append('<div class="row"><div class="col-md-10"><select class="w-100"><option selected disabled hidden>Укажите дополнительную компетенцию</option><option>Программист</option><option>Юрист</option><option>Маркетолог</option></select></div><div class="col-md-2 removeCompBtn" onclick="removeComp(this);">Удалить</div></div>');
-					});
-					function removeComp (s) {
-						$(s).parent('.row').remove();
-					};
-				</script>
 				
 				<p>Задача, которую специалист должен выполнить</p>
 				<p><input type="text" class="col-xs-12" placeholder="Основная задача, кратко"><div class="clear"></div></p>
 				<p>Сумма оплаты работ</p>
 				<p>
-					<input type="text" class="col-xs-8">
+					<input type="text" class="col-xs-5">
+					<select name="payCur" class="col-xs-3">
+					  <option value="usd">usd</option>
+					  <option value="rub">rub</option>
+					  <option value="eth">eth</option>
+					  <option value="btc">btc</option>
+					  <option value="ltc">ltc</option>
+					  <option value="des">des</option>
+					</select>
 					<select name="payType" class="col-xs-4">
 					  <option value="project">За проект</option>
 					  <option value="month">В месяц</option>
@@ -255,7 +254,7 @@
 				Поиск специалиста<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
 			</div>
 			<div class="modal-body">
-				<p>Название компетенции специалиста</p>
+				<p>Требуемая специальность</p>
 				<p><input type="text" class="col-xs-12" placeholder="Администратор серверного парка" disabled><div class="clear"></div></p>
 				<p>Задача, которую специалист должен выполнить</p>
 				<p><input type="text" class="col-xs-12" placeholder="Сопровождение работы серверного парка" disabled><div class="clear"></div></p>

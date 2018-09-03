@@ -177,11 +177,19 @@
 								  <div role="tabpanel" class="medias tab-pane fade in" id="tab_content3" aria-labelledby="home-tab">
 									<div class="x_panel">
 									  <div class="x_content">
-										<div>
-											<h2>Обложка проекта</h2>
-											<div class="row"><div class="col-sm-4 col-xs-12"><img src="http://daniellegibsonevents.com/wp-content/uploads/2014/06/16-9-dummy-image2.jpg" alt=""> Рекомендуемое соотншение сторон: 16:9<br/><br/>
-											<span class="btn btn-primary btn-file">Изменить <input type="file"></span></div></div>
-										</div><div><br/>
+										<div class="row">
+											<div class="col-xs-12 col-sm-6 col-md-4">
+												<h2>Логотип проекта</h2>
+												<div class="row"><div class="col-xs-12"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEXMzMyUlJTPz8+WlpbCwsKjo6O6urqampqSkpK2trbJycmpqam8vLytra2cnJzLy8uxsbE1oJnGAAAD90lEQVR4nO3YAXejKBSGYUEiiIj+/1+794Iadcyks52kObvvc05bakT5RIHYNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKz93n777farB3snNw7pK/v14zhd1h8Gt/0zjvOHRLT3i+1C+Eqr7BDaePVBCqHb/mnN7dmx7EU/X237ntiLVC+9M6b/UkLzIKEx94T+aUKnp3bPt32TC0ZlPeqbE3Zy6jAedrKjbuse1fhXnGlbIz/t9AMJ5dTnhNqcv55wiL0cVp7ANyecopzwmLCZpt68IKG1s2lvb09YbppTwsa+JqH+9v/xhO0x4fHhOBVqwsPkXv/eE9p9wuuD1ZP/VB+m2Vnn6qA9dXM3HQolYey7pR+tW8f3LaHWXxNKtWUZoUeM8773dwnTem1e9Bymw3M4BBPmHLyWnZd/5BrUgnc1oU86ANdcgw7wuseW8CZ79ktCJzuGrLHsLfhkwmVC24ewll6S0OX9WCqbdPpos5RtlmFW22+zaWWvW00oH7Z10aKDlCiLoSVht9TXjyfflmq65631/lHC0Sxd/pKEXlrbmm0+1LPNjUxMmtDJnJViV1YGnaQxriSUHaRiljqTVI4xt75ZE0oS0zdDuSskrUlyQM0l21vfuelw8vUulWtc7+WXJJT7qN5xSx9KC2U1V/pQ05Y2SMHHJhrtau1Dp70rW2ojl+g1oWa21pU+lF3zduXkuMmeTv6ekSaPc5qae8Ks2abyW1tVnjZ7M1mGzPJwLWPpTTNrg6ROzVZ/R6/ZppowSwUby9KlVviRhMM62teEW9s0oTxDpVVSyF3X+TY3x4TSe6nUnNecsTx2y1gqabuujjpaYTqf/G2zxcOEMlDUhFIIQUZNf0o4XiUctoQ6Tmm1cj+Y/NkJ81w8Sjg+SLhU+6g+9Jd3qT5Q9evpH92lknat9jEJdaRprkYa+TMP5z68jzT2NNKUhLnMoPPQf1TCB7OF3q65TP67hBezRaOzRbPNFq1erfD0Ll3b8I6EZcbXpYrO+KnM+Nr6IBuXHfYJddHinN/P+IPuVWf82sWyVktP+jDm7N6WcFm1+fuqTUcOGfeNlLWNh4R6KWTBsF+1Ja3v66pNbgWpZvyT5/Clq7YQtu9xy7s2fVkS+m3lvbxM0YKsuMtIE4wmXN64Dfqep668l3dtsvI2XVuOa3WJbuqCXVbe54T39Xaoi/dS+rsJY0puV66LjjQn65btUb40xa1QWuGSroFkh/plys3yZelQv9NvX7W+jf28bHXp/BJtd/Kun06NeK3ffgP+de9f33r+9lMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPA/8A+7oidFiCpvzgAAAABJRU5ErkJggg==" alt=""> Рекомендуемое соотншение сторон: 1:1<br/><br/>
+												<span class="btn btn-primary btn-file">Изменить <input type="file"></span></div></div>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4">
+												<h2>Обложка проекта</h2>
+												<div class="row"><div class="col-xs-12"><img src="http://daniellegibsonevents.com/wp-content/uploads/2014/06/16-9-dummy-image2.jpg" alt=""> Рекомендуемое соотншение сторон: 16:9<br/><br/>
+												<span class="btn btn-primary btn-file">Изменить <input type="file"></span></div></div>
+											</div>
+										</div>
+										<div><br/>
 											<h2>Видеопрезентация проекта (ссылка)</h2>
 											<input type="text" id="project-name" required="required" class="form-control col-xs-12" value ="https://www.youtube.com/watch?v=izv1Wh3vvTQ">
 											<div class="clearfix"></div>
@@ -205,7 +213,7 @@
 									  <div class="x_content">
 										<a href="startup-experts.php"><button type="button" class="btn btn-success noborder pull-right"><i class="fa fa-wrench"></i> &nbsp;Найти эксперта</button></a>
 										<h2>Команда проекта</h2>
-										<div class="row">
+										<div class="row team">
 											<div class="teamCard col-md-3 col-sm-4 col-xs-12">
 												<div>
 													<div class="img"><img src="http://www.epochtimes.ru/eet-content/uploads/06/cinema/161_PV.jpg" alt=""></div>
@@ -213,7 +221,7 @@
 													<div class="position">Технический директор</div>
 													<div class="desc">Описание. Cras dui nibh, elementum non tincidunt pulvinar, laoreet commodo felis. Vestibulum malesuada lorem iaculis metus auctor lobortis.</div>
 													<div class="social"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a></div>
-													<div class="edit"><a href="#">изменить</a> | <a href="#">удалить</a></div>
+													<div class="edit"><a href="#">изменить</a><!-- предполагается вызов такого же окна, как при добавлении, но с имеющимися данными --> | <a href="javascript:void(0)" onclick="delMan(this)">удалить</a></div>
 												</div>
 											</div>
 											<div class="teamCard col-md-3 col-sm-4 col-xs-12">
@@ -223,7 +231,7 @@
 													<div class="position">Технический директор</div>
 													<div class="desc">Описание. Cras dui nibh, elementum non tincidunt pulvinar, laoreet commodo felis. Vestibulum malesuada lorem iaculis metus auctor lobortis.</div>
 													<div class="social"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a></div>
-													<div class="edit"><a href="#">изменить</a> | <a href="#">удалить</a></div>
+													<div class="edit"><a href="#">изменить</a> | <a href="javascript:void(0)" onclick="delMan(this)">удалить</a></div>
 												</div>
 											</div>
 											<div class="teamCard col-md-3 col-sm-4 col-xs-12">
@@ -233,7 +241,7 @@
 													<div class="position">Технический директор</div>
 													<div class="desc">Описание. Cras dui nibh, elementum non tincidunt pulvinar, laoreet commodo felis. Vestibulum malesuada lorem iaculis metus auctor lobortis.</div>
 													<div class="social"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a></div>
-													<div class="edit"><a href="#">изменить</a> | <a href="#">удалить</a></div>
+													<div class="edit"><a href="#">изменить</a> | <a href="javascript:void(0)" onclick="delMan(this)">удалить</a></div>
 												</div>
 											</div>
 										</div>
@@ -242,7 +250,7 @@
 										<hr/>
 										
 										<h2>Советники проекта</h2>
-										<div class="row">
+										<div class="row adv">
 											<div class="teamCard col-md-3 col-sm-4 col-xs-12">
 												<div>
 													<div class="img"><img src="http://www.epochtimes.ru/eet-content/uploads/06/cinema/161_PV.jpg" alt=""></div>
@@ -250,7 +258,7 @@
 													<div class="position">Технический директор</div>
 													<div class="desc">Описание. Cras dui nibh, elementum non tincidunt pulvinar, laoreet commodo felis. Vestibulum malesuada lorem iaculis metus auctor lobortis.</div>
 													<div class="social"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a></div>
-													<div class="edit"><a href="#">изменить</a> | <a href="#">удалить</a></div>
+													<div class="edit"><a href="#">изменить</a><!-- предполагается вызов такого же окна, как при добавлении, но с имеющимися данными --> | <a href="javascript:void(0)" onclick="delMan(this)">удалить</a></div>
 												</div>
 											</div>
 										</div>
@@ -307,32 +315,35 @@
 			</div>
 			<div class="modal-body">
 				<p>ФИО</p>
-				<input type="text" class="col-xs-12" />
+				<input type="text" class="a1 col-xs-12" />
 				<p>Должность в проекте</p>
-				<input type="text" class="col-xs-12" />
+				<input type="text" class="a2 col-xs-12" />
 				<p>Описание</p>
-				<input type="text" class="col-xs-12" />
+				<input type="text" class="a3 col-xs-12" />
 				<p>Контакты</p>
-				<p>Facebook: https://www.facebook.com/amasdds - <a href="#"><span class="text-danger">удалить</span></a><br/></p>
-				<button type="button" class="btn btn-primary noborder addContactBtn" onclick="$('.addContact').slideDown('fast'); $(this).slideUp('fast');">Добавить новый контакт</button>
-				<div class="row addContact">
-					<div class="col-md-3 col-xs-12">
-						<select class="form-control">
-						  <option>Facebook</option>
-						  <option>Twitter</option>
-						  <option>Google+</option>
-						</select>
-					</div>
-					<div class="col-md-6 col-xs-12">
-						<input type="text" id="teamLink_1" class="docLink form-control" value="https://facebook.com/sfrjwoei">
-					</div>
-					<div class="col-md-3 col-xs-12">
-						<button type="button" class="btn btn-success noborder vx"><i class="fa fa-check" aria-hidden="true"></i></button>
-						<button type="button" class="btn btn-warning noborder vx" onclick="$('.addContact').slideUp('fast'); $('.addContactBtn').slideDown('fast');"><i class="fa fa-times" aria-hidden="true"></i></button>
+				<div class="contacts">
+					<button type="button" class="btn btn-primary noborder addContactBtn" onclick="$('#addTeamModal .addContact').slideDown('fast'); $(this).slideUp('fast');">Добавить новый контакт</button>
+					<div class="row addContact">
+						<div class="col-md-3 col-xs-12">
+							<select class="form-control">
+							  <option>Facebook</option>
+							  <option>Twitter</option>
+							  <option>Google+</option>
+							</select>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<input type="text" id="teamLink_1" class="form-control" />
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<button type="button" class="btn btn-success noborder vx" onclick="addContact(this);"><i class="fa fa-check" aria-hidden="true"></i></button>
+							<button type="button" class="btn btn-warning noborder vx" onclick="$('#addTeamModal .addContact').slideUp('fast'); $('.addContactBtn').slideDown('fast');"><i class="fa fa-times" aria-hidden="true"></i></button>
+						</div>
 					</div>
 				</div>
 				<p>Фото</p>
 				<span class="btn btn-primary btn-file">Добавить фото <input type="file" /></span>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning button140" onclick="addMan(this, 'team');" data-dismiss="modal">Добавить</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button></p>
 			</div>
 		</div>
 	</div>
@@ -352,9 +363,29 @@
 				<p>Описание</p>
 				<input type="text" class="col-xs-12" />
 				<p>Контакты</p>
-				<button type="button" class="btn btn-primary noborder" data-toggle="modal" data-target="#addContactModal">Добавить новый контакт</button>
+				<div class="contacts">
+					<button type="button" class="btn btn-primary noborder addContactBtn" onclick="$('#addAdvModal .addContact').slideDown('fast'); $(this).slideUp('fast');">Добавить новый контакт</button>
+					<div class="row addContact">
+						<div class="col-md-3 col-xs-12">
+							<select class="form-control">
+							  <option>Facebook</option>
+							  <option>Twitter</option>
+							  <option>Google+</option>
+							</select>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<input type="text" id="advLink_1" class="form-control" />
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<button type="button" class="btn btn-success noborder vx" onclick="addContact(this);"><i class="fa fa-check" aria-hidden="true"></i></button>
+							<button type="button" class="btn btn-warning noborder vx" onclick="$('#addAdvModal .addContact').slideUp('fast'); $('.addContactBtn').slideDown('fast');"><i class="fa fa-times" aria-hidden="true"></i></button>
+						</div>
+					</div>
+				</div>
 				<p>Фото</p>
 				<span class="btn btn-primary btn-file">Добавить фото <input type="file" /></span>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning button140" onclick="addMan(this, 'adv');" data-dismiss="modal">Добавить</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button></p>
 			</div>
 		</div>
 	</div>
@@ -493,6 +524,33 @@
 		</div>
 	</div>
 </div>
+  
+<script>
+	// add team/adv and their contacts
+	function addContact(e) {
+		var blk = $(e).closest('.contacts');
+		if (blk.find('input').val()){
+			blk.prepend('<p class="linkType ' + blk.find('select').val() + '">' + blk.find('select').val() + ' - <span class="link">' + blk.find('input').val() + '</span> <a href="javascript:void(0)"><span class="text-danger" onclick="removeContact(this)">удалить</span></a><br/></p>');
+			blk.find('input').val('');
+		}
+	}
+	function removeContact (e) {
+		$(e).closest('p').remove();
+	}
+	// требуется реализовать подгрузку фото на сервер. также не помешает валидация.
+	function addMan (e, type) {
+		if (type == 'team') {
+			var target = $('.team.row');
+		} else {
+			var target = $('.adv.row');
+		}
+		// здесь иконки должны отображаться при наличии ссылок соответствующих социалок. В связи со сроками реализовано частично.
+		$(target).append('<div class="teamCard col-md-3 col-sm-4 col-xs-12"><div><div class="img"><img src="http://www.epochtimes.ru/eet-content/uploads/06/cinema/161_PV.jpg" alt=""></div><div class="name">' + $(e).closest('.modal-body').find('.a1').val() + '</div><div class="position">' + $(e).closest('.modal-body').find('.a2').val() + '</div><div class="desc">' + $(e).closest('.modal-body').find('.a3').val() + '</div><div class="social"><a href="' + $(e).closest('.modal-body').find('.linkType .link').text() + '"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a></div><div class="edit"><a href="#">изменить</a><!-- предполагается вызов такого же окна, как при добавлении, но с имеющимися данными --> | <a href="javascript:void(0)" onclick="delMan(this)">удалить</a></div></div></div>')
+	}
+	function delMan(e) {
+		e.closest('.teamCard').remove();
+	}
+</script>
   
   <script src="js/bootstrap.min.js"></script>
 

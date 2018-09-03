@@ -19,7 +19,7 @@
 								  <li role="presentation" class=""><a href="#tab_content2" role="tab" id="tab2" data-toggle="tab" aria-expanded="false">Эксперты <span class="label label-danger">1</span></a></li>
 								  <li role="presentation" class=""><a href="#tab_content3" role="tab" id="tab3" data-toggle="tab" aria-expanded="false">Заявки</a></li>
 								  <li role="presentation" class=""><a href="#tab_content4" role="tab" id="tab4" data-toggle="tab" aria-expanded="false">Отзывы</a></li>
-								  <li role="presentation" class=""><a href="#tab_content5" role="tab" id="tab5" data-toggle="tab" aria-expanded="false">Компетенции</a></li>
+								  <li role="presentation" class=""><a href="#tab_content5" role="tab" id="tab5" data-toggle="tab" aria-expanded="false">Специальность</a></li>
 								</ul>
 								<div id="infoTabContent" class="tab-content">
 								  <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
@@ -256,7 +256,7 @@
 												<button>Поиск</button>
 											</div>
 										</div><hr/>
-											<button type="button" class="btn btn-info" data-toggle="modal" data-target="#addCompModal"><i class="fa fa-envelope"></i> &nbsp;Добавить компетенцию</button>
+											<button type="button" class="btn btn-info" data-toggle="modal" data-target="#addCompModal"><i class="fa fa-envelope"></i> &nbsp;Добавить специальность</button>
 											<table class="table table-striped valign-m">
 												<thead>
 												  <tr>
@@ -373,12 +373,12 @@
 		</div>
 	</div>
 </div>
-<!-- окно добавления компетенции -->
+<!-- окно добавления специальности -->
 <div class="modal fade" id="addCompModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				Добавить компетенцию<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				Добавить специальность<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
 			</div>
 			<div class="modal-body">
 				<p>Название RU <input type="text" class="col-xs-12"></p><div class="clear"></div><p></p>
@@ -389,12 +389,12 @@
 		</div>
 	</div>
 </div>
-<!-- окно изменения компетенции -->
+<!-- окно изменения специальности -->
 <div class="modal fade" id="editCompModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				Изменить компетенцию<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				Изменить специальность<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
 			</div>
 			<div class="modal-body">
 				<p>Название RU <input type="text" class="col-xs-12" value="Программист C#"></p><div class="clear"></div><p></p>
@@ -405,15 +405,15 @@
 		</div>
 	</div>
 </div>
-<!-- окно удаления компетенции -->
+<!-- окно удаления специальности -->
 <div class="modal fade" id="delCompModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				Удилить компетенцию<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				Удилить специальность<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
 			</div>
 			<div class="modal-body">
-				<p>Вы уверены, что хотите удалить компетенцию &laquo;Программист C#&raquo;?</p>
+				<p>Вы уверены, что хотите удалить специальность &laquo;Программист C#&raquo;?</p>
 				<hr>
 				<p class="text-center"><button type="button" class="btn btn-danger button140">Удалить</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button></p>
 			</div>
