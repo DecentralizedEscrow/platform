@@ -6001,7 +6001,7 @@ ul.msg_list li a .time {right: 12px;}
 }
 .voting .percentage p:last-child{margin-bottom: 0;}
 
-.questions .question, #conversModal .question {
+.questions .question, .conversModal .question {
 	margin-left: 40px;
 	margin-right: 0px;
 	border: 1px solid #E6E9ED;
@@ -6219,15 +6219,15 @@ ul.msg_list li a .time {right: 12px;}
 .userMess .msgAttr.inlist button a:hover {color: #107aab;}
 
 .userMess textarea {background: #f5f5f5;}
-.userMess .answer button, #conversModal .answer button {margin-top: 20px;}
-#conversModal .questions {
+.userMess .answer button, .conversModal .answer button {margin-top: 20px;}
+.conversModal .questions {
 	max-height: 50vh;
     overflow-y: scroll;
 }
-#conversModal .question {
+.conversModal .question {
 	margin-right: 20px;
 }
-#conversModal .answer {text-align: center;}
+.conversModal .answer {text-align: center;}
 
 .userMess .msg.selected {
 	border: 1px solid #175a96;
@@ -7150,3 +7150,14 @@ table.style1 th {white-space: nowrap;}
 	overflow: hidden;
 }
 #rmModal .percentage {padding-left: 20px;}
+
+.innerSuccess {
+	margin-bottom: 10px;
+    background: #00af3b;
+    color: #fff;
+    padding: 8px 10px;
+}
+#ajSuccessModal  .modal-content {
+    background: #ea540cfa;
+    color: #fff;
+}
