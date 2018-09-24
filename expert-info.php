@@ -34,14 +34,14 @@
 					</div>
 					<div class="x_panel comp">
 						<div class="x_title">
-						  <h2>Компетенции</h2>
+						  <h2>Специальности</h2>
 						  <div class="clearfix"></div>
 						</div>
 						<div class="x_content text-left over-x-auto">
 							<table class="table table-striped valign-m">
 								<thead>
 								  <tr>
-									<th><a href="#">Компетенция <i class="fa fa-caret-down"></i></a></th>
+									<th><a href="#">Специальность <i class="fa fa-caret-down"></i></a></th>
 									<th><a href="#">Комментарий  <i class="fa fa-caret-down"></i></a></th>
 									<th></th>
 								  </tr>
@@ -131,23 +131,23 @@
 
   </div>
 
-<!-- окно добавления компетенции -->
+<!-- окно добавления специальности -->
 <div class="modal fade" id="compAddModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				Добавление компетенции<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				Добавление специальности<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
 			</div>
 			<div class="modal-body">
 				<p>
 					<select class="w-100">
-					  <option selected disabled hidden>Укажите компетенцию</option>
+					  <option selected disabled hidden>Укажите специальность</option>
 					  <option>Программист</option>
 					  <option>Юрист</option>
 					  <option>Маркетолог</option>
 					</select>
 				</p>
-				<p><textarea class="form-control col-xs-12" rows="4" placeholder="Наименование документа, подтверждающего компетенцию (дата выдачи, место выдачи) или иной комментарий"></textarea><div class="clear"></div></p>
+				<p><textarea class="form-control col-xs-12" rows="4" placeholder="Наименование документа, подтверждающего специальность (дата выдачи, место выдачи) или иной комментарий"></textarea><div class="clear"></div></p>
 				<p class="text-center"><button type="button" class="btn btn-success">Добавить</button></p>
 			</div>
 		</div>
