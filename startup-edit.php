@@ -190,6 +190,25 @@
 											</div>
 										</div>
 										<div><br/>
+											<h2>Документы проекта</h2>
+											<div class="docs">
+												<p>Устав организации - http://asdweiofij.ef/sdafase.pdf <a href="javascript:void(0)"><span class="text-danger" onclick="removeContact(this)">удалить</span></a></p>
+												<button type="button" class="btn btn-primary noborder addDocBtn" onclick="$('.addDoc').slideDown('fast'); $(this).slideUp('fast');" style="display: inline-block;">Добавить документ</button>
+												<div class="row addDoc" style="display: none;">
+													<div class="col-md-3 col-xs-12">
+														<input type="text" id="DocName_1" class="DocName form-control" placeholder="Название">
+													</div>
+													<div class="col-md-6 col-xs-12">
+														<input type="text" id="DocLink_1" class="DocLink form-control" placeholder="Ссылка">
+													</div>
+													<div class="col-md-3 col-xs-12">
+														<button type="button" class="btn btn-success noborder vx" onclick="addDoc(this);"><i class="fa fa-check" aria-hidden="true"></i></button>
+														<button type="button" class="btn btn-warning noborder vx" onclick="$('.addDoc').slideUp('fast'); $('.addDocBtn').slideDown('fast');"><i class="fa fa-times" aria-hidden="true"></i></button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div><br/>
 											<h2>Видеопрезентация проекта (ссылка)</h2>
 											<input type="text" id="project-name" required="required" class="form-control col-xs-12" value ="https://www.youtube.com/watch?v=izv1Wh3vvTQ">
 											<div class="clearfix"></div>
@@ -536,6 +555,13 @@
 	}
 	function removeContact (e) {
 		$(e).closest('p').remove();
+	}
+	function addDoc(e) {
+		var blk = $(e).closest('.docs');
+		if (blk.find('input').val()){
+			blk.prepend('<p>' + blk.find('input.DocName').val() + ' - <span class="link">' + blk.find('input.DocLink').val() + '</span> <a href="javascript:void(0)"><span class="text-danger" onclick="removeContact(this)">удалить</span></a><br/></p>');
+			blk.find('input').val('');
+		}
 	}
 	// требуется реализовать подгрузку фото на сервер. также не помешает валидация.
 	function addMan (e, type) {

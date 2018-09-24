@@ -311,26 +311,23 @@
 										<div class="form-group">
 										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="docs">Документы проекта <span class="required"></span>
 										  </label>
-										  <div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 20px;">
-											<div class="row">
-												<div class="addDoc col-md-4 col-xs-12"><input type="text" id="docName_1" class="docName form-control ntSaveForms" placeholder="Название" /></div>
-												<div class="addDoc col-md-8 col-xs-12"><input type="text" id="docLink_1" class="docLink form-control ntSaveForms" placeholder="Ссылка на документ" /></div>
+										  <div class="col-md-6 col-sm-6 col-xs-12" style="margin: 9px 0 20px 0;">
+											<div class="docs">
+												<button type="button" class="btn btn-primary noborder addDocBtn" onclick="$('.addDoc').slideDown('fast'); $(this).slideUp('fast');" style="display: inline-block;">Добавить документ</button>
+												<div class="row addDoc" style="display: none;">
+													<div class="col-md-3 col-xs-12">
+														<input type="text" id="DocName_1" class="DocName form-control" placeholder="Название">
+													</div>
+													<div class="col-md-6 col-xs-12">
+														<input type="text" id="DocLink_1" class="DocLink form-control" placeholder="Ссылка">
+													</div>
+													<div class="col-md-3 col-xs-12">
+														<button type="button" class="btn btn-success noborder vx" onclick="addDoc(this);"><i class="fa fa-check" aria-hidden="true"></i></button>
+														<button type="button" class="btn btn-warning noborder vx" onclick="$('.addDoc').slideUp('fast'); $('.addDocBtn').slideDown('fast');"><i class="fa fa-times" aria-hidden="true"></i></button>
+													</div>
+												</div>
 											</div>
-											<div class="docList"></div>
-											<span class="addDocBtn btn btn-primary" onclick="addDoc()">Добавить строку</span>
 										  </div>
-										  <script>
-											//чисто для примера. здесь нужно реализовать присвоение адекватных id спаунящимся инпутам, прописать ограничения, критерии для появления и исчезновения строк
-											function addDoc() {
-												$('.docList').append('<div class="row"><div class="addDoc col-md-4 col-xs-12"><input type="text" id="docName" class="form-control ntSaveForms" placeholder="Название" /></div><div class="addDoc col-md-8 col-xs-12"><input type="text" id="docLink" class="form-control ntSaveForms" placeholder="Ссылка на документ" /></div></div>');
-											}
-											function addTeam() {
-												$('.teamList').append('<div class="row"><div class="addDoc col-md-4 col-xs-12"><input type="text" id="teamName_1" class="docName form-control ntSaveForms" placeholder="ФИО" /></div><div class="addDoc col-md-5 col-xs-12"><input type="text" id="teamLink_1" class="docLink form-control ntSaveForms" placeholder="Должность в проекте" /></div><div class="addDoc col-md-3 col-xs-12"><input type="text" id="teamLink_1" class="docLink form-control ntSaveForms" placeholder="Контакты" /></div></div>');
-											}
-											function addAdv() {
-												$('.advList').append('<div class="row"><div class="addDoc col-md-4 col-xs-12"><input type="text" id="advName_1" class="docName form-control ntSaveForms" placeholder="ФИО" /></div><div class="addDoc col-md-5 col-xs-12"><input type="text" id="advLink_1" class="docLink form-control ntSaveForms" placeholder="Должность в проекте" /></div><div class="addDoc col-md-3 col-xs-12"><input type="text" id="advLink_1" class="docLink form-control ntSaveForms" placeholder="Контакты" /></div></div>');
-											}
-										  </script>
 										</div>
 										<div class="form-group">
 										  <label class="control-label col-md-4 col-sm-4 col-xs-12" for="video">Видеопрезентация <span class="required"></span>
@@ -631,6 +628,18 @@
 	}
 	function delMan(e) {
 		e.closest('.teamCard').remove();
+	}
+	
+	// docs
+	function removeDoc (e) {
+		$(e).closest('p').remove();
+	}
+	function addDoc(e) {
+		var blk = $(e).closest('.docs');
+		if (blk.find('input').val()){
+			blk.prepend('<p>' + blk.find('input.DocName').val() + ' - <span class="link">' + blk.find('input.DocLink').val() + '</span> <a href="javascript:void(0)"><span class="text-danger" onclick="removeDoc(this)">удалить</span></a><br/></p>');
+			blk.find('input').val('');
+		}
 	}
   </script>
 
