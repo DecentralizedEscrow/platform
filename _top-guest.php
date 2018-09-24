@@ -208,7 +208,7 @@
 				  
 				  <!-- menu prile quick info -->
 				  <div class="enterReg darkblue">
-					<button type="button" class="btn btn-success noborder" data-toggle="modal" data-target="#enterModal">Вход / Регистрация</button>
+					<button type="button" class="btn btn-success noborder" data-toggle="modal" data-target="#enterModal"><span>Вход / Регистрация</span><i class="fa fa-sign-in"></i></button>
 					<div class="clear"></div>
 				  </div>
 				  <!-- /menu prile quick info -->

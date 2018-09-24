@@ -7161,3 +7161,7 @@ table.style1 th {white-space: nowrap;}
     background: #ea540cfa;
     color: #fff;
 }
+
+.enterReg button i {display: none;}
+.nav-sm .enterReg button span {display: none;}
+.nav-sm .enterReg button i {display: block;}
