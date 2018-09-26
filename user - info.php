@@ -1,4 +1,10 @@
 <?php require_once('_top.php'); ?>
+				<div class="announcement">
+					<h4>Подтверждение номера телефона</h4>
+					<p>На указанный вами номер телефона было отправлено сообщение с кодом подтверждения.</p>
+					<p>Введите полученный код в поле: <input type="text" /><button class="btn-md btn-success acc">Подтвердить</button></p>
+					<p>Не получили код? &nbsp; <button class="btn-md btn-warning">Отправить код еще раз</button></p>
+				</div><br/>
 				<div class="userInfo r1 row">
 					<div class="col-sm-4 col-xs-12">
 						<div class="ava x_panel">

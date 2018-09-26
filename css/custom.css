@@ -7170,3 +7170,28 @@ table.style1 th {white-space: nowrap;}
 	height: auto;
 	margin-bottom: 10px;
 }
+
+.announcement input {
+	color: #000;
+	padding: 6px;
+	margin-left: 6px;
+	border: 1px solid #fff;
+    height: 25px;
+    width: 100px;
+}
+.announcement button {
+	height: 25px;
+	border: 1px solid #eee !important;
+}
+.announcement button.acc {
+	border-left: none !important;
+}
+.announcement p:last-child {margin-bottom: 0;}
+
+.footer {
+	background: #EDEDED;
+	padding: 20px;
+	padding-bottom: 16px;	
+	margin-bottom: 10px;
+	text-align: right;
+}
