@@ -7165,3 +7165,8 @@ table.style1 th {white-space: nowrap;}
 .enterReg button i {display: none;}
 .nav-sm .enterReg button span {display: none;}
 .nav-sm .enterReg button i {display: block;}
+
+.dashboard .current .x_content {
+	height: auto;
+	margin-bottom: 10px;
+}

@@ -18,6 +18,46 @@
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="x_panel addWidget" data-toggle="modal" data-target="#addWModal"><i class="fa fa-plus-circle"></i> Добавить виджет</div>
 						</div>
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="x_panel current tile">
+								<div class="x_title">
+									<h2>Текущий проект</h2>
+									<ul class="nav navbar-right panel_toolbox">
+									  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+									  <li><a class="close-link"><i class="fa fa-close"></i></a></li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+								<div class="x_content myStartup">
+									<div class="icoCard col-sm-4 col-xs-12"><div>
+									<div class="img"><img src="http://www.thebohoguide.com/wp-content/uploads/job-manager-uploads/main_image/2016/09/Panorama-Fraser-Island.jpg" alt=""></div>
+									<div class="summary">
+										<div class="name">Завод стеклянных пылесосов</div>
+										<div class="status"><span class="text-success">Одобрен</span> | <span class="text-danger">требуется наполнение</span></div>
+										<div class="notice">Для запуска проекта необходимо: <span class=""><a href="#">заполнить RoadMap</a>, <a href="startup-add-smart.php">создать смарт-контракт</a></span></div>
+										<!--<div class="descr">Описание проекта. Nunc et mi in nisl semper elementum eu sed sapien. Mauris vehicula enim vel quam mollis lobortis.</div>
+										<div class="">
+											<div class="pull-left">Прогресс 45%</div>
+											<div class="pull-right">Осталось: 35 дней</div>
+										</div>
+										<div class="progress"><div class="progress-bar progress-bar-info" data-transitiongoal="45" style="width: 45%;" aria-valuenow="45"></div></div>
+										<div class="money">
+											Собрано: $ 1 583 354<br>
+											Цель: $ 3 518 564
+										</div>-->
+									</div>
+									<div class="btns"><div>
+										<div>
+											<button type="button" class="btn btn-success noborder btn-sm"> Запустить ICO</button> <!-- отображается в случае, если выбран ручной запуск ICO и оно еще не было запущено -->
+											<button type="button" class="btn btn-danger noborder btn-sm"> Завершить ICO</button> <!-- отображается в случае, если выбрано ручное завершение ICO и оно уже было запущено но не было завершено -->
+											<a href="startup.php"><button type="button" class="btn btn-info noborder btn-sm"> Страница стартапа</button></a>
+											<a href="startup-edit.php"><button type="button" class="btn btn-warning noborder btn-sm"> Изменить информацию</button></a>
+										</div>
+									</div></div>
+								</div></div>
+								</div>
+							</div>
+						</div>
 						<!-- Виджет отображается для проекта на стадии идеи вместо виджета статистики голосований -->
 						<!-- <div class="col-md-6 col-sm-12 col-xs-12">
 							<div class="x_panel tile">
