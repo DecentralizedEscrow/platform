@@ -256,6 +256,17 @@
 					</div>
 				</div>
 			</section>
+			<div class="footer row">
+				<div class="bugRep col-md-2"><a href="javascript:void(0)" data-toggle="modal" data-target="#bugRepModal">Нашли ошибку?</a></div>
+				<div class="social col-md-10">
+					<a href="https://twitter.com/descrow3"><img height="20" src="http://www.pngall.com/wp-content/uploads/2016/07/Twitter-Download-PNG.png"></a>
+					<a href="https://www.facebook.com/descrow3/"><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png"></a>
+					<a href="https://medium.com/@Descrow"><img height="20" src="http://www.stickpng.com/assets/images/5841c47ba6515b1e0ad75aa3.png"></a>
+					<a href="http://t.me/descrow"><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Telegram_Messenger.png"></a>
+					<a href="https://www.instagram.com/descrow_official/"><img height="20" src="https://sguru.org/wp-content/uploads/2018/01/best-instagram-logo-download-here-15.png"></a>
+					<a href="https://vk.com/descrow"><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/200px-VK.com-logo.svg.png"></a>
+				</div>
+			</div>
 		  </div>
 		</div>
 		</div>
@@ -283,6 +294,22 @@
 					<div>Название виджета</div>
 				</div>
 				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно bugReport -->
+<div class="modal fade" id="bugRepModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Нашли ошибку?<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body">
+				<p>Если вы нашли ошибку на сайте, напишите нам на почту <a href="mailto:asdf@descrow.com">asdf@descrow.com</a>, подробно описав суть и момент возникновения ошибки (желательно, приложив скриншоты), и мы исправим ее в последующих релизах платформы.</p>
+				<p>Также вы можете написать свои пожелания и идеи по улучшению существующей или добавлению новой функциональности.</p>
+				<p>Это поможет сделать платформу лучше.</p>
 			</div>
 		</div>
 	</div>

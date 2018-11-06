@@ -6466,7 +6466,10 @@ ul.msg_list li a .time {right: 12px;}
 	margin-left: 10px;
 	min-width: 60px;
 }
-.myStartup .icoCard .btns {width: 100%;}
+.myStartup .icoCard .btns {
+	width: 100%;
+	padding-right: 5px;
+}
 .myStartup .icoCard .btns > div {
     top: -30px;
     right: 10px;
@@ -7191,7 +7194,29 @@ table.style1 th {white-space: nowrap;}
 .footer {
 	background: #EDEDED;
 	padding: 20px;
-	padding-bottom: 16px;	
-	margin-bottom: 10px;
-	text-align: right;
+	padding-bottom: 16px;
+	border-top: 1px solid #D9DEE4;
+}
+.footer .social {text-align: right;}
+.footer .social img {
+	filter: grayscale(100%);
+}
+.footer .social img:hover {
+	filter: none !important;
+}
+
+#helpModal .carousel-control {
+	display: inline-block;
+    position: relative;
+    height: 40px;
+    width: 40px;
+	background: #999;
+	margin-top: 10px;
+	float: none;
+}
+#helpModal .carousel-control.left {margin-right: 4px;}
+#helpModal .carousel-control span {
+	font-size: 20px;
+	margin-left: -14px;
+	margin-right: -14px;
 }
