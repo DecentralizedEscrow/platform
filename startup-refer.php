@@ -64,7 +64,7 @@
 											</thead>
 											<tbody>
 											  <tr>
-												<td><a href="#">Валентин Медведев</a></td>
+												<td><a href="javascript:void(0);" data-toggle="modal" data-target="#askModal">Валентин Медведев</a></td>
 												<td><a href="#">54</a></td>
 												<td>12.05.2018</td>
 												<td>10.06.2018</td>
@@ -115,7 +115,7 @@
 											</thead>
 											<tbody>
 											  <tr>
-												<td><a href="#">Валентин Медведев</a></td>
+												<td><a href="javascript:void(0);" data-toggle="modal" data-target="#askModal">Валентин Медведев</a></td>
 												<td><a href="#">54</a></td>
 												<td>12.05.2018</td>
 												<td>10.06.2018</td>
@@ -179,6 +179,22 @@
 				<p class="text-center">Период &nbsp; <input type="date"> - <input type="date"></p>
 				<hr>
 				<p class="text-center"><button type="button" class="btn btn-info noborder">Показать</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно сообщения рефоводу -->
+<div class="modal fade in" id="askModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Написать рефоводу<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+				<h4 class="modal-title" id="image-gallery-title"></h4>
+			</div>
+			<div class="modal-body">
+				<p><textarea id="adv-descr" required="required" class="form-control col-xs-12" rows="4" placeholder="Ваше сообщение рефоводу"></textarea>
+				   </p><div class="clear"></div><p></p>
+				<p class="text-center"><button type="button" class="btn btn-success">Отправить</button></p>	
 			</div>
 		</div>
 	</div>
