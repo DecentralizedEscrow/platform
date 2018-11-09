@@ -7191,17 +7191,24 @@ table.style1 th {white-space: nowrap;}
 }
 .announcement p:last-child {margin-bottom: 0;}
 
-.footer {
+.desfooter {
 	background: #EDEDED;
 	padding: 20px;
 	padding-bottom: 16px;
 	border-top: 1px solid #D9DEE4;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-left: 240px;
+	margin: 0;
 }
-.footer .social {text-align: right;}
-.footer .social img {
+.desfooter .bugRep {text-align: left; padding-left: 20px;}
+.desfooter .social {text-align: right;}
+.desfooter .social img {
 	filter: grayscale(100%);
 }
-.footer .social img:hover {
+.desfooter .social img:hover {
 	filter: none !important;
 }
 

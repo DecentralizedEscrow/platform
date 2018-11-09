@@ -256,15 +256,15 @@
 					</div>
 				</div>
 			</section>
-			<div class="footer row">
-				<div class="bugRep col-md-2"><a href="javascript:void(0)" data-toggle="modal" data-target="#bugRepModal">Нашли ошибку?</a></div>
-				<div class="social col-md-10">
-					<a href="https://twitter.com/descrow3"><img height="20" src="http://www.pngall.com/wp-content/uploads/2016/07/Twitter-Download-PNG.png"></a>
-					<a href="https://www.facebook.com/descrow3/"><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png"></a>
-					<a href="https://medium.com/@Descrow"><img height="20" src="http://www.stickpng.com/assets/images/5841c47ba6515b1e0ad75aa3.png"></a>
-					<a href="http://t.me/descrow"><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Telegram_Messenger.png"></a>
-					<a href="https://www.instagram.com/descrow_official/"><img height="20" src="https://sguru.org/wp-content/uploads/2018/01/best-instagram-logo-download-here-15.png"></a>
-					<a href="https://vk.com/descrow"><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/200px-VK.com-logo.svg.png"></a>
+			<div class="desfooter row">
+				<div class="bugRep col-xs-6 col-md-2"><a href="javascript:void(0)" data-toggle="modal" data-target="#bugRepModal">Нашли ошибку?</a></div>
+				<div class="social col-xs-6 col-md-10">
+					<a href="https://twitter.com/descrow3" target="_blank"><img height="20" src="http://www.pngall.com/wp-content/uploads/2016/07/Twitter-Download-PNG.png"></a>
+					<a href="https://www.facebook.com/descrow3/" target="_blank"><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png"></a>
+					<a href="https://medium.com/@Descrow" target="_blank"><img height="20" src="http://www.stickpng.com/assets/images/5841c47ba6515b1e0ad75aa3.png"></a>
+					<a href="http://t.me/descrow" target="_blank"><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Telegram_Messenger.png"></a>
+					<a href="https://www.instagram.com/descrow_official/" target="_blank"><img height="20" src="https://sguru.org/wp-content/uploads/2018/01/best-instagram-logo-download-here-15.png"></a>
+					<a href="https://vk.com/descrow" target="_blank"><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/200px-VK.com-logo.svg.png"></a>
 				</div>
 			</div>
 		  </div>
