@@ -469,11 +469,11 @@
 			</div>
 			<div class="modal-body">
 				<p>ФИО</p>
-				<input type="text" class="col-xs-12" />
+				<input type="text" class="a1 col-xs-12" />
 				<p>Должность в проекте</p>
-				<input type="text" class="col-xs-12" />
+				<input type="text" class="a2 col-xs-12" />
 				<p>Описание</p>
-				<input type="text" class="col-xs-12" />
+				<input type="text" class="a3 col-xs-12" />
 				<p>Контакты</p>
 				<div class="contacts">
 					<button type="button" class="btn btn-primary noborder addContactBtn" onclick="$('#addAdvModal .addContact').slideDown('fast'); $(this).slideUp('fast');">Добавить новый контакт</button>
@@ -502,6 +502,92 @@
 		</div>
 	</div>
 </div>
+<!-- окно изменения члена команды -->
+<div class="modal fade" id="editTeamModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Изменить члена команды<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<input class="tempID" style="display:none;" /> <!-- temp id -->
+				<p>ФИО</p>
+				<input type="text" class="fio a1 col-xs-12" />
+				<p>Должность в проекте</p>
+				<input type="text" class="pos a2 col-xs-12" />
+				<p>Описание</p>
+				<input type="text" class="desc a3 col-xs-12" />
+				<p>Контакты</p>
+				<div class="contacts">
+					<button type="button" class="btn btn-primary noborder addContactBtn" onclick="$('#editTeamModal .addContact').slideDown('fast'); $(this).slideUp('fast');">Добавить новый контакт</button>
+					<div class="row addContact">
+						<div class="col-md-3 col-xs-12">
+							<select class="form-control">
+							  <option>Facebook</option>
+							  <option>Twitter</option>
+							  <option>Google+</option>
+							</select>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<input type="text" id="teamLink_1" class="form-control" />
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<button type="button" class="btn btn-success noborder vx" onclick="addContact(this);"><i class="fa fa-check" aria-hidden="true"></i></button>
+							<button type="button" class="btn btn-warning noborder vx" onclick="$('#editTeamModal .addContact').slideUp('fast'); $('.addContactBtn').slideDown('fast');"><i class="fa fa-times" aria-hidden="true"></i></button>
+						</div>
+					</div>
+				</div>
+				<p>Фото</p>
+				<span class="btn btn-primary btn-file">Добавить фото <input type="file" /></span>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning button140" onclick="saveMan(this, 'team');" data-dismiss="modal">Изменить</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- окно изменения советника -->
+<div class="modal fade" id="editAdvModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				Изменить советника<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Закрыть</span></button>
+			</div>
+			<div class="modal-body">
+				<input class="tempID" style="display:none;" /> <!-- temp id -->
+				<p>ФИО</p>
+				<input type="text" class="fio a1 col-xs-12" />
+				<p>Должность в проекте</p>
+				<input type="text" class="pos a2col-xs-12" />
+				<p>Описание</p>
+				<input type="text" class="desc a3 col-xs-12" />
+				<p>Контакты</p>
+				<div class="contacts">
+					<button type="button" class="btn btn-primary noborder addContactBtn" onclick="$('#editAdvModal .addContact').slideDown('fast'); $(this).slideUp('fast');">Добавить новый контакт</button>
+					<div class="row addContact">
+						<div class="col-md-3 col-xs-12">
+							<select class="form-control">
+							  <option>Facebook</option>
+							  <option>Twitter</option>
+							  <option>Google+</option>
+							</select>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<input type="text" id="advLink_1" class="form-control" />
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<button type="button" class="btn btn-success noborder vx" onclick="addContact(this);"><i class="fa fa-check" aria-hidden="true"></i></button>
+							<button type="button" class="btn btn-warning noborder vx" onclick="$('#editAdvModal .addContact').slideUp('fast'); $('.addContactBtn').slideDown('fast');"><i class="fa fa-times" aria-hidden="true"></i></button>
+						</div>
+					</div>
+				</div>
+				<p>Фото</p>
+				<span class="btn btn-primary btn-file">Добавить фото <input type="file" /></span>
+				<hr/>
+				<p class="text-center"><button type="button" class="btn btn-warning button140" onclick="saveMan(this, 'adv');" data-dismiss="modal">Изменить</button><button type="button" class="btn btn-warning button140" data-dismiss="modal">Отмена</button></p>
+			</div>
+		</div>
+	</div>
+</div>
   
   <style>#wizardForm .warning {background: #fff3f3;}</style>
   
@@ -523,6 +609,9 @@
   
   <script type="text/javascript">
     $(document).ready(function() {
+		teamID = 0;
+		advID = 0;
+	
       // Smart Wizard
       $('#wizard').smartWizard({
 		labelNext:'Далее', // label for Next button
@@ -537,7 +626,6 @@
 		// alert("Leaving step " + context.fromStep + " to go to step " + context.toStep);
 		// return false to stay on step and true to continue navigation 
         return validateSteps(context.fromStep); // return false to stay on step and true to continue navigation 
-		
 	}
 	
 	function validateSteps(stepnumber){
@@ -620,14 +708,42 @@
 	function addMan (e, type) {
 		if (type == 'team') {
 			var target = $('.team.row');
+			thisID = teamID + 1;
+			teamID++;
 		} else {
 			var target = $('.adv.row');
+			thisID = advID + 1;
+			advID++;
 		}
 		// здесь иконки должны отображаться при наличии ссылок соответствующих социалок. В связи со сроками реализовано частично.
-		$(target).append('<div class="teamCard col-md-3 col-sm-4 col-xs-12"><div><div class="img"><img src="http://www.epochtimes.ru/eet-content/uploads/06/cinema/161_PV.jpg" alt=""></div><div class="name">' + $(e).closest('.modal-body').find('.a1').val() + '</div><div class="position">' + $(e).closest('.modal-body').find('.a2').val() + '</div><div class="desc">' + $(e).closest('.modal-body').find('.a3').val() + '</div><div class="social"><a href="' + $(e).closest('.modal-body').find('.linkType .link').text() + '"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a></div><div class="edit"><a href="#">изменить</a><!-- предполагается вызов такого же окна, как при добавлении, но с имеющимися данными --> | <a href="javascript:void(0)" onclick="delMan(this)">удалить</a></div></div></div>')
+		$(target).append('<div class="teamCard ' + thisID + ' col-md-3 col-sm-4 col-xs-12"><div><div class="id" style="display:none;">' + thisID + '</div><div class="img"><img src="http://www.epochtimes.ru/eet-content/uploads/06/cinema/161_PV.jpg" alt=""></div><div class="name">' + $(e).closest('.modal-body').find('.a1').val() + '</div><div class="position">' + $(e).closest('.modal-body').find('.a2').val() + '</div><div class="desc">' + $(e).closest('.modal-body').find('.a3').val() + '</div><div class="social"><a href="' + $(e).closest('.modal-body').find('.linkType .link').text() + '"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a></div><div class="edit"><a href="javascript:void(0)" onclick="editMan(this, \'' + type + '\')">изменить</a> | <a href="javascript:void(0)" onclick="delMan(this)">удалить</a></div></div></div>');
+		$(e).closest('.modal-body').find('input').val('');
 	}
 	function delMan(e) {
 		e.closest('.teamCard').remove();
+	}
+	function editMan (e, type) {
+		if (type == 'team') {
+			var tWindow = $('#editTeamModal');
+		} else {
+			var tWindow = $('#editAdvModal');
+		}
+		tWindow.find('.tempID').val($(e).closest('.teamCard').find('.id').text());
+		tWindow.find('.fio').val($(e).closest('.teamCard').find('.name').text());
+		tWindow.find('.pos').val($(e).closest('.teamCard').find('.position').text());
+		tWindow.find('.desc').val($(e).closest('.teamCard').find('.desc').text());
+		tWindow.modal('show');
+	}
+	function saveMan (e, type) {
+		if (type == 'team') {
+			var tWindow = $('#editTeamModal');
+		} else {
+			var tWindow = $('#editAdvModal');
+		}
+		id = $(e).closest(tWindow).find('.tempID').val();
+		$('.teamCard.' + id).find('.name').text($(e).closest('.modal-body').find('.fio').val());
+		$('.teamCard.' + id).find('.position').text($(e).closest('.modal-body').find('.pos').val());
+		$('.teamCard.' + id).find('.desc').text($(e).closest('.modal-body').find('.desc').val());
 	}
 	
 	// docs

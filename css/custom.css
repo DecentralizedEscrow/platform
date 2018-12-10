@@ -6953,7 +6953,7 @@ span.label {
 .addSmart .announcement {margin-top: 0;}
 
 .btn.vx i {width: 14px; height: 14px;}
-#addTeamModal .addContact, #addAdvModal .addContact {display: none;}
+#addTeamModal .addContact, #addAdvModal .addContact, #editTeamModal .addContact, #editAdvModal .addContact {display: none;}
 
 /* lang/currency change menus */
 .toggle {width: auto;}
