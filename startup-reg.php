@@ -557,7 +557,7 @@
 				<p>ФИО</p>
 				<input type="text" class="fio a1 col-xs-12" />
 				<p>Должность в проекте</p>
-				<input type="text" class="pos a2col-xs-12" />
+				<input type="text" class="pos a2 col-xs-12" />
 				<p>Описание</p>
 				<input type="text" class="desc a3 col-xs-12" />
 				<p>Контакты</p>
@@ -737,13 +737,16 @@
 	function saveMan (e, type) {
 		if (type == 'team') {
 			var tWindow = $('#editTeamModal');
+			var target = '.team.row';
 		} else {
 			var tWindow = $('#editAdvModal');
+			var target = '.adv.row';
 		}
 		id = $(e).closest(tWindow).find('.tempID').val();
-		$('.teamCard.' + id).find('.name').text($(e).closest('.modal-body').find('.fio').val());
-		$('.teamCard.' + id).find('.position').text($(e).closest('.modal-body').find('.pos').val());
-		$('.teamCard.' + id).find('.desc').text($(e).closest('.modal-body').find('.desc').val());
+		console.log(target + ' .teamCard.' + id);
+		$(target + ' .teamCard.' + id).find('.name').text($(e).closest('.modal-body').find('.fio').val());
+		$(target + ' .teamCard.' + id).find('.position').text($(e).closest('.modal-body').find('.pos').val());
+		$(target + ' .teamCard.' + id).find('.desc').text($(e).closest('.modal-body').find('.desc').val());
 	}
 	
 	// docs
